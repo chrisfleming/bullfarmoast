@@ -131,6 +131,11 @@ html>body #centercontent {
   margin-right:10px;
   }
 
+#fixedcontent h1 {
+  font-family: penna,sans-serif;
+  font-size: 200%;
+  font-weight: normal;
+}
 
 #fixedcontent img{ 
   margin: 5px;
@@ -181,7 +186,7 @@ background-color:#fff;
 #headertext {
   position: absolute;
   top:19px;
-  left: 128px;
+  left: 19px;
     } 
 #headertext a {
   font-size:35px;
@@ -231,9 +236,13 @@ div#mainNav a {
     padding: 8px 0px 0px 8px;  
     border-color: #000;  
     color: #fff;
-    font-weight: bold;
+    font-weight: normal;
+    letter-spacing: 0.5px;
     text-decoration: none; 
     outline-width: 0;
+  }
+div#mainNav a:first-child {
+  margin-left: 11px;
   }
   
 div#mainNav a:hover {
@@ -642,3 +651,29 @@ div.aligncenter {
 .shashinPhotoGroups { display: block; clear:both; }
 .storycontent p { clear:both; display: block; }
 
+.highslide-caption {display:none;}
+
+.shashinThumbnailDiv {
+  background-color: #F3F3F3;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    padding: 15px;
+    text-align: center;
+}
+
+.shashinThumbnailCaption {
+  color: #000;
+  font-size: 12px;
+}
+.shashinThumbnailsTable {
+    float: none !important;
+}
+
+.shashinThumbnailsTable td {
+    border: 0 none !important;
+    margin-bottom: 0 !important;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0 !important;
+    width: auto !important;
+}

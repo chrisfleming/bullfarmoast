@@ -5,6 +5,8 @@
     <%= raw(@page.content) %>
   </div>
   
+<% if @page.name == "index"%>
+  
 <div id="blog">
 <div>
  
@@ -18,10 +20,10 @@ $.ajax({
   }
 }); 
 </script>
-  
+<% end %>
 </div>
 
-<div id="headerleft"></div>
+
 <div id="headerright"></div>
 
 <div id="leftcontent">

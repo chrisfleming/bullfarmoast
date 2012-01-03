@@ -1,1 +1,3 @@
-$('#blog').html("<%= %>");
+$('#blog').html("<% @feed_entries.each do |feed_entry| 
+  raw(feed_entry.content)
+end %>");

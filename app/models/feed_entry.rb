@@ -19,7 +19,7 @@ def self.update_from_feed(feed_url)
         :summary      => item.summary,
         :url          => item.url,
         :content      => item.content_encoded,
-        :published_at => item.published,
+        :published_at => item.pubDate,
         :guid         => item.id
       )
     end

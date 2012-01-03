@@ -1,5 +1,12 @@
-<h1>Blog</h1>
+<h1 style=" font-family: penna,sans-serif; font-size: 200%; font-weight: normal;">Latest News</h1>
 <% @feed_entries.each do |feed_entry|  %>
-  <b><%= feed_entry.name %></b>
-  <p><%= raw(feed_entry.content) %></p>
+  <div id="<%= feed_entry.guid %>" class="blog post class-post">
+  	<h2 class="">
+  	  <%= feed_entry.published_at.strftime("%d-%m-%Y") %> 	
+  	</h2>  
+    <h3 class="storytitle"><a href="<%= feed_entry.url %>"><%= feed_entry.name %></a></h3>
+    <div class="storycontent">
+    	<%= raw(feed_entry.content) %>
+    </div>
+  </div>
 <% end %>
