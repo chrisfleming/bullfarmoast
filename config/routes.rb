@@ -1,5 +1,7 @@
 Bullfarmoast::Application.routes.draw do
+  match "pages/show_blogfeed", :controller => "pages", :action => "show_blogfeed"
   resources :pages
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -41,3 +41,9 @@ group :test do
   gem 'rspec-rails'
   gem 'webrat', '0.7.1'
 end
+
+# for rss blog parsing....
+gem 'simple-rss', '1.2.3'
+
+
+
