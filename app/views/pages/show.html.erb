@@ -1,0 +1,58 @@
+<div id="centercontent">
+  <div id="fixedcontent">
+  <p id="notice"><%= notice %></p>
+  	
+    <%= raw(@page.content) %>
+  </div>
+  
+<div id="blog">
+<div>
+ 
+<script language="JavaScript">
+$.ajax({
+  url: "<%= pages_show_blogfeed_path() %>",
+  format: "html",
+  cache: false,
+  success: function(html){
+    $("#blog").append(html);
+  }
+}); 
+</script>
+  
+</div>
+
+<div id="headerleft"></div>
+<div id="headerright"></div>
+
+<div id="leftcontent">
+  <%= raw(@page.sub_content) %>
+</div>
+   
+   
+
+
+
+
+
+<!--
+<p>
+  <b>Name:</b>
+  <%= @page.name %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @page.title %>
+</p>
+
+<p>
+  <b>Keywords:</b>
+  <%= @page.keywords %>
+</p>
+
+
+
+
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>
+-->

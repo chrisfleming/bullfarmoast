@@ -1,0 +1,656 @@
+attractions:
+  name: attractions
+  title: 'Attractions close to Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent '
+  content: "  <p>There are many places to visit from our Bed and Breakfast. Cranbrook
+    is a \n    picturesque town with it's distinctive windmill. Also close by, are
+    the world \n    famous <a href=\"/d/sissinghurst\">gardens at Sissinghurst.</a></p>\n
+    \ <p>We also have some pictures from the landscaped gardens of <a href=\"/d/sheffieldParkGardens\">Sheffield
+    Park</a></p>\n  <p>We have a list of <a href=\"/d/fulllocation\">some of the local
+    attractions</a> \n    in the area</p>\n  <br />\n"
+  sub_content: |
+    <a href="/images/sissinghurst_large.jpg"><img src="/images/sissinghurst.jpg" alt="sissinghurst castle moat" width="150" height="220" border="0" /></a><br />
+      <a href="/images/sissinghurst_large.jpg">Sissinghurst Moat</a>
+  keywords: 'Bed and Breakfast, Attractions, Cranbrook, UK, Kent, Sussex, Sissinghurst,
+    Sheffield, Bodium, Castle '
+  description: Places to Visit near Bull Farm Oast, Cranbrook, Kent
+  abstract: ""
+  lightbox: "false"
+availability:
+  name: availability
+  title: Room Availability at Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent
+  content: "<p>Enter details of when you are planning to arrive and how long you would
+    like to stay, we will get back to you within 1 day to confirm your booking.</p>
+    \n"
+  sub_content: |
+    <p>
+    <img src="http://www.bullfarmoast.co.uk/images/house-entrance-sq.jpg" width="150" height="150" /></p>
+    <p>
+    <!-- <img src="http://www.bullfarmoast.co.uk/images/mum-dad-lettie.jpg" width="150" height="150"> -->
+    </p>
+  keywords: 'Availability, Bed and Breakfast, Cranbrook, UK, Kent, Sussex,  '
+  description: Are rooms available at Bull Farm Oast, Bed and Breakfast
+  abstract: Room availability at Bull Farm Oast.
+  lightbox: "false"
+
+blank:
+  name: blank
+  title: Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent
+  content: ""
+  sub_content: ""
+  keywords: 'Bed and Breakfast, accommodation, Cranbrook, UK, Kent, Sussex, comfortable,
+    double, twin '
+  description: ""
+  abstract: ""
+  lightbox: "false"
+
+bodiamCastle:
+  name: bodiamCastle
+  title: Bodiam Castle near Bull Farm Oast Bed and Breakfast
+  content: |2
+      <h1>Bodiam Castle</h1>
+      <p>With the outside  appearing intact, this castle build in 1385 makes a spectacular sight. The grounds can be visited for free
+    and the castle can be viewed across the moat. The inside is largely ruined, however some of the towers can be climbed and the walls
+    explored.</p>
+      <p>We are only around 6 miles(10 km), a 10 minute drive  from Bodiam and our accomodation makes a prefect base from which to explore this and many other <a href="/places">local attractions</a>.
+
+      <p><img src="/images/bodiam-winter1.jpg" width="450" height="300" style="float:none" /><br /></p>
+
+      <p><img src="/images/bodiam-winter2.jpg" width="300" height="450" style="float:none" /></p>
+
+      <br />
+  sub_content: "<p>Opening Times: </p>\n  <p><strong>Castle</strong><br>\n  8 Jan
+    to 6 Feb 2011<br />\n\n    Saturday and Sunday 11:00 am to 4:00 pm</p>\n  <p>12
+    Feb to 30 Oct 11 <br />\n    All week 10:30 am to 5:00 pm</p>\n  <p>2rd Nov to
+    18 December 11 <br />\n    Wednesday to Sunday 11:00am to 4:00 pm</p> \n  <p>Last
+    admission is always one hour before closing or dusk if earlier.</p>\n\n  <p><br
+    />\n    Adult Admission &pound;6.50 (&pound;5.80), Child &pound;3.20 (&pound;2.90),
+    Family &pound;17 (&pound;15.00)</p>\n  \n  <p>Distance: 6 miles (10km)<br />\n
+    \    10 minutes driving.<br />\n     See <a href=\"/r?url=http://maps.google.co.uk/maps?q=from%3A+TN17+2ST+to%3A+TN32+5UA\">Google
+    Maps</a> for maps and directions.\n  </p>\n\n  <p>&nbsp;</p>\n  <p>See the <a
+    href=\"/r?url=http://www.nationaltrust.org.uk/main/w-vh/w-visits/w-findaplace/w-bodiamcastle/\">National
+    \n    Trust Website</a> for more Information</p> \n"
+  keywords: Bodiam Castle, Bodium, Castle, Ruins
+  description: With the outside  appearing intact, this castle build in 1385 makes
+    a spectacular sight. The grounds can be visited for free and the castle can be
+    viewed across the moat. The inside is largely ruined, however some of the towers
+    can be climbed and the walls explored.
+  abstract: ""
+  lightbox: "false"
+
+breakfast:
+  name: breakfast
+  title: Breakfast at Bull Farm Oast B&B, Cranbrook, Kent
+  content: " <h1>Breakfast</h1>\n  <p>We provide a breakfast tailored to your requirements,
+    a full English breakfast \n    consisting of bacon, local free range eggs, delicious
+    sausages, grilled tomatoes, \n    and freshly cooked mushrooms. </p>\n  <p>Vegetarians,
+    vegans and those with specific dietary requirements are welcome. An example breakfast
+    would\t be made up from of a selection \n     of smoked tofu sausages, grilled
+    tomatoes and freshly cooked mushrooms. Addtional options are available on request.</p>\n
+    \ <div class=\"image\">\n    <img src=\"/images/breakfast/PoachedEgg_Bacon_Tomato_Bread_Mushrooms.jpg\"
+    width=\"640\" height=\"427\" alt=\"PoachedEgg, Bacon, Tomato, Bread and Mushrooms\"
+    style=\"float: none;\"/>\n    <div class=\"caption\">PoachedEgg, Bacon, Tomato,
+    Bread and Mushrooms</div>\n  </div>\n  <div class=\"image\">\n    <img src=\"/images/breakfast/Set_Table_For_Breakfast.jpg\"
+    width=\"640\" height=\"427\" alt=\"Our Dinning Room all set for breakfast\" style=\"float:
+    none;\">\n    <div class=\"caption\">Our Dinning Room ready for breakfast.</div>\n
+    \ </div>  \n  <div class=\"image\">\n    <img src=\"/images/breakfast/Guests_Enjoying_Breakfast.jpg\"
+    width=\"640\" height=\"427\" alt=\"Some of our guests enjoying breakfast.\" style=\"float:
+    none;\">\n    <div class=\"caption\">Some of our guests enjoying breakfast.</div>\n
+    \ </div>\n\n"
+  sub_content: |
+    <a href="/image.php?g=breakfast&id=1" rel="lightbox"><img src="/image.php?g=breakfast&id=1&size=thumb" width="200"></a>
+  keywords: 'Bed and Breakfast, accommodation, Cranbrook, UK, breakfast, vegatarian,
+    full engilish, bacon, mushrooms, eggs, sausage '
+  description: We provide a breakfast tailored to your requirements, a full English
+    breakfast consisting of bacon, local free range eggs, delicious sausages, grilled
+    tomatoes and freshly cooked mushrooms.
+  abstract: We provide a breakfast tailored to your requirements, a full English breakfast
+    consisting of bacon, local free range eggs, delicious sausages, grilled tomatoes
+  lightbox: "false"
+
+contact:
+  name: contact
+  title: Contact Details for Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent
+  content: "    <p>Our address is:</p>\n    <p style=\"margin-left:10px\">Bull Farm
+    Oast<br />\n\tHawkhurst Road<br />\n\tCranbrook<br />\n\tKent<br />\n\tTN17 2ST</p>\n
+    \ \n  <p>You can e-mail us on: <a href=\"mailto:b+b@bullfarmoast.co.uk\">b+b@bullfarmoast.co.uk</a><br
+    />\nOr phone us on 01580 714 140.</p>\n\n  <p>This site was designed by <a href=\"/r?url=http://www.chrisfleming.org/\">Chris
+    \n    Fleming</a>. It is fully compliant with the XML 1.0 and CSS 2 and should
+    look \n    okay if you are using a compliant browser.</p>\n\n  <p> <a href=\"/r?url=http://validator.w3.org/check/referer\"><img\n
+    \ \t\t  style=\"border:0;width:88px;height:31px\"\n          src=\"http://www.w3.org/Icons/valid-xhtml10\"\n
+    \         alt=\"Valid XHTML 1.0!\" /></a> <a href=\"/r?url=http://jigsaw.w3.org/css-validator/\">
+    \n    <img style=\"border:0;width:88px;height:31px\"\n       src=\"http://jigsaw.w3.org/css-validator/images/vcss\"
+    \n       alt=\"Valid CSS!\" /></a>\n\n </p>\n"
+  sub_content: |+
+    <img src="/images/house.jpg" alt="our oast house" width="200" /><br />
+    <img src="/images/icons/4st_BandB_100x142.png" alt="4 stars" width="100" height="142" />
+    <img src="/images/icons/SilverAward_100x142.png" alt="Silver Award" width="100" height="142" />
+
+  keywords: Contact, email, Bed and Breakfast
+  description: ""
+  abstract: ""
+  lightbox: "false"
+
+dayTrip1:
+  name: dayTrip1
+  title: 'Day trip to Battle Abbey, Hastings, Bateman''s and Scotney Castle from Bed
+    and Breakfast at Bull Farm Oast, Cranbrook, Kent '
+  content: "<h1>Day trip to Battle Abbey, Hastings, Bateman's and Scotney Castle</h2>\n\n
+    All visits only available Wednesdays, Saturdays and Sundays!!\n\n<table>\n<tr>\n<td><b>Mile</b></td><td><b>Km</b></td></tr>\t\n<tr><td>0</td><td>0</td><td>Turn
+    Right onto A229 and go straight through Hawkhurst</td></tr>\n<tr><td>6.0</td><td>9.7</td><td>\tTurn
+    left onto the A21 and follow this to Johns Cross</td></tr>\n<tr><td>10.6</td><td>\t17.1</td><td>\tBear
+    right onto the A2100 to Battle</td></tr>\n<tr><td>14.0</td><td>\t22.5</td><td>\tBattle</td></tr>\n</table>\n\n<p>Battle
+    Abbey was built by William the Conqueror to commemorate his victory over Harold
+    in 1066. A free audio guide of the Battlefield is available. Visit the Great Gatehouse
+    exhibition of monastic life at the abbey, and the 1066 Exhibition.</p>\n\n<p>\nOpen
+    1st November to 31st March 10-4\n          1st April to 31st October  10-6</p>\n<p>
+    \n14.0\t22.5\tGo back on A2100 to John Cross<br />\n18.4\t29.5\tTurn Right onto
+    the A21<br /> \n21.9\t35.1\tArrive Hastings<br />\n</p>\n<p>\nVisit the old town,
+    Hastings Castle , Britain.s first Norman Castle built in 1067. Hastings Sea Life
+    Centre and Hastings Museum and Art Gallery</p>\n<p>\n22.4\t36\tLeave Hastings
+    back up the A21<br />\n36.7\t59.3\tAt Hurst Green turn left onto the A265 towards
+    and through Burwash <br />\n41.8\t67.5\tTurn left onto small road signposted Bateman's<br
+    />\n42.6\t68.7\tArrive Bateman's\n</p>\n<p>\nBateman's is a beautiful 17th century
+    Sussex sandstone manor house and was home to the author Rudyard Kipling from 1902
+    to 1936. The house have been set out as they were in Kipling.s days with his books
+    and mementoes of his visits to India being featured. The garden is delightful
+    and has a pond, rose garden and  Pear Alley. The garden also has one of the world.s
+    first water driven turbines in the mill- installed by Kipling to provide electricity
+    for the house. The working mill still grinds corn most Saturdays. Kipling.s 1928
+    Rolls Royce is also on display.</p>\n</p>\n<p>\n  Open daily 27th March to 31st
+    October except Thursdays and Fridays 11.00 to 5.00\n</p>\n<p>\n42.6\t68.7\tLeave
+    Bateman's and return to the A265-<br />\n43.3\t69.9\tTurn right onto the A265<br
+    />\n48.4\t78.2\tTurn left onto the A21 towards Lamberhurst<br />\n55.2\t89.1\tTurn
+    right onto the small road signposted Scotney Castle<br />\n55.3\t89.3\tArrive
+    Scotney Castle<br />\n</p>\n<p>\nScotney Castle Garden is one of England.s most
+    romantic gardens created around a picturesque 14th century moated castle ruin.
+    Enjoy dramatic vistas and viewpoints created by the steep lie of the land and
+    relish beautiful colours throughout the year. The estate has beautiful parkland,
+    meadows, woods and hopfields\n</p>\nOpen 27th March to 31st October Wed to Friday
+    11 .6  Sat & Sun 12-6   Old Castle only opens May to 1 Sept.</p>\n<p>\n\n\t\tLeave
+    Scotney and turn right onto the A21 and just through Lamberhurst<br />\n\t\tTurn
+    right onto the B2162  and the at the cross road turn right onto the A262<br />\n\t\tGo
+    through Goudhurst stopping to see church/pond and pretty village- good pubs/restaurants<br
+    />\n\t\tTurn right onto B2085 at the Peacock Inn<br />\n\t\tTurn right into Bull
+    Farm Oast<br />\n</p>\n\n\n"
+  sub_content: |
+    <a href="/images/sissinghurst_large.jpg"><img src="/images/sissinghurst.jpg" alt="sissinghurst castle moat" width="150" height="220" border="0" /></a><br />
+      <a href="/images/sissinghurst_large.jpg">Sissinghurst Moat</a>
+  keywords: Day Trip, Battle Abbey, Hastings, Bateman's, Scotney Castle
+  description: Places to Visit near Bull Farm Oast, Cranbrook, Kent
+  abstract: ""
+  lightbox: "false"
+
+dayTrip2:
+  name: dayTrip2
+  title: 'Attractions close to Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent '
+  content: "uggested round trip: Bodium Castle/ Great Dixter /Rye\n\n\nBodium and
+    \ Great Dixter directions\n.\n2.6 \tm to the Hawkhurst traffic lights\n0.6m turn
+    left onto the B2044\n2.1m turn left towards Bodium\n1.3m Bodium on left\nTotal
+    \ 6.6m\n\nBodium Castle\n\nBodium open 10-6   last admissions 5 pm\nNational Trust
+    shop (11-5)  and restaurant\nBuilt 1385 one of the best examples of a moated castle.
+    Its exterior walls are virtually complete , and the inside is ruins with partial
+    restorations . Spiral staircases to battlements with fine views.\n \nBodium to
+    Great Dixter\n\nTurn left out of Bodium\n1.2m turn left\n3.6m turn left into Dixter
+    Rd\n0.3m entrance into Great Dixter\nTotal  5.3m\n\nGreat Dixter house and gardens
+    \nA hall house dating from around 1500, one of the largest timber framed halls
+    in the country.The garden has a variety of clipped topiary, carpets of wild meadow
+    flowers, the ever changing tapestry of mixed borders , a dreamy pond and a startling
+    exuberant Exotic Garden.\nOpen from 2 to 5 closed Mondays except Bank Holidays
+    1st April to 31 October\nGardens only open from 11 on Sundays and Bank Holiday
+    Mondays\nNursery 9-12, 1.30-5 Mon. to Fri. and 9 - 12 Sat\n\nGreat Dixter to Rye\nTurn
+    left out of Great Dixter\n0.6m turn left (out of Dixter lane)\n0.5m is The turn
+    to right to Rye\n1.0 is the turning to right to Brickwall House\n1.1m Peasmarsh
+    village\n3.1m Playden Village\n0.8m Rye\nVisit The Rye Heritage Centre, Ypres
+    Tower, The Rye Treasure of Mechanical Music, and wander through the cobbled streets.
+    Mermaid Street and the Mermaid Inn must not be missed.\n\n  <br />\n"
+  sub_content: |
+    <a href="/images/sissinghurst_large.jpg"><img src="/images/sissinghurst.jpg" alt="sissinghurst castle moat" width="150" height="220" border="0" /></a><br />
+      <a href="/images/sissinghurst_large.jpg">Sissinghurst Moat</a>
+  keywords: 'Bed and Breakfast, Attractions, Cranbrook, UK, Kent, Sussex, Sissinghurst,
+    Sheffield, Bodium, Castle '
+  description: Places to Visit near Bull Farm Oast, Cranbrook, Kent
+  abstract: ""
+  lightbox: "false"
+
+fulllocation:
+  name: fulllocation
+  title: 'Bull Farm Oast - B&B - Local Places to visit '
+  content: "\t\t<h1>Full List Of Local Attractions.</h1>\n\t\t<P>Here is a full list
+    of local attractions that you can visit while staying at Bull Farm Oast, Bed and
+    Breakfast. We also have a <a href=\"/d/map\">map</a> showing where these are.</a></P>\n<p>You
+    should also be able to find more information about Kent on \n<a href=\"/r?url=http://www.tripadvisor.com/Tourism-g186310-Kent_England-Vacations.html\">trip
+    advisor</a></p>\n\n       <table border=\"1\" >\n              <tr>\n                <th
+    width=\"100%\"  colspan=\"2\">Gardens: </th>\n\n              </tr>\n              <tr>\n\n
+    \               \n      <td width=\"50%\" >1. <a href=\"/d/sissinghurst\">Sissinghurst
+    \n        Gardens</a>.-the most famous of all gardens</td>\n                <td
+    width=\"50%\" >2. Great Dixter</td>\n              </tr>\n              <tr>\n\n
+    \               <td width=\"50%\" >3. <a href=\"/d/places/BedgeburyPinetum\">Bedgebury
+    Pinetum</a></td>\n\n                <td width=\"50%\" >4. Marle Place</td>\n              </tr>\n
+    \             <tr>\n                <td width=\"50%\" >5. Yalding Organic Garden</td>\n
+    \               <td width=\"50%\" >6. Pashley Manor Gardens</td>\n\n              </tr>\n
+    \             <tr>\n                <td width=\"50%\">7. Merriment.s Gardens</td>\n
+    \               <td width=\"50%\">8. Gardens of Gaia</td>\n              </tr>\n
+    \             <tr>\n\n                <td width=\"50%\">9. <a href=\"/d/scotney\">Scotney
+    Castle Garden</a></td>\n\n                <td width=\"50%\">10. Emmets Garden</td>\n
+    \             </tr>\n              <tr>\n                <td width=\"50%\" >11.
+    <a href=\"/d/sheffieldParkGardens\"> Sheffield Park Garden</a></td>\n\n                <td
+    width=\"50%\" >12. Sprivers Garden</td>\n              </tr>\n\n              <tr>\n
+    \               <td width=\"50%\" >13. Nymans Garden</td>\n                <td
+    width=\"50%\" >14. Leonardslee Gardens</td>\n              </tr>\n              <tr>\n
+    \               <td width=\"50%\" >15. Groombridge Place Gardens and Enchanted
+    Forest</td>\n                <td width=\"50%\" >16. Broadview Gardens</td>\n\n
+    \             </tr>\n              <tr>\n\n                <td width=\"50%\" >17.
+    Cabbages and Kings</td>\n                <td width=\"50%\" >18. Wakehurst Place</td>\n
+    \             </tr>\n              <tr>\n                <td width=\"50%\" >19.
+    Great Comp Garden</td>\n\n                <td width=\"50%\" >20. Wych Cross Rose
+    & Garden Center</td>\n              </tr>\n              <tr>\n                <td
+    width=\"50%\" >21.Brogdale World of fruit</td>\n                <td width=\"50%\"
+    >22.Maize Maze.</td>\n              </tr>\n\n              <tr>\n                <th
+    width=\"100%\" colspan=\"2\">Castles and Historic Houses:</th>\n              </tr>\n
+    \             <tr>\n                <td width=\"50%\">30. <a href=\"/d/bodiamCastle\">Bodiam
+    Castle</a></td>\n                <td width=\"50%\">31. Hever Castle </td>\n              </tr>\n\n
+    \             <tr>\n                <td width=\"50%\" >32. Leeds Castle </td>\n
+    \               <td width=\"50%\" >33. Bateman's</td>\n              </tr>\n              <tr>\n
+    \               <td width=\"50%\" >34. Chartwell </td>\n                <td width=\"50%\"
+    >35. Knole </td>\n\n              </tr>\n              <tr>\n                <td
+    width=\"50%\">36. Ightham Mote </td>\n                <td width=\"50%\">37. Penshurst
+    Place </td>\n              </tr>\n              <tr>\n                <td width=\"50%\"
+    >38. Squerryes Court </td>\n\n                <td width=\"50%\" >39. Battle Abbey
+    </td>\n              </tr>\n              <tr>\n                <td width=\"50%\"
+    >40. Herstmonceux Castle </td>\n                <td width=\"50%\" >41. Michelham
+    Priory </td>\n              </tr>\n              <tr>\n\n                <td width=\"50%\"
+    >\n              42. Smallhythe Place </td>\n                <td width=\"50%\"
+    ></td>\n              </tr>\n              <tr>\n                <th width=\"100%\"
+    \ colspan=\"2\">Other Attractions:</th>\n              </tr>\n              <tr>\n\n
+    \               <td width=\"50%\" >60. Hastings </td>\n                <td width=\"50%\"
+    >61. Rye </td>\n              </tr>\n              <tr>\n                <td width=\"50%\"
+    >62. Royal Tunbridge Wells </td>\n                <td width=\"50%\" >63. Canterbury</td>\n\n
+    \             </tr>\n              <tr>\n                <td width=\"50%\" >64.
+    Brighton </td>\n                <td width=\"50%\" >65. Lewes </td>\n              </tr>\n
+    \             <tr>\n                <td width=\"50%\" >66. Eastbourne </td>\n\n
+    \               <td width=\"50%\" >67. Kent and East Sussex Steam Railway </td>\n
+    \             </tr>\n              <tr>\n                <td width=\"50%\" >68.
+    The Bluebell Railway </td>\n\n                <td width=\"50%\" >\n              69.
+    Spa Valley Railway. </td>\n              </tr>\n\n              <tr>\n                <td
+    width=\"50%\" >\n              70. Cobtree-Museum of Kent Life </td>\n                <td
+    width=\"50%\" >\n              71. Romney, Hythe & Dymchurch Railway </td>\n\n
+    \             </tr>\n              <tr>\n\n                <td width=\"50%\" >72.
+    Dungeness power Station </td>\n                <td width=\"50%\" >73. Hop Farm
+    Country Park </td>\n              </tr>\n              <tr>\n\n                <td
+    width=\"50%\" >74. Bentley Wildflower and Motor Museum </td>\n                <td
+    width=\"50%\" >75. Tenterden Vineyard Park </td>\n\n              </tr>\n              <tr>\n
+    \               <td width=\"50%\" >76. Beachy Head </td>\n                <td
+    width=\"50%\" >77. Nepicar Farm </td>\n              </tr>\n              <tr>\n
+    \               <td width=\"50%\" >78. Bewl Water. </td>\n\n                <td
+    width=\"50%\" >79. Chiddingstone </td>\n              </tr>\n              <tr>\n
+    \               <td width=\"50%\">80. Alfriston </td>\n                <td width=\"50%\">&nbsp;</td>\n
+    \             </tr>\n            </table>\n\n<p>\nNote: <a href=\"/d/bodiamCastle\">Bodiam
+    Castle</a> is often miss spelled as Bodium Castle.\n</p>\n\n"
+  sub_content: |
+    <img src="/images/house.jpg" width="150" />
+  keywords: ""
+  description: ""
+  abstract: ""
+  lightbox: "false"
+
+guestbook:
+  name: guestbook
+  title: Bull Farm Oast Guest Book
+  content: "  <h1>Guest Book</h1>\n\n<div id=\"TA_selfserveprop51\" class=\"TA_selfserveprop\">\n<ul
+    id=\"YFFKeYO3zed\" class=\"TA_links fl6mScsn7y\">\n            <li id=\"augEu3B303\"
+    class=\"bFi9fNeP\">Offering 11 reviews of <a target=\"_blank\" href=\"http://www.tripadvisor.co.uk/Hotel_Review-g186315-d487638-Reviews-Bull_Farm_Oast_Bed_and_Breakfast-Royal_Tunbridge_Wells_Kent_England.html\">Bull
+    Farm Oast Bed and Breakfast</a> in Royal Tunbridge Wells</li>\n      </ul>\n  </div>\n<script
+    src=\"http://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=51&amp;locationId=487638&amp;lang=en_UK&amp;rating=true&amp;nreviews=3&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=true&amp;linkt=2\"></script>\n\n\n
+    \ <p>Comments from some of our guests.</p>\n  <p><img src=\"/images/guest_book.jpg\"
+    width=\"400\" height=\"334\" style=\"float:none\" /><br />\n  </p>\n  <p>\"We
+    loved staying here! very nice, we felt really welcome here. We liked \n    the
+    room also. Thank you!\" <BR>\n    Hessika en Paul Yd Broek - Holland</p>\n\n  <p><img
+    src=\"/images/guest_book_belgium.gif\" style=\"float:none\"/> \"This is without
+    \n    exaggeration,<BR>\n    the best B&B of the nation.<BR>\n    This is a veggie
+    paradise<BR>\n    and ever so nice<BR>\n    Such a lovely mum and son <BR>\n\n
+    \   hopefully this will go on and on.<BR>\n    See you !! - Ellen Straelens, Belgium<BR>\n
+    \ </p>\n  <p>\"Thanks a lot for such an enjoyable stay in a real family house!
+    It makes \n    it even harder to say Goodbye to you and England!\" - Anja, Germany</p>\n"
+  sub_content: |
+    <img src="/images/family_outside.jpg" width="150" height="225" /><br />
+    A visiting family in the Garden.
+  keywords: 'Bed and Breakfast,  Cranbrook, Guest Book '
+  description: ""
+  abstract: ""
+  lightbox: "false"
+
+index:
+  name: index
+  title: Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent
+  content: "<h1>Welcome to Bull Farm Oast Bed and Breakfast</h1>\n<p>Prue and Andrew
+    offer a genuine taste of <a href=\"/places\">Kentish</a> hospitality in their
+    authentic oasthouse and gardens, charmingly converted into Cranbrook's most welcoming
+    B&B, moments from <a href=\"/d/sissinghurst\">Sissinghurst</a>. Enjoy a beautiful
+    night's sleep in our <a href=\"/d/rooms\">rooms</a> before waking to a <a href=\"/d/breakfast\">Breakfast</a>
+    of freshly baked bread, homemade preserved and local farm eggs and bacon.\n  </p>\n
+    \ <p>We are happy to help you plan your stay with our extensive knowledge of \n
+    \   <a href=\"/places\">the area</a>.  \n    There are a large number of gardens
+    open to the public \n    in the surrounding area, as well as many other fabulous
+    attractions for the \n    visitor.</p>\n\n"
+  sub_content: |
+    <img src="http://s1.bullfarmoast.co.uk/images/house.jpg" alt="our oast house" width="199" height="267" /><br />
+  keywords: Bed and Breakfast, accommodation, Cranbrook, UK, Kent, Sussex, High Weald,
+    sissinghurst, oasthouse,  guest, guesthouse,Great Dixter, Garden, holiday,  Scotney
+    castle, Merriments, Pashley Manor, Leeds Castle, National Trust, Scotney castle,
+    Merriments, Pashley Manor, Leeds Castle, National Trust, accomodation, High Weald
+  description: We provide a family run bed and breakfast just outside Cranbrook, Kent
+    we provide a perfect base to explore the South East of England, Sissinghurst is
+    1 mile away.
+  abstract: A picturesque Bed and Breakfast near Cranbrook in Kent.
+  lightbox: "true"
+
+links:
+  name: links
+  title: Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent
+  content: |+
+    <p>Here are links that you may find useful, both to other bed and breakfasts in the area and also to other sites. For local attractions, please visit out <a href="/places">Places</a> Page.</p>
+    <ul>
+      <li><A HREF="HTTP://www.bedandbreakfasts.co.uk">http://www.bedandbreakfasts.co.uk</A></li>
+      <li><a href="http://www.cranbrookuk.co.uk/">Quality assured Cranbrook, Bed and Breakfasts<a></li>
+      <li><a href="http://www.simplyspecial.org.uk/">Simply Special Places to Stay in the Weald of Kent</li>
+    </ul>
+
+
+  sub_content: ""
+  keywords: 'Bed and Breakfast, accommodation, Cranbrook, UK, Kent, Sussex, comfortable,
+    double, twin '
+  description: ""
+  abstract: ""
+  lightbox: "false"
+
+location:
+  name: location
+  title: Location of Bull Farm Oast Bed and Breakfast, Cranbrook, Kent, TN17 2ST
+  content: |2
+
+    <h1>Location</h1>
+
+
+    <div id="map" style="width: 500px; height: 500px; color: black"></div>
+
+    <!--   <div id="message"></div>  -->
+    <br \>
+    <br \>
+    <p>We are located at the corner of Bishops Lane(B2085) and the A229.
+    The nearest station is located 5 miles away in Staplehurst and there is
+    a bus stop nearby.<br>
+    <br>
+    </p>
+    <h2>Our Full address is:</h2>
+
+    <p> Bull Farm Oast,<br>
+    Corner of Hawkhurst Road and Bishops Lane<br>
+    Cranbrook,<br>
+    Kent,<br>
+    TN17 2ST<br>
+    </p>
+    <p>Phone us on: 01580 714 140<br>
+    </p>
+    <p> <a
+     href="http://www.multimap.com/p/browse.cgi?pc=TN172ST&amp;title=BullFarmOast"
+     target="multimap">Local Map</a> </p>
+  sub_content: |
+    <img src="/images/lambs_150.jpg" width="150" height="94" alt="lambs">
+  keywords: Location, Map, Bed and Breakfast, accommodation, Cranbrook, UK, Kent,
+    Sussex
+  description: 'We are located close to the Kent, East Sussex border, at the corner
+    of Bishops Lane(B2085) and the A229. The nearest station is located 5 miles away
+    in Staplehurst and there is a bus stop nearby. '
+  abstract: ""
+  lightbox: "false"
+
+map:
+  name: map
+  title: 'Bull Farm Oast - B&B - Local Places to visit '
+  content: "\t\t<h1>Full List Of Local Attractions.</h1>\n\t\t<p>Here is a full list
+    of local attractions that you can visit while staying at Bull Farm Oast, Bed and
+    Breakfast.</p>\n       <table border=\"1\" >\n              <tr>\n                <th
+    width=\"100%\"  colspan=\"2\">Gardens: </th>\n\n              </tr>\n              <tr>\n\n
+    \               \n      <td width=\"50%\" >1. <a href=\"/d/sissinghurst\">Sissinghurst
+    \n        Gardens</a>.-the most famous of all gardens</td>\n                <td
+    width=\"50%\" >2. Great Dixter</td>\n              </tr>\n              <tr>\n\n
+    \               <td width=\"50%\" >3. <a href=\"/d/places/BedgeburyPinetum\">Bedgebury
+    Pinetum</a></td>\n\n                <td width=\"50%\" >4. Marle Place</td>\n              </tr>\n
+    \             <tr>\n                <td width=\"50%\" >5. Yalding Organic Garden</td>\n
+    \               <td width=\"50%\" >6. Pashley Manor Gardens</td>\n\n              </tr>\n
+    \             <tr>\n                <td width=\"50%\">7. Merriment.s Gardens</td>\n
+    \               <td width=\"50%\">8. Gardens of Gaia</td>\n              </tr>\n
+    \             <tr>\n\n                <td width=\"50%\">9. Scotney Castle Garden</td>\n\n
+    \               <td width=\"50%\">10. Emmets Garden</td>\n              </tr>\n
+    \             <tr>\n                <td width=\"50%\" >11. <a href=\"/d/sheffieldParkGardens\">
+    Sheffield Park Garden</a></td>\n\n                <td width=\"50%\" >12. Sprivers
+    Garden</td>\n              </tr>\n\n              <tr>\n                <td width=\"50%\"
+    >13. Nymans Garden</td>\n                <td width=\"50%\" >14. Leonardslee Gardens</td>\n
+    \             </tr>\n              <tr>\n                <td width=\"50%\" >15.
+    Groombridge Place Gardens and Enchanted Forest</td>\n                <td width=\"50%\"
+    >16. Broadview Gardens</td>\n\n              </tr>\n              <tr>\n\n                <td
+    width=\"50%\" >17. Cabbages and Kings</td>\n                <td width=\"50%\"
+    >18. Wakehurst Place</td>\n              </tr>\n              <tr>\n                <td
+    width=\"50%\" >19. Great Comp Garden</td>\n\n                <td width=\"50%\"
+    >20. Wych Cross Rose & Garden Center</td>\n              </tr>\n              <tr>\n
+    \               <td width=\"50%\" >21.Brogdale World of fruit</td>\n                <td
+    width=\"50%\" >22.Maize Maze.</td>\n              </tr>\n\n              <tr>\n
+    \               <th width=\"100%\" colspan=\"2\">Castles and Historic Houses:</th>\n
+    \             </tr>\n              <tr>\n                <td width=\"50%\">30.
+    Bodium Castle </td>\n                <td width=\"50%\">31. Hever Castle </td>\n
+    \             </tr>\n\n              <tr>\n                <td width=\"50%\" >32.
+    Leeds Castle </td>\n                <td width=\"50%\" >33. Bateman's</td>\n              </tr>\n
+    \             <tr>\n                <td width=\"50%\" >34. Chartwell </td>\n                <td
+    width=\"50%\" >35. Knole </td>\n\n              </tr>\n              <tr>\n                <td
+    width=\"50%\">36. Ightham Mote </td>\n                <td width=\"50%\">37. Penshurst
+    Place </td>\n              </tr>\n              <tr>\n                <td width=\"50%\"
+    >38. Squerryes Court </td>\n\n                <td width=\"50%\" >39. Battle Abbey
+    </td>\n              </tr>\n              <tr>\n                <td width=\"50%\"
+    >40. Herstmonceux Castle </td>\n                <td width=\"50%\" >41. Michelham
+    Priory </td>\n              </tr>\n              <tr>\n\n                <td width=\"50%\"
+    >\n              42. Smallhythe Place </td>\n                <td width=\"50%\"
+    ></td>\n              </tr>\n              <tr>\n                <th width=\"100%\"
+    \ colspan=\"2\">Other Attractions:</th>\n              </tr>\n              <tr>\n\n
+    \               <td width=\"50%\" >60. Hastings </td>\n                <td width=\"50%\"
+    >61. Rye </td>\n              </tr>\n              <tr>\n                <td width=\"50%\"
+    >62. Royal Tunbridge Wells </td>\n                <td width=\"50%\" >63. Canterbury</td>\n\n
+    \             </tr>\n              <tr>\n                <td width=\"50%\" >64.
+    Brighton </td>\n                <td width=\"50%\" >65. Lewes </td>\n              </tr>\n
+    \             <tr>\n                <td width=\"50%\" >66. Eastbourne </td>\n\n
+    \               <td width=\"50%\" >67. Kent and East Sussex Steam Railway </td>\n
+    \             </tr>\n              <tr>\n                <td width=\"50%\" >68.
+    The Bluebell Railway </td>\n\n                <td width=\"50%\" >\n              69.
+    Spa Valley Railway. </td>\n              </tr>\n\n              <tr>\n                <td
+    width=\"50%\" >\n              70. Cobtree-Museum of Kent Life </td>\n                <td
+    width=\"50%\" >\n              71. Romney, Hythe & Dymchurch Railway </td>\n\n
+    \             </tr>\n              <tr>\n\n                <td width=\"50%\" >72.
+    Dungeness power Station </td>\n                <td width=\"50%\" >73. Hop Farm
+    Country Park </td>\n              </tr>\n              <tr>\n\n                <td
+    width=\"50%\" >74. Bentley Wildflower and Motor Museum </td>\n                <td
+    width=\"50%\" >75. Tenterden Vineyard Park </td>\n\n              </tr>\n              <tr>\n
+    \               <td width=\"50%\" >76. Beachy Head </td>\n                <td
+    width=\"50%\" >77. Nepicar Farm </td>\n              </tr>\n              <tr>\n
+    \               <td width=\"50%\" >78. Bewl Water. </td>\n\n                <td
+    width=\"50%\" >79. Chiddingstone </td>\n              </tr>\n              <tr>\n
+    \               <td width=\"50%\">80. Alfriston </td>\n                <td width=\"50%\">&nbsp;</td>\n
+    \             </tr>\n            </table>\n\n<img src=\"/images/local_map.gif\"
+    width=\"800\" height=\"527\" alt=\"Map of Kent, local attractions.\"/> \n"
+  sub_content: |
+    <img src="/images/house.jpg" width="150" />
+  keywords: ""
+  description: ""
+  abstract: ""
+  lightbox: "false"
+
+merriments.html:
+  name: merriments.html
+  title: Merriments Gardens
+  content: |
+    <h1>Merriments Gardens</h1>
+      <p>We are a short 10 minute drive from these gardens consisting of 4 acres of densly planted borders where plants grown in the nursery can be seen planted in context. These lovely gardens are really worth a visit.
+        </p>
+      <p><img src="/image.php?g=attractions&id=1" width="640" style="float:none" /></p>
+      <p></p>
+      <p><img src="/image.php?g=attractions&id=2" width="640" height="425" alt="" style="float:none" /></p>
+      <p><img src="/image.php?g=attractions&id=3" width="640" height="425" alt="" style="float:none" />
+       Merriments Garden in the Early Spring</p>
+       <p><img src="/image.php?g=attractions&id=4" width="640" height="425" alt="" style="float:none" />
+       A Newly designed garden, in the Early Spring</p>
+      <br />
+  sub_content: "<p>Opening Times: </p>\n  <!--<p>14th April 2006 to mid October <br
+    />-->\n    Monday to Saturday 10am - 5.30pm.<br />\n    Sunday 10:30 - 5:30pm<br
+    />\n</p>\n\n  <p>\n    Admission: &pound;5.00, child &pound;2.00</p>\n  <p>&nbsp;</p>\n
+    \ <p>See also the <a href=\"/r?url=http://www.merriments.co.uk/\">Merriments Gardens</a>
+    \n  </a> Website.</p>\n\n  <p><b>We are 5 miles or less than a 10 minute drive
+    from Merriments Gardens</b></p>\n\n"
+  keywords: Merriments Gardens, Bed and Breakfast, accommodation,  Weald, East Sussex,
+    UK, Kent, Gardens, Sissinghurst
+  description: We are a short 10 minute drive from these gardens consisting of 4 acres
+    of densly planted borders where plants grown in the nursery can be seen planted
+    in context. These lovely gardens are really worth a visit.
+  abstract: ""
+  lightbox: "false"
+
+rooms:
+  name: rooms
+  title: Rooms for Bed and Breakfast at Bull Farm` Oast, Cranbrook, Kent
+  content: |+
+    <h1>Rooms</h1>
+      <p>We have a large en suite room with a double bed towards the front of the house, which can easily accommodate children
+        with additional beds, if required. We have a further bright twin bedded room overlooking our garden at the rear of the house. </p>
+      <p>Our twin room is available from 62 pounds and the double is available from 67  pounds for the room. </p>
+      <p>All our rooms have TV's with freeview available along with Tea and Coffee making facilities and ample space for storage of luggage and chairs for
+    relaxing in. Free wireless internet is available throught our property. All our rooms have individual  heating  controls and hairdryers are available on
+    request.</p>
+    <div class="image">
+        <img src="http://s1.bullfarmoast.co.uk/images/rooms/blue_room.jpg" width="640" height="427" alt="Our Double Blue Room" style="float: none;"/>
+        <div class="caption">Our Double Blue Room</div>
+      </div>
+    <div class="image">
+        <img src=http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=4" width="640" height="427" alt="Our twin room" style="float: none;"/>
+        <div class="caption">Our twin room</div>
+      </div>
+
+
+      <p>Please click on any of the pictures shown on this page in order to see a larger version</p>
+      <a href="http://s1.bullfarmoast.co.uk/image.php?g=rooms&id=4" rel="lightbox[rooms]"  title="Beds in the Twin Room"><img src="http://s1.bullfarmoast.co.uk/image.php?g=rooms&id=4&size=thumb" /></a>
+       <a href="http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=5" rel="lightbox[rooms]"><img src="http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=5&size="thumb" /></a>
+       <a href="http://s1.bullfarmoast.co.uk/image.php?g=rooms&id=3" rel="lightbox[rooms]"><img src="http://s1.bullfarmoast.co.uk/image.php?g=rooms&id=3&size=thumb" height="159" /></a>
+       <a href="http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=6" rel="lightbox[rooms]"><img src="http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=6&size=thumb" /></a>
+
+
+
+  sub_content: |2+
+      <a href="http://s2.bullfarmoast.co.uk/images/blueroom.jpg" rel="lightbox[rooms]" title="The Blue Room"><img src="http://s2.bullfarmoast.co.uk/images/blueroom.jpg" width="240" /></a>
+       <a href="http://s1.bullfarmoast.co.uk/image.php?g=rooms&id=1" rel="lightbox[rooms]"  title="Beds in the Twin Room"><img src="http://s1.bullfarmoast.co.uk/image.php?g=rooms&id=1&size=thumb" width="116" /></a>
+       <a href="http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=2" rel="lightbox[rooms]"><img src="http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=2&size=thumb" width="115" /></a>
+
+  keywords: 'Bed and Breakfast, accommodation, Cranbrook, UK, Kent, Sussex, comfortable,
+    double, twin '
+  description: We have an en suite with a double bed, and can also accommodate children
+    with additional beds, if required. We have a further twin bedded room.
+  abstract: 'Rooms at Bull Farm Oast '
+  lightbox: "false"
+
+scotney:
+  name: scotney
+  title: Scotney Castle Garden & Estate
+  content: |
+    <h1>Scotney Castle</h1>
+    <p>Scotney Castle, is a country house and garden located near Lamberhurst.<p>
+    <p>The Gardens, are centered around the ruins of a medieval, moated house, Scotney
+    Old Castle on an island in a small lake. The lake is surrounded by sloping, wooded
+    gardens with fine collections of rhododendrons, azaleas and kalmia for spring colour,
+    summer wisteria and roses, and spectacular autumn colour.</p>
+      <p><img src="/images/scotney-gardens1.jpg" width="400" height="300" style="float:none" /></p>
+      <p><img src="/images/scotney-2.jpg" width="400" height="300" /></p>
+      <p><img src="/images/scotney-3.jpg" width="400" height="300" /></p>
+
+
+      <br />
+  sub_content: |2+
+      <p>The House and Gardens are open from 23rd February 2011 until 30th October 2011, on Wednesday through to Sundays, 11am to 5pm, and from 5th November to 11th December, on the weekends between 11am and 4pm. See <a href="http://www.nationaltrust.org.uk/main/w-vh/w-visits/w-findaplace/w-scotneycastlegarden.htm">National Trust Website</a> for more details.
+      <p><br />
+        Admission: <b>House and garden:</b> &pound;10 (&pound;9), child &pound;5 (&pound;4.50), family &pound;25.50 (&pound;23).<br /><b>Garden:</b> &pound;7.75 (&pound;7), child &pound;4.25 (&pound;3.75), family &pound;21.50 (&pound;19).</p>
+      <p>&nbsp;</p>
+
+     <p>Estate Walks can be done all year round and are Free</p>
+
+    <p><b>We are a 6 miles drive, from Scotney Casle. This will take around 15 minutes. See <a href="/r?url=http://maps.google.co.uk/maps?q=from%3A+TN17+2ST+to%3A+TN3+8JN&ll=51.095545,0.459194&spn=0.069234,0.119373&f=d&hl=en">Google</a> for maps and directions.</b></p>
+
+  keywords: Bed and Breakfast,accommodation, Cranbrook, UK, Kent, Gardens, Scotney
+  description: '[description'
+  abstract: ""
+  lightbox: "false"
+
+sendMail:
+  name: sendMail
+  title: Room Availability at Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent
+  content: "<p></p> \n"
+  sub_content: |
+    <img src="http://www.bullfarmoast.co.uk/images/hanging_basket.jpg" width="150" height="146" />
+  keywords: 'Availability, Bed and Breakfast, Cranbrook, UK, Kent, Sussex,  '
+  description: Are rooms available at Bull Farm Oast, Bed and Breakfast
+  abstract: Room availability at Bull Farm Oast.
+  lightbox: "false"
+
+sheffieldParkGardens:
+  name: sheffieldParkGardens
+  title: Sheffield Park Gardens near Bull Farm Oast Bed and Breakfast
+  content: |2
+      <h1>Sheffield Park Gardens</h1>
+      <p>Lose yourself in the seemingly endless winding paths of Capability Browns majestic landscaped gardens.</p>
+      <p><img src="/kent/Places/sheffieldPark/sheffieldGardens1.jpg" width="500" height="333" style="float:none" /><br /></p>
+      <p> The 100 acres of gardens designed in the 18 Centuary entice and entertain visitors all year round.</p>
+
+      <p><img src="/kent/Places/sheffieldPark/sheffieldGardens2.jpg" width="500" height="333" /></p>
+
+      <br />
+  sub_content: "  <p><b>Opening Times:</b> </p>\n  <p>1 Jan to 13 Feb 11 <br />\n
+    \   Saturday and Sunday 10:30am to 4:00 pm</p> \n  <p>14 Feb to 31 Oct 11 <br
+    />\n    Monday to Sunday 10:30am to 5:30 pm</p>\n  <p>1 Nov to 31 Dec 11 <br />\n
+    \   Monday to Sunday 10:30am to 4:00 pm</p>\n   \n  <p>Last admission is always
+    one hour before closing or dusk if earlier.</p>\n\n  <p><br />\n    Adult Admission
+    &pound;8.20 (&pound;7.40), Child &pound;4.10 (&pound;3.70), Family &pound;20.50
+    (&pound;18.50) </p>\n\n  <p>&nbsp;</p>\n  <p>See the <a href=\"/r?url=http://www.nationaltrust.org.uk/scripts/nthandbook.dll?ACTION=PROPERTY&PropertyId=109\">National
+    \n    Trust Website</a> for more Information</p> \n"
+  keywords: Sheffield Park Gardens, Sheffield, park, gardens, lakes, Capability Brown,
+    photos
+  description: Lose yourself in the seemingly endless winding paths of Capability
+    Browns majestic landscaped gardens.  The 100 acres of gardens designed in the
+    18 Century entice and entertain visitors all year round.
+  abstract: ""
+  lightbox: "false"
+
+sissinghurst:
+  name: sissinghurst
+  title: Sissinghurst Castle Gardens
+  content: "<h1>Sissinghurst Castle</h1>\n  <p>One of the worlds most celebrated and
+    famous gardens, created by Vita Sackville-West \n    and her husband Sir Harold
+    Nicolson. The gardens are laid out around the surviving parts \n    of an Elizabethan
+    mansion with a central red-brick prospect tower. The gardens are made up\n    of
+    small, vibrant,  enclosed compartments, \n    provide outstanding design and colour
+    in an intimate atmosphere. The study, where \n    Vita worked, and Long Library
+    are also open to visitors.</p>\n  <p><img src=\"/images/sissinghurst_large.jpg\"
+    width=\"450\" height=\"300\" style=\"float:none\" /></p>\n  <p>The woodland and
+    Wealdon landscape around Sissinghurst Castle, which influenced the work in the
+    garden are always open and is free to access. The garden now also has a new vegetable
+    garden supplying fresh fruit and veg to the restaurant.</p>\n  <p><img src=\"/kent/Places/sissinghurst_images/woods.jpg\"
+    width=\"400\" height=\"267\" alt=\"Woodland around Sissinghurst Castle\" style=\"float:none\"
+    \ /></p>\n\n    <p>As well as staying with us have a look at <A HREF=\"HTTP://www.bedandbreakfasts.co.uk\">http://www.bedandbreakfasts.co.uk</a>\n
+    for more places to stay, or have a look at our <a href=\"/d/links\">links page</a>
+    </p>\n\n\n  <br />\n"
+  sub_content: "<p>Garden Opening Times: </p>\n  <p>13th March to 31 October 2011<br
+    />\n    Monday, Tuesday,  Friday, Saturday and Sunday  11am - 6pm.</p>\n\n  <p>Last
+    admission is always 5.30pm or an hour before dusk if earlier.</p>\n  <p><br />\n
+    \   Admission: &pound;10.50, child &pound;5.20, family &pound;26.00</p>\n  <p>&nbsp;</p>\n
+    \ <p>See also the <a href=\"/r?url=http://www.nationaltrust.org.uk/scripts/nthandbook.dll?ACTION=PROPERTY&amp;PROPERTYID=97\">National
+    \n    Trust</a> Website.</p>\n\n  <p><a href=\"/r?url=http://www.invectis.co.uk/sissing/\">Dave
+    Parker</a> has lots of \n    photos, maps and more detailed information about
+    the castle.</p>\n  <p><b>We are less than 4 miles or a 5 minute drive from Sissinghurst
+    Castle</b></p>\n\n"
+  keywords: Bed and Breakfast, accommodation, Cranbrook, UK, Kent, Gardens, Sissinghurst
+  description: ""
+  abstract: ""
+  lightbox: "false"
+

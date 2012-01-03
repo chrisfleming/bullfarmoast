@@ -1,0 +1,644 @@
+/* reset-min.css - From Yahoo YUI Version 2.7.0 */
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+/* base.css, part of YUI's CSS Foundation */
+h1 {
+  /*18px via YUI Fonts CSS foundation*/
+  font-size:138.5%;  
+}
+h2 {
+  /*16px via YUI Fonts CSS foundation*/
+  font-size:123.1%; 
+}
+h3 {
+  /*14px via YUI Fonts CSS foundation*/
+  font-size:108%;  
+}
+h1,h2,h3 {
+  /* top & bottom margin based on font size */
+  margin:1em 0;
+}
+h1,h2,h3,h4,h5,h6,strong {
+  /*bringing boldness back to headers and the strong element*/
+  font-weight:bold; 
+}
+abbr,acronym {
+  /*indicating to users that more info is available */
+  border-bottom:1px dotted #000;
+  cursor:help;
+} 
+em {
+  /*bringing italics back to the em element*/
+  font-style:italic;
+}
+blockquote,ul,ol,dl {
+  /*giving blockquotes and lists room to breath*/
+  margin:1em;
+}
+ol,ul,dl {
+  /*bringing lists on to the page with breathing room */
+  margin-left:2em;
+}
+ol li {
+  /*giving OL's LIs generated numbers*/
+  list-style: decimal outside;  
+}
+ul li {
+  /*giving UL's LIs generated disc markers*/
+  list-style: disc outside;
+}
+dl dd {
+  /*giving UL's LIs generated numbers*/
+  margin-left:1em;
+}
+th,td {
+  /*borders and padding to make the table readable*/
+  border:1px solid #000;
+  padding:.5em;
+}
+th {
+  /*distinguishing table headers from data cells*/
+  font-weight:bold;
+  text-align:center;
+}
+caption {
+  /*coordinated marking to match cell's padding*/
+  margin-bottom:.5em;
+  /*centered so it doesn't blend in to other content*/
+  text-align:center;
+}
+p,fieldset,table {
+  /*so things don't run into each other*/
+  margin-bottom:1em;
+
+}
+
+html {  background-color:#7fb6e0; }
+body {
+  background-color:#7fb6e0;
+  font-family:verdana, arial, helvetica, sans-serif;
+  color:#fff;
+  }
+
+#leftcontent {
+  font-size: 80%;
+  position: absolute;
+  left:10px;
+  top:110px;
+  width:250px;
+  }
+  
+#leftcontent ul li {
+  list-style: none;
+}
+
+#centercontent {
+  margin-top: 0px;
+  margin-left: 240px;
+  margin-right: 10px;
+  top:100px;
+  border:0px solid #000;
+  padding:0px 40px;
+  /*
+  IE5x PC mis-implements the box model. Because of that we sometimes have
+  to perform a little CSS trickery to get pixel-perfect display across browsers.
+  The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+  parsing bug in IE5x PC that will prematurly close a style rule when it runs
+  into the string "\"}\"". After that string appears in a rule, then, we can override
+  previously set attribute values and only browsers without the parse bug will
+  recognize the new values. So any of the name-value pairs above this comment
+  that we need to override for browsers with correct box-model implementations
+  will be listed below.
+  
+  We use the voice-family property because it is likely to be used very infrequently,
+  and where it is used it will be set on the body tag. So the second voice-family value 
+  of "inherit" will override our bogus "\"}\"" value and allow the proper value to
+  cascade down from the body tag.
+
+  The style rule immediately following this rule offers another chance for CSS2
+  aware browsers to pick up the values meant for correct box-model implementations.
+  It uses a CSS2 selector that will be ignored by IE5x PC.
+  
+  Read more at http://www.glish.com/css/hacks.asp
+  */
+  
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  margin-left: 240px;
+  margin-right:10px;
+  }
+html>body #centercontent {
+  margin-left:240px;
+  margin-right:10px;
+  }
+
+
+#fixedcontent img{ 
+  margin: 5px;
+  background-color:white;
+  padding:15px;
+  }
+
+#mainNav {
+  background:#6fc65b;
+  font-size:100%;
+  }
+
+#banner {
+  background:#3ea533;
+  top: 0px;
+  height:75px;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  height:75px;
+  }
+
+  
+html>body #banner {
+  height:75px;
+  }
+
+#headerleft {
+   position: absolute;
+   top: 25px;
+   left:25px;
+   background-image: url("http://s1.bullfarmoast.co.uk/images/3blocks.gif");
+   width:95px;
+   height:25px;
+   margin:0px;
+   padding:0px;
+background-color:#fff;
+}
+
+#headerright {
+  position: absolute;
+  top:25px;
+  right: 25px;
+  background-image: url("http://s2.bullfarmoast.co.uk/images/2blocks.gif");
+  height: 25px;
+  width: 60px;
+}
+
+#headertext {
+  position: absolute;
+  top:19px;
+  left: 128px;
+    } 
+#headertext a {
+  font-size:35px;
+  color:#fff;
+  text-decoration: none;
+  
+  font-family: penna,sans-serif;
+  font-style: italic;
+  font-weight: 400;
+
+    } 
+  
+p,h1,pre {
+  margin:0px 5px 10px 0px;
+  padding-top: 4px;
+  }
+  
+h1 {
+  padding-top:10px;
+  }
+  
+#banner h1 {
+  font-size: 15px;
+  padding: 10px 10px 0px 10px;
+  margin: 0px;
+  }
+
+div#mainNav {
+  padding: 0.17em 10px 0.27em 0em; 
+  text-align: left;
+  height: 1.2 em;
+  font-size: 90%;
+}
+div#mainNav h4 {
+  margin: 2em 0 0 2px;
+  padding: 0;
+  font-size: 1em; font-weight: bold; line-height: 1.25em;
+  text-align: left; text-transform: lowercase;
+  border-bottom: 2px solid;}
+
+div#mainNav form {padding: 0.25em 0.66em;}
+div#mainNav p {line-height: 1.1em; text-align: left;
+  padding: 0.5em 0.5em 0.5em 5%;}
+
+div#mainNav a {
+  text-align: left; 
+    padding: 8px 0px 0px 8px;  
+    border-color: #000;  
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none; 
+    outline-width: 0;
+  }
+  
+div#mainNav a:hover {
+  text-align: left; 
+    /*padding: 5px 5px 2px; */ 
+    color: #3ea533;
+  }
+
+#alternative {
+    position: absolute;
+    top:79.5px;
+    right: 25px;
+    height: 25px;
+    width: 60px;
+}
+
+div#alternative img { float:right; border:0px; padding:2px; } 
+
+#caption {
+    color: #000000;
+}
+
+.image {    float:none; position: relative; display: block; padding-bottom: 10px;}
+.image img {padding:15px;background-color:white; float:none; display: block;}
+.caption {float:none; display: block; color:black; font-weight: bold; font-size:90%; }
+
+
+/*
+Theme Name: WordPress Classic
+Theme URI: http://wordpress.org/
+Description: The original WordPress theme that graced versions 1.2.x and prior.
+Version: 1.5
+Author: Dave Shea
+Tags: mantle color, variable width, two columns, widgets
+
+Default WordPress by Dave Shea || http://mezzoblue.com
+Modifications by Matthew Mullenweg || http://photomatt.net
+This is just a basic layout, with only the bare minimum defined.
+Please tweak this and make it your own. :)
+*/
+
+
+a {
+  color: #115bf8;
+}
+
+a img {
+  border: none;
+}
+
+a:visited {
+  color: #115bf8;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+acronym, abbr {
+  border-bottom: 1px dashed #333;
+}
+
+acronym, abbr, span.caps {
+  font-size: 90%;
+  letter-spacing: .07em;
+}
+
+acronym, abbr {
+  cursor: help;
+}
+
+blockquote {
+  border-left: 5px solid #ccc;
+  margin-left: 1.5em;
+  padding-left: 5px;
+}
+
+
+
+cite {
+  font-size: 90%;
+  font-style: normal;
+}
+
+.blog h2 {
+  border-bottom: 1px dotted #ccc;
+  font-size: 95%;
+  letter-spacing: 0.2em;
+  margin: 15px 0 2px 0;
+  padding-bottom: 2px;
+}
+
+.blog h3 {
+  border-bottom: 1px dotted #eee;
+  margin-top: 0;
+}
+
+ol#comments li p {
+  font-size: 100%;
+}
+
+.blog p,.blog li, .feedback {
+  font: 90%/175% 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  letter-spacing: -1px;
+}
+
+/* classes used by the_meta() */
+.blog ul.post-meta {
+  list-style: none;
+}
+
+.blog ul.post-meta span.post-meta-key {
+  font-weight: bold;
+}
+
+.credit {
+  background: #90a090;
+  border-top: 3px double #aba;
+  color: #fff;
+  font-size: 11px;
+  margin: 10px 0 0 0;
+  padding: 3px;
+  text-align: center;
+}
+
+.credit a:link, .credit a:hover {
+  color: #fff;
+}
+
+.feedback {
+  color: #ccc;
+  text-align: right;
+  clear: both;
+}
+
+.meta {
+  font-size: .75em;
+}
+
+.meta li, ul.post-meta li {
+  display: inline;
+}
+
+.meta ul {
+  display: inline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.meta, .meta a {
+  color: #555555;
+  font-weight: normal;
+  letter-spacing: 0;
+}
+
+.storytitle {
+  margin: 0;
+}
+
+.storytitle a {
+  text-decoration: none;
+}
+
+#commentform #author, #commentform #email, #commentform #url, #commentform textarea {
+  background: #fff;
+  border: 1px solid #333;
+  padding: .2em;
+}
+
+#commentform textarea {
+  width: 100%;
+}
+
+#commentlist li ul {
+  border-left: 1px solid #ddd;
+  font-size: 110%;
+  list-style-type: none;
+}
+
+#commentlist li .avatar {
+  float: right;
+  margin-right: 25px;
+  border: 1px dotted #ccc;
+  padding: 2px;
+}
+
+#content {
+  margin: 30px 13em 0 3em;
+  padding-right: 60px;
+}
+
+#header {
+  background: #90a090;
+  border-bottom: 3px double #aba;
+  border-left: 1px solid #9a9;
+  border-right: 1px solid #565;
+  border-top: 1px solid #9a9;
+  font: italic normal 230% 'Times New Roman', Times, serif;
+  letter-spacing: 0.2em;
+  margin: 0;
+  padding: 15px 10px 15px 60px;
+}
+
+#header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header a:hover {
+  text-decoration: underline;
+}
+
+
+#menu form {
+  margin: 0 0 0 13px;
+}
+
+#menu input#s {
+  width: 80%;
+  background: #eee;
+  border: 1px solid #999;
+}
+
+#menu ul {
+  font-weight: bold;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 3px;
+  text-transform: lowercase;
+}
+
+#menu ul li {
+  letter-spacing: 0.1em;
+  margin-top: 10px;
+  padding-bottom: 2px; /*border-bottom: dotted 1px #ccc;*/
+}
+
+#menu ul ul {
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#menu ul ul li {
+  border: 0;
+  /* font: normal normal 12px/115% 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif; */
+  letter-spacing: 0;
+  margin-top: 0;
+  padding: 0;
+  padding-left: 12px;
+}
+
+#menu ul ul li a {
+  /* color: #000; */
+  text-decoration: none;
+}
+
+#menu ul ul li a:hover {
+  border-bottom: 1px solid #809080;
+}
+
+#menu ul ul ul.children {
+  font-size: 142%;
+  padding-left: 4px;
+}
+
+#wp-calendar {
+  border: 1px solid #ddd;
+  empty-cells: show;
+  font-size: 14px;
+  margin: 0;
+  width: 90%;
+}
+
+#wp-calendar #next a {
+  padding-right: 10px;
+  text-align: right;
+}
+
+#wp-calendar #prev a {
+  padding-left: 10px;
+  text-align: left;
+}
+
+#wp-calendar a {
+  display: block;
+  text-decoration: none;
+}
+
+#wp-calendar a:hover {
+  background: #e0e6e0;
+  color: #333;
+}
+
+#wp-calendar caption {
+  color: #999;
+  font-size: 16px;
+  text-align: left;
+}
+
+#wp-calendar td {
+  color: #ccc;
+  /*  font: normal 12px 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif; */
+  letter-spacing: normal;
+  padding: 2px 0;
+  text-align: center;
+}
+
+#wp-calendar td.pad:hover {
+  background: #fff;
+}
+
+#wp-calendar td:hover, #wp-calendar #today {
+  background: #eee;
+  color: #bbb;
+}
+
+#wp-calendar th {
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+/* Captions & aligment */
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.wp-caption {
+  border: 1px solid #ddd;
+  text-align: center;
+  background-color: #f3f3f3;
+  padding-top: 4px;
+  margin: 10px;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.wp-caption img {
+  margin: 0;
+  padding: 0px;
+  border: 0 none;
+}
+
+.wp-caption img {
+  margin: 0;
+  padding: 0px;
+  border: 0 none;
+}
+
+.wp-caption p.wp-caption-text
+{
+  color: #000;
+  font-size: 11px;
+  line-height: 17px;
+  padding: 0 4px 5px;
+  margin: 0;
+}
+/* End captions & aligment */
+
+
+/* Lightbox CSS */
+#lightbox{position:absolute;top:40px;left:0;width:100%;z-index:100;text-align:center;line-height:0;}
+#lightbox a img{border:none;}
+#outerImageContainer{position:relative;background-color:#fff;width:250px;height:250px;margin:0 auto;}
+#imageContainer{padding:10px;}
+#loading{position:absolute;top:40%;left:0%;height:25%;width:100%;text-align:center;line-height:0;}
+#hoverNav{position:absolute;top:0;left:0;height:100%;width:100%;z-index:10;}
+#imageContainer>#hoverNav{left:0;}
+#hoverNav a{outline:none;}
+#prevLink, #nextLink{width:49%;height:100%;background:transparent url(../images/blank.gif) no-repeat;display:block;}
+#prevLink{left:0;float:left;}
+#nextLink{right:0;float:right;}
+#prevLink:hover, #prevLink:visited:hover{background:url(../images/prevlabel.gif) left 15% no-repeat;}
+#nextLink:hover, #nextLink:visited:hover{background:url(../images/nextlabel.gif) right 15% no-repeat;}
+#imageDataContainer{font:10px Verdana, Helvetica, sans-serif;background-color:#fff;margin:0 auto;line-height:1.4em;}
+#imageData{padding:0 10px;}
+#imageData #imageDetails{width:70%;float:left;text-align:left;}
+#imageData #caption{font-weight:bold;}
+#imageData #numberDisplay{display:block;clear:left;padding-bottom:1.0em;}
+#imageData #bottomNavClose{width:66px;float:right;padding-bottom:0.7em;}
+#overlay{position:absolute;top:0;left:0;z-index:90;width:100%;height:500px;background-color:#000;filter:alpha(opacity=60);-moz-opacity:0.6;opacity:0.6;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+* html>body .clearfix{display:inline-block;width:100%;}
+* html .clearfix{height:1%;}
+
+.shashinPhotoGroups { display: block; clear:both; }
+.storycontent p { clear:both; display: block; }
+
