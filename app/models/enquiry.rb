@@ -1,4 +1,14 @@
 class Enquiry < ActiveRecord::Base
+  validates :firstname, :surname, presence: true
+  validate :some_contact_details
+  
+  def some_contact_details
+    if self.phone == "" && self.email == ""
+      errors.add(:phone, "Please Supply a Phone Number or E-mail address") 
+    end
+  end
+
+  
   
   def IsCommentSpam()
     # Original PHP code
