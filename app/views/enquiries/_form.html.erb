@@ -1,0 +1,53 @@
+<%= form_for(@enquiry) do |f| %>
+  <% if @enquiry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@enquiry.errors.count, "error") %> prohibited this enquiry from being saved:</h2>
+
+      <ul>
+      <% @enquiry.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :firstname %><br />
+    <%= f.text_field :firstname %>
+  </div>
+  <div class="field">
+    <%= f.label :surname %><br />
+    <%= f.text_field :surname %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :arrival_date %><br />
+    <%= f.date_select :arrival_date, :order => [:day, :month, :year] %>
+  </div>
+  <div class="field">
+    <%= f.label :night_count %><br />
+    <%= f.number_field :night_count %>
+  </div>
+  <div class="field">
+    <%= f.label :people %><br />
+    <%= select_tag(:people, options_for_select([['1 Person', 1], ['2 People', 2], ['3 People', 3], ['4 People', 4]], 2)) %>
+  </div>
+  <div class="field">
+    <%= f.label :rooms %><br />
+    <%= select_tag(:rooms, options_for_select([['1 Room', 1], ['2 Rooms', 2]], 1)) %>
+  </div>
+  <div class="field">
+    <%= f.label :comment %><br />
+    <%= f.text_area :comment %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

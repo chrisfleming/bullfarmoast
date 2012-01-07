@@ -27,4 +27,21 @@ Bullfarmoast::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # config.action_mailer.delivery_method = :smtp
+  config.action_mailer.delivery_method = :smtp
+ 
+  config.action_mailer.smtp_settings = { 
+      address: "localhost",
+      port: 1465,
+      domain: "chrisfleming.org", 
+      authentication: "plain",
+      user_name: "login@chrisfleming.org", 
+      password: "lmip00!", 
+      enable_starttls_auto: true
+    }
+    
+  perform_deliveries = true
+  raise_delivery_errors = true
+
 end

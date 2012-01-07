@@ -3,3 +3,8 @@
 
 en:
   hello: "Hello world"
+  helpers:
+    label:
+      enquiry:
+        comment: "If you have any other questions or comments, then please let us know:"
+        night_count: "Nights"

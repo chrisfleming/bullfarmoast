@@ -1,0 +1,39 @@
+<h1>Listing enquiries</h1>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Surname</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Arrival date</th>
+    <th>Night count</th>
+    <th>People</th>
+    <th>Rooms</th>
+    <th>Comment</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @enquiries.each do |enquiry| %>
+  <tr>
+    <td><%= enquiry.firstname %></td>
+    <td><%= enquiry.surname %></td>
+    <td><%= enquiry.phone %></td>
+    <td><%= enquiry.email %></td>
+    <td><%= enquiry.arrival_date %></td>
+    <td><%= enquiry.night_count %></td>
+    <td><%= enquiry.people %></td>
+    <td><%= enquiry.rooms %></td>
+    <td><%= enquiry.comment %></td>
+    <td><%= link_to 'Show', enquiry %></td>
+    <td><%= link_to 'Edit', edit_enquiry_path(enquiry) %></td>
+    <td><%= link_to 'Destroy', enquiry, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Enquiry', new_enquiry_path %>

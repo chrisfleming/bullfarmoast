@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Firstname:</b>
+  <%= @enquiry.firstname %>
+</p>
+
+<p>
+  <b>Surname:</b>
+  <%= @enquiry.surname %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @enquiry.phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @enquiry.email %>
+</p>
+
+<p>
+  <b>Arrival date:</b>
+  <%= @enquiry.arrival_date %>
+</p>
+
+<p>
+  <b>Night count:</b>
+  <%= @enquiry.night_count %>
+</p>
+
+<p>
+  <b>People:</b>
+  <%= @enquiry.people %>
+</p>
+
+<p>
+  <b>Rooms:</b>
+  <%= @enquiry.rooms %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @enquiry.comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_enquiry_path(@enquiry) %> |
+<%= link_to 'Back', enquiries_path %>
