@@ -8,6 +8,9 @@ class EnquiryTest < ActiveSupport::TestCase
     
     enquiry.comment = "drug Test Text"
     assert enquiry.IsCommentSpam, "Spam at start of comment"
+    
+    enquiry.comment = "DRUG"
+    assert enquiry.IsCommentSpam, "Is check case insensitive"
 
     enquiry.comment = "Test Text drug"
     assert enquiry.IsCommentSpam, "Spam at end of comment"
@@ -23,6 +26,9 @@ class EnquiryTest < ActiveSupport::TestCase
     
     enquiry.comment = "casino Text"
     assert enquiry.IsCommentSpam, "Different spam word"
+    
+
+    
     
   end
 end
