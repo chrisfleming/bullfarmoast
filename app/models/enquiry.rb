@@ -1,6 +1,6 @@
 class Enquiry < ActiveRecord::Base
-  validates :firstname, :surname, presence: true
   validate :some_contact_details
+  validate :some_name_fields
   
   def some_contact_details
     if self.phone == "" && self.email == ""
@@ -8,6 +8,11 @@ class Enquiry < ActiveRecord::Base
     end
   end
 
+  def some_name_fields
+    if self.firstname == "" && self.surname == ""
+      errors.add(:firstname, "Please Supply a Phone Number or E-mail address") 
+    end
+  end
   
   
   def IsCommentSpam()
