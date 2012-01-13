@@ -45,9 +45,16 @@ class EnquiriesController < ApplicationController
     respond_to do |format|
       if @enquiry.save
         
-        AccomodationEnquiry.acknowledge(@enquiry).deliver
         
-        format.html { redirect_to @enquiry, notice: 'Enquiry was successfully created.' }
+        # Send request to Bull Farm Oast
+        AccomodationEnquiry.enquiry(@enquiry).deliver
+        
+        # Only send reply if we've not tagged this as spam
+        unless @enquiry.IsCommentSpam 
+          AccomodationEnquiry.acknowledge(@enquiry).deliver
+        end
+        
+        format.html { redirect_to @enquiry, notice: 'Enquiry was successfully submitted.', action: "success" }
         format.json { render json: @enquiry, status: :created, location: @enquiry }
       else
         format.html { render action: "new" }
