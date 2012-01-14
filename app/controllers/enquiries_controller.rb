@@ -41,17 +41,20 @@ class EnquiriesController < ApplicationController
   # POST /enquiries.json
   def create
     @enquiry = Enquiry.new(params[:enquiry])
+    
+    logger.info "New enquiry: #{@enquiry.attributes.inspect}"
+
 
     respond_to do |format|
-      if @enquiry.save
+      if @enquiry.save 
         
         
         # Send request to Bull Farm Oast
-        AccomodationEnquiry.enquiry(@enquiry).deliver
+        #AccomodationEnquiry.enquiry(@enquiry).deliver
         
         # Only send reply if we've not tagged this as spam
         unless @enquiry.IsCommentSpam 
-          AccomodationEnquiry.acknowledge(@enquiry).deliver
+          #AccomodationEnquiry.acknowledge(@enquiry).deliver
         end
         
         format.html { redirect_to @enquiry, notice: 'Enquiry was successfully submitted.', action: "success" }

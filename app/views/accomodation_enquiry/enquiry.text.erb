@@ -2,8 +2,8 @@
 request from <%= @enquiry.firstname %> <%= @enquiry.surname %>
 phone number: <%= @enquiry.phone %>
 email: <%= @enquiry.email %> 
-for <%= pluralize(@enquiry.rooms, 'room' %> 
-for <%= pluralize(@enquiry.persons, 'person' %> to stay for <%= pluralize(@enquiry.night_count, 'night' %> from <%= @enquiry.arrival_date %>
+for <%= pluralize(@enquiry.rooms, 'room') %> 
+for <%= pluralize(@enquiry.people, 'person') %> to stay for <%= pluralize(@enquiry.night_count, 'night') %> from <%= @enquiry.arrival_date %>
 
 
-<%=  @enquiry.comments %>
+<%=  @enquiry.comment %>

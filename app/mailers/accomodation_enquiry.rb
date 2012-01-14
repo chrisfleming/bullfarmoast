@@ -22,9 +22,9 @@ class AccomodationEnquiry < ActionMailer::Base
   #
   #   en.accomodation_enquiry.enquiry.subject
   #
-  def enquiry
-    @greeting = "Hi"
+  def enquiry(enquiry)
+    @enquiry = enquiry
 
-    mail to: "to@example.org"
+    mail to: "me@chrisfleming.org"
   end
 end

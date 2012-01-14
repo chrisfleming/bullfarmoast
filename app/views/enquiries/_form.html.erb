@@ -11,8 +11,6 @@
     </div>
   <% end %>
 
-  <div <fieldset id="name" class="">
-    <legend>Your Name</legend>
  
   <div class="field">
     <%= f.label :firstname %><br />
@@ -21,7 +19,6 @@
   <div class="field">
     <%= f.label :surname %><br />
     <%= f.text_field :surname %>
-  </div>
   </div>
   <div class="field">
     <%= f.label :phone %><br />
@@ -41,11 +38,11 @@
   </div>
   <div class="field">
     <%= f.label :people %><br />
-    <%= select_tag(:people, options_for_select([['1 Person', 1], ['2 People', 2], ['3 People', 3], ['4 People', 4]], 2)) %>
+    <%= select(:enquiry, :people, options_for_select([['1 Person', 1], ['2 People', 2], ['3 People', 3], ['4 People', 4]], 2)) %>
   </div>
   <div class="field">
     <%= f.label :rooms %><br />
-    <%= select_tag(:rooms, options_for_select([['1 Room', 1], ['2 Rooms', 2]], 1)) %>
+    <%= select(:enquiry, :rooms, options_for_select([['1 Room', 1], ['2 Rooms', 2]], 1)) %>
   </div>
   <div class="field">
     <%= f.label :comment %><br />
