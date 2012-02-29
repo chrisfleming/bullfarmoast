@@ -44,4 +44,5 @@ Bullfarmoast::Application.configure do
   perform_deliveries = true
   raise_delivery_errors = true
 
+  script_dir = "/usr/local/pgsql/share/contrib/postgis-1.5/"
 end

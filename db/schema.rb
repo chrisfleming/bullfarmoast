@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120107011920) do
+ActiveRecord::Schema.define(:version => 20120122223357) do
+
+  create_table "attractions", :force => true do |t|
+    t.string   "name"
+    t.spatial  "latlong",     :limit => {:srid=>4326, :type=>"point", :geographic=>true}
+    t.string   "category"
+    t.string   "url"
+    t.string   "ownership"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "enquiries", :force => true do |t|
     t.string   "firstname"
