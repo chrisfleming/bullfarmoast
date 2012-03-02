@@ -1,6 +1,7 @@
 Bullfarmoast::Application.routes.draw do
   resources :enquiries
-
+  resources :attractions
+  
   match "pages/show_blogfeed", :controller => "pages", :action => "show_blogfeed"
   resources :pages
   

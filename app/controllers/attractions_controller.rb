@@ -1,14 +1,14 @@
 class AttractionsController < ApplicationController
-  before_filter :find_Attraction, :only => [:show, :edit, :update, :destroy]
+  #before_filter :find_Attraction, :only => [:show, :edit, :update, :destroy]
 
   # GET /Attractions
   # GET /Attractions.xml
   def index
-    @Attractions = Attraction.all
+    @attractions = Attraction.all
 
-    respond_to do |wants|
-      wants.html # index.html.erb
-      wants.xml  { render :xml => @Attractions }
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render :json => @attractions }
     end
   end
 

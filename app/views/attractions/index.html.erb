@@ -1,0 +1,140 @@
+
+<div id="map" style="border:1px; width:100%; height:500px;">Map goes here.</div>
+
+
+<h1>Listing pages</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Category</th>
+    <th>Ownership</th>
+    <td>Location</th>
+  </tr>
+
+<% @attractions.each do |attraction| %>
+  <tr>
+    <td><%= attraction.name %></td>
+    <td><%= attraction.category %></td>
+    <td><%= attraction.ownership %></td>
+    <td><%= attraction.latlong%>
+  </tr>
+<% end %>
+</table>
+
+
+
+<br />
+
+<script type="text/javascript">
+//<![CDATA[
+	var map;
+var ajaxRequest;
+var plotlist;
+var plotlayers=[];
+
+function getXmlHttpObject() {
+	if (window.XMLHttpRequest) { return new XMLHttpRequest(); }
+	if (window.ActiveXObject)  { return new ActiveXObject("Microsoft.XMLHTTP"); }
+	return null;
+}
+
+function stateChanged( response ) {
+	
+	var MyIcon = L.Icon.extend({
+      iconUrl: '/assets/leaflet/marker.png',
+      shadowUrl: '/assets/leaflet/marker-shadow.png',
+    });
+
+	var icon = new MyIcon();
+	//var marker = new L.Marker(marker, {icon: icon});
+	
+	// if AJAX returned a list of markers, add them to the map
+	//if (ajaxRequest.readyState==4) {
+		//use the info here that was returned
+		//if (ajaxRequest.status==200  ) {
+			//plotlist=eval("(" + ajaxRequest.responseText + ")");
+			plotlist = response;
+			removeMarkers();
+			
+			for (i=0;i<plotlist.length;i++) {
+				// latlong  = POINT (51.1156 -0.5823)
+				
+				var latlong  = /(-*\d+\.\d+)\s+(-*\d+\.\d+)/g.exec( plotlist[i].latlong )
+				
+				if (latlong==null) {
+					alert ("latlong is null :( " + plotlist[i].name + "<br> ll: " + plotlist[i].latlong );
+				}	
+				else {
+				var plotll = new L.LatLng( latlong[1], latlong[2], true);
+				var plotmark = new L.Marker(plotll, {icon: icon});
+				plotmark.data=plotlist[i];
+				map.addLayer(plotmark);
+				plotmark.bindPopup("<h3>"+plotlist[i].name+"</h3>"+plotlist[i].description);
+				plotlayers.push(plotmark);
+				}
+			}
+		//}
+	//}
+}
+
+function removeMarkers() {
+	for (i=0;i<plotlayers.length;i++) {
+		map.removeLayer(plotlayers[i]);
+	}
+	plotlayers=[];
+}
+
+function askForPlots() {
+	// request the marker info with AJAX for the current bounds
+	//var bounds=map.getBounds();
+	//var minll=bounds.getSouthWest();
+	//var maxll=bounds.getNorthEast();
+	var msg='/attractions.json';
+	ajaxRequest.onreadystatechange = stateChanged();
+	ajaxRequest.open('GET', msg, true);
+	ajaxRequest.send(null);
+}
+
+function initmap() {
+	// set up the map
+	map = new L.Map('map');
+
+    // set up AJAX request
+	//ajaxRequest=getXmlHttpObject();
+	//if (ajaxRequest==null) {
+	//	alert ("This browser does not support HTTP Request");
+	//	return;
+	//}
+
+	// create the tile layer with correct attribution
+	var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+	var osmAttrib='Map data © OpenStreetMap contributors';
+	var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 12, attribution: osmAttrib});		
+
+	// start the map in South-East England
+	map.setView(new L.LatLng(51.104, 0.5105),11);
+	map.addLayer(osm);
+	
+	//askForPlots();
+	//map.on('moveend', onMapMove);
+}
+
+function onMapMove(e) { askForPlots(); }
+
+// Setup Map
+$(document).ready(
+	initmap()
+);
+
+// Get List of Places
+$.ajax({
+  url: "/attractions.json",
+  context: document.body,
+  success: function(response){
+    stateChanged(response);
+  }
+});
+	
+//]]>
+</script>
