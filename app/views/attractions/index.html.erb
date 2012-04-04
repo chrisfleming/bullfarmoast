@@ -1,5 +1,12 @@
 
-<div id="map" style="border:1px; width:100%; height:500px;">Map goes here.</div>
+<div id="map" style="border:1px; width:100%; height:500px;">
+   <div id="map-list" style="z-index: 3000;">
+     <h2>Castles</h2>
+     <h2>Gardens</h2>
+     <h2>Places</h2>	
+     <h2>Other</h2>
+   </div>
+</div>
 
 
 <h1>Listing pages</h1>
@@ -14,7 +21,7 @@
 
 <% @attractions.each do |attraction| %>
   <tr>
-    <td><%= attraction.name %></td>
+    <td><%= attraction.id %>: <%= attraction.name %></td>
     <td><%= attraction.category %></td>
     <td><%= attraction.ownership %></td>
     <td><%= attraction.latlong%>
@@ -23,15 +30,78 @@
 </table>
 
 
+	<div id="MapBuilderSideBar">
+		<div id="SideBarGardens">
+			Gardens [<a href="javascript:void(0)" onclick="HideLocationList(0)">-</a>]
+		</div>
+		<div style="overflow:auto;">
+			<ul id="GardenList">
+				<noscript>
+					<?= $noscriptText["garden"] ?>
+				</noscript>
+			</ul>
+		</div>
+		<div id="SideBarCastle">
+			Castles and Houses [<a href="javascript:void(0)" onclick="HideLocationList(1)">-</a>]
+		</div>
+		<div style="overflow:auto;">
+			<ul id="CastleList">
+				<noscript>
+					<?= $noscriptText["building"] ?>
+				</noscript>
+			</ul>
+		</div>
+		<div id="SideBarPlaces">
+			Places [<a href="javascript:void(0)" onclick="HideLocationList(2)">-</a>]
+		</div>
+		<div style="overflow:auto;">
+			<ul id="PlacesList">
+				<noscript>
+					<?= $noscriptText["places"] ?>
+				</noscript>
+			</ul>
+		</div>
+		<div id="SideBarOther">
+			Other [<a href="javascript:void(0)" onclick="HideLocationList(3)">-</a>]
+		</div>
+		<div style="overflow:auto;">
+			<ul id="OtherList">
+				<noscript>
+					<?= $noscriptText["other"] ?>
+				</noscript>
+			</ul>
+		</div>
+	</div>
+
+
 
 <br />
 
 <script type="text/javascript">
 //<![CDATA[
-	var map;
+var map;
 var ajaxRequest;
 var plotlist;
 var plotlayers=[];
+
+//set up array of locations
+//var aLocations = new Array;
+var usePDMarker = false;
+var aCats = new Array;
+
+// Setup Category's
+aCats[0] = new Array("garden", "SideBarGardens", "GardenList", "Gardens");
+aCats[1] = new Array("building", "SideBarCastle", "CastleList", "Castles and Houses");
+aCats[2] = new Array("places", "SideBarPlaces", "PlacesList", "Places");
+aCats[3] = new Array("other", "SideBarOther", "OtherList", "Other"); 
+
+
+// Storage for sidebar list
+var listNodeContent = new Array; 
+
+function openPopup( i ) {
+	plotlayers[1].openPopup();
+}
 
 function getXmlHttpObject() {
 	if (window.XMLHttpRequest) { return new XMLHttpRequest(); }
@@ -54,6 +124,8 @@ function stateChanged( response ) {
 		//use the info here that was returned
 		//if (ajaxRequest.status==200  ) {
 			//plotlist=eval("(" + ajaxRequest.responseText + ")");
+		
+
 			plotlist = response;
 			removeMarkers();
 			
@@ -75,8 +147,67 @@ function stateChanged( response ) {
 				}
 			}
 		//}
-	//}
+	createSideBar( plotlist );
 }
+
+/* Side Bar */
+// Creates a locations list and put it into side bar
+function createSideBar( plotlist ) {
+//var oUL = document.createElement("ul");
+// write links into document.
+	for (var j=0; j<aCats.length; j++) {
+		for (var i=0; i<plotlist.length; i++) {
+			if (plotlist[i].category == aCats[j][0]) {
+				var linkElem = document.createElement("a");
+				var listElem = document.createElement("li");
+				linkElem.innerHTML = plotlist[i].name;
+				// must use this approach instead.
+				
+				linkElem.href = "javascript:void(0)";
+				linkElem.click = openPopup(i);			
+				
+				var listNode = document.getElementById(aCats[j][2]).appendChild(listElem);
+				listNode.appendChild(linkElem);
+				// oUL.appendChild(listElem);
+			}
+		}
+	}
+//document.getElementById("LocationList").appendChild(oUL);
+}
+
+
+// Function is called to hide location list
+function HideLocationList(j)
+{
+document.getElementById(aCats[j][2]).innerHTML = '';
+document.getElementById(aCats[j][1]).innerHTML = aCats[j][3] +' [<a href="#" onclick="ShowLocationList(' + j + ')">+</a>]';
+}
+// Function is called to show location list
+function ShowLocationList(j)
+{
+document.getElementById(aCats[j][2]).innerHTML = listNodeContent[j];
+document.getElementById(aCats[j][1]).innerHTML = aCats[j][3] + ' [<a href="#" onclick="HideLocationList(' + j + ')">-</a>]';
+}
+// Function is called to show/hide location list
+var LocationListVisible = true;
+function ProcessLocationList()
+{
+if (LocationListVisible)
+{
+// Hide sidebar
+document.getElementById("LocationList").style.display="none";
+document.getElementById("SideBarActionLink").innerHTML = "+";
+}
+else
+{
+// Show sidebar
+document.getElementById("LocationList").style.display="block";
+document.getElementById("SideBarActionLink").innerHTML = "-";
+}
+LocationListVisible = !LocationListVisible;
+}
+/* EOF Side Bar */ 
+
 
 function removeMarkers() {
 	for (i=0;i<plotlayers.length;i++) {
@@ -100,17 +231,10 @@ function initmap() {
 	// set up the map
 	map = new L.Map('map');
 
-    // set up AJAX request
-	//ajaxRequest=getXmlHttpObject();
-	//if (ajaxRequest==null) {
-	//	alert ("This browser does not support HTTP Request");
-	//	return;
-	//}
-
 	// create the tile layer with correct attribution
 	var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 	var osmAttrib='Map data © OpenStreetMap contributors';
-	var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 12, attribution: osmAttrib});		
+	var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 18, attribution: osmAttrib});		
 
 	// start the map in South-East England
 	map.setView(new L.LatLng(51.104, 0.5105),11);

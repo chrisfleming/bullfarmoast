@@ -1,0 +1,51 @@
+<div id="centercontent" style="margin-left: 350px;">
+  <div id="attrleftcontent">
+    <div id="map" style="border:1px; width:300px; height:300px;"></div>
+  	
+
+  </div>
+   	
+	
+  <div id="fixedcontent">
+    <p id="notice"><%= notice %></p>
+  	<h1><%= @attraction.name  %></h1>  	
+    <p><%= @attraction.description  %></p>
+    <p><%= @attraction.latlong %></p>
+  </div>
+  
+</div>
+
+
+<script>
+
+function initmap() {
+	// set up the map
+	map = new L.Map('map');
+
+	// create the tile layer with correct attribution
+	var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+	var osmAttrib='Map data © OpenStreetMap contributors';
+	var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 18, attribution: osmAttrib});		
+
+    var latlong  = /(-*\d+\.\d+)\s+(-*\d+\.\d+)/g.exec( "<%= @attraction.latlong %>" )
+				
+				
+	var plotll = new L.LatLng( latlong[1], latlong[2], true);
+
+	// start the map in South-East England
+	map.setView( plotll  ,17);
+	map.addLayer(osm);
+	
+	//askForPlots();
+	//map.on('moveend', onMapMove);
+}
+
+function onMapMove(e) { askForPlots(); }
+
+// Setup Map
+$(document).ready(
+	initmap()
+);
+
+
+</script>

@@ -15,6 +15,8 @@ class AttractionsController < ApplicationController
   # GET /Attractions/1
   # GET /Attractions/1.xml
   def show
+    @attraction = Attraction.find(params[:id])
+    
     respond_to do |wants|
       wants.html # show.html.erb
       wants.xml  { render :xml => @Attraction }
