@@ -1,7 +1,9 @@
 <div id="centercontent" style="margin-left: 350px;">
   <div id="attrleftcontent">
     <div id="map" style="border:1px; width:300px; height:300px;"></div>
-        <p><%= raw(@attraction.page.sub_content) %></p>
+        <p><% if @attraction.page.respond_to?('sub_content') then %> 
+        	<%= raw(@attraction.page.sub_content) %> 
+        <% end%></p>
   	
 
   </div>
@@ -9,11 +11,12 @@
 	
   <div id="fixedcontent">
     <p id="notice"><%= notice %></p>
-    <% if  @attraction.page.content == nil then %>
+    <% if  @attraction.page.respond_to?('content')  then %>
+        <%= raw(@attraction.page.content)  %> 
+    <% else%>
         <h1><%= @attraction.name  %></h1>  	
         <p><%= raw(@attraction.description)  %></p>  
-    <% else%>
-		 <%= raw(@attraction.page.content)  %> 
+
     <% end%>
 
   </div>
