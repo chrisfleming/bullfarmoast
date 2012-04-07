@@ -19,12 +19,12 @@
     <td>Location</th>
   </tr>
 
-<% @attractions.each do |attraction| %>
+<% @attractions.each do |a| %>
   <tr>
-    <td><%= attraction.id %>: <%= attraction.name %></td>
-    <td><%= attraction.category %></td>
-    <td><%= attraction.ownership %></td>
-    <td><%= attraction.latlong%>
+    <td><%= link_to a.name, attraction_path(a.name) %></td>
+    <td><%= a.category %></td>
+    <td><%= a.ownership %></td>
+    <td><%= a.latlong%>
   </tr>
 <% end %>
 </table>

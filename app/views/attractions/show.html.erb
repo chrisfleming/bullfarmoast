@@ -3,7 +3,11 @@
     <div id="map" style="border:1px; width:300px; height:300px;"></div>
         <p><% if @attraction.page.respond_to?('sub_content') then %> 
         	<%= raw(@attraction.page.sub_content) %> 
-        <% end%></p>
+        <% end %></p>
+        <h2>Nearby Places and Attractions</h2>
+        <% @nearby.each { |a| %>
+            <%= display_miles(a.distance) %> <%= link_to a.name, a.name %><br/>
+        <% } %>
   	
 
   </div>
