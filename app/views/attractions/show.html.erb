@@ -5,14 +5,11 @@
         	<%= raw(@attraction.page.sub_content) %> 
         <% end %></p>
         <h2>Nearby Places and Attractions</h2>
-        <% @nearby.each { |a| %>
+        <% @attraction.nearest_attractions(5).each { |a| %>
             <%= display_miles(a.distance) %> <%= link_to a.name, a.name %><br/>
         <% } %>
-  	
-
   </div>
    	
-	
   <div id="fixedcontent">
     <p id="notice"><%= notice %></p>
     <% if  @attraction.page.respond_to?('content')  then %>

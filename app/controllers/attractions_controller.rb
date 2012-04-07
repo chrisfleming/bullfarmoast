@@ -18,20 +18,8 @@ class AttractionsController < ApplicationController
     @attraction   = Attraction.find_by_name(params[:id])  # GET/pages/name
     @attraction ||= Attraction.find(params[:id])
     
-    @nearby = Attraction.find_by_sql("Select *, 
-        ST_Distance(
-          Attractions.latlong, 
-          ST_GeomFromText('#{ @attraction.latlong} ')
-        ) as distance
-        from Attractions
-        where ST_Distance(
-          Attractions.latlong, 
-          ST_GeomFromText('#{@attraction.latlong}')) > 0 
-        order by ST_Distance(  
-          Attractions.latlong, 
-          ST_GeomFromText('#{@attraction.latlong}')
-        )  
-        limit 5;")
+    @nearby = @attraction.nearest_attractions(5)
+
     
     respond_to do |wants|
       wants.html # show.html.erb
