@@ -47,28 +47,25 @@ bodiamCastle:
   name: bodiamCastle
   title: Bodiam Castle near Bull Farm Oast Bed and Breakfast
   content: |2
-      <h1>Bodiam Castle</h1>
-      <p>With the outside  appearing intact, this castle build in 1385 makes a spectacular sight. The grounds can be visited for free
+    <h1>Bodiam Castle</h1>
+    <p>With the outside  appearing intact, this castle build in 1385 makes a spectacular sight. The grounds can be visited for free
     and the castle can be viewed across the moat. The inside is largely ruined, however some of the towers can be climbed and the walls
     explored.</p>
-      <p>We are only around 6 miles(10 km), a 10 minute drive  from Bodiam and our accomodation makes a prefect base from which to explore this and many other <a href="/places">local attractions</a>.
-
-      <p><img src="/images/bodiam-winter1.jpg" width="450" height="300" style="float:none" /><br /></p>
-
-      <p><img src="/images/bodiam-winter2.jpg" width="300" height="450" style="float:none" /></p>
-
+    <p>We are only around 6 miles(10 km), a 10 minute drive  from Bodiam and our accomodation makes a prefect base from which to explore this and many other <a href="/places">local attractions</a>.
+      <p><img src="/assets/bodiam-winter1.jpg" width="450" height="300" style="float:none" /><br /></p>
+      <p><img src="/assets/bodiam-winter2.jpg" width="300" height="450" style="float:none" /></p>
       <br />
-  sub_content: "<p>Opening Times: </p>\n  <p><strong>Castle</strong><br>\n  8 Jan
+  sub_content: "<p>Opening Times:<br/><strong>Castle</strong><br>\n  8 Jan
     to 6 Feb 2011<br />\n\n    Saturday and Sunday 11:00 am to 4:00 pm</p>\n  <p>12
     Feb to 30 Oct 11 <br />\n    All week 10:30 am to 5:00 pm</p>\n  <p>2rd Nov to
-    18 December 11 <br />\n    Wednesday to Sunday 11:00am to 4:00 pm</p> \n  <p>Last
-    admission is always one hour before closing or dusk if earlier.</p>\n\n  <p><br
-    />\n    Adult Admission &pound;6.50 (&pound;5.80), Child &pound;3.20 (&pound;2.90),
-    Family &pound;17 (&pound;15.00)</p>\n  \n  <p>Distance: 6 miles (10km)<br />\n
-    \    10 minutes driving.<br />\n     See <a href=\"/r?url=http://maps.google.co.uk/maps?q=from%3A+TN17+2ST+to%3A+TN32+5UA\">Google
-    Maps</a> for maps and directions.\n  </p>\n\n  <p>&nbsp;</p>\n  <p>See the <a
-    href=\"/r?url=http://www.nationaltrust.org.uk/main/w-vh/w-visits/w-findaplace/w-bodiamcastle/\">National
-    \n    Trust Website</a> for more Information</p> \n"
+    18 December 11 <br />\n    Wednesday to Sunday 11:00am to 4:00 pm</p>
+    <p>Last
+    admission is always one hour before closing or dusk if earlier.</p>
+    <p>Adult Admission &pound;6.50 (&pound;5.80), Child &pound;3.20 (&pound;2.90),
+    Family &pound;17 (&pound;15.00)</p><p>Distance: 6 miles (10km)<br /> 10 minutes driving.<br />
+    See <a href=\"http://maps.google.co.uk/maps?q=from%3A+TN17+2ST+to%3A+TN32+5UA\">Google
+    Maps</a> for maps and directions.</p>  
+    <p>See the <a href=\"http://www.nationaltrust.org.uk/main/w-vh/w-visits/w-findaplace/w-bodiamcastle/\">National Trust Website</a> for more Information</p>"
   keywords: Bodiam Castle, Bodium, Castle, Ruins
   description: With the outside  appearing intact, this castle build in 1385 makes
     a spectacular sight. The grounds can be visited for free and the castle can be
