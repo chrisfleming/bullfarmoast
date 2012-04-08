@@ -93,7 +93,7 @@ aCats[3] = new Array("other", "SideBarOther", "OtherList", "Other");
 var listNodeContent = new Array; 
 
 function openPopup( i ) {
-	plotlayers[1].openPopup();
+	plotlayers[i].openPopup();
 }
 
 function getXmlHttpObject() {
@@ -105,12 +105,12 @@ function getXmlHttpObject() {
 function stateChanged( response ) {
 	
 	var MyIcon = L.Icon.extend({
-      iconUrl: '/assets/leaflet/marker.png',
-      shadowUrl: '/assets/leaflet/marker-shadow.png',
+      iconUrl: '/assets/images/marker.png',
+      shadowUrl: '/assets/images/marker-shadow.png'
     });
 
 	var icon = new MyIcon();
-	//var marker = new L.Marker(marker, {icon: icon});
+	var marker = new L.Marker(marker, {icon: icon});
 	
 	// if AJAX returned a list of markers, add them to the map
 	//if (ajaxRequest.readyState==4) {
@@ -140,6 +140,7 @@ function stateChanged( response ) {
 				}
 			}
 		//}
+	//}
 	createSideBar( plotlist );
 }
 
@@ -154,10 +155,9 @@ function createSideBar( plotlist ) {
 				var linkElem = document.createElement("a");
 				var listElem = document.createElement("li");
 				linkElem.innerHTML = plotlist[i].name;
-				// must use this approach instead.
-				
-				linkElem.href = "javascript:void(0)";
-				linkElem.click = openPopup(i);			
+				//linkElem.href = "javascript:void(0)";
+				linkElem.href = "javascript:openPopup(" + i +")";
+				linkElem.click = "openPopup(" + i +")";
 				
 				var listNode = document.getElementById(aCats[j][2]).appendChild(listElem);
 				listNode.appendChild(linkElem);
@@ -235,6 +235,27 @@ function initmap() {
 	
 	//askForPlots();
 	//map.on('moveend', onMapMove);
+	
+	var BfoIcon = L.Icon.extend({
+        iconUrl: 'http://localhost:3000/assets/images/marker.png',
+        shadowUrl: '/assets/images/marker-shadow.png',
+        iconSize: new L.Point(38, 95),
+        shadowSize: new L.Point(68, 95),
+        iconAnchor: new L.Point(22, 94),
+        popupAnchor: new L.Point(-3, -76)
+    });
+    
+    var bfo = new L.Popup();
+    
+    var bfoMarker = new L.Marker(new L.LatLng(51.104, 0.5105), {icon: BfoIcon});
+   //map.addLayer(bfoMarker);
+    
+    bfo.setLatLng(new L.LatLng(51.104, 0.5105));
+    bfo.setContent("This is Bull Farm Oast");
+    
+    //map.openPopup(bfo);
+
+
 }
 
 function onMapMove(e) { askForPlots(); }
