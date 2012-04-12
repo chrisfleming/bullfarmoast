@@ -75,7 +75,7 @@ p,fieldset,table {
 html {  background-color:#7fb6e0; }
 body {
   background-color:#7fb6e0;
-  font-family:verdana, arial, helvetica, sans-serif;
+  font-family: "facitweb", helvetica, sans-serif;
   color:#fff;
   }
 
@@ -100,6 +100,7 @@ body {
 }
 
 #centercontent {
+  width: 685px;
   margin-top: 0px;
   margin-left: 240px;
   margin-right: 10px;
@@ -140,10 +141,12 @@ html>body #centercontent {
   }
 
 #fixedcontent h1 {
-  font-family: penna,sans-serif;
+  margin-left: 5px;
   font-size: 200%;
   font-weight: normal;
 }
+#fixedcontent p,h1,h2,h3,h4 { margin-left: 5px; }
+
 
 #fixedcontent img{ 
   margin: 5px;
@@ -201,9 +204,7 @@ background-color:#fff;
   color:#fff;
   text-decoration: none;
   
-  font-family: penna,sans-serif;
-  font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
 
     } 
   

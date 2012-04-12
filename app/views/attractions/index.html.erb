@@ -155,9 +155,9 @@ function createSideBar( plotlist ) {
 				var linkElem = document.createElement("a");
 				var listElem = document.createElement("li");
 				linkElem.innerHTML = plotlist[i].name;
-				//linkElem.href = "javascript:void(0)";
+				linkElem.href = "javascript:void(0)";
 				linkElem.href = "javascript:openPopup(" + i +")";
-				linkElem.click = "openPopup(" + i +")";
+				//linkElem.click = "javascript:openPopup(" + i +")";
 				
 				var listNode = document.getElementById(aCats[j][2]).appendChild(listElem);
 				listNode.appendChild(linkElem);
