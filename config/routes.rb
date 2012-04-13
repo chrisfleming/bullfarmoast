@@ -2,7 +2,10 @@ Bullfarmoast::Application.routes.draw do
   resources :enquiries
   resources :attractions
   
+  match "availability", :controller => "enquiries", :action => "new"
   match "pages/show_blogfeed", :controller => "pages", :action => "show_blogfeed"
+  
+  # everything else goes to pages
   resources :pages
   
 
