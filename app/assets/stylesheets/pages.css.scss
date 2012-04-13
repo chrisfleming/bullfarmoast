@@ -142,8 +142,9 @@ html>body #centercontent {
 
 #fixedcontent h1 {
   margin-left: 5px;
-  font-size: 200%;
-  font-weight: normal;
+  font-size: 225%;
+  font-weight: 700;
+  font-family: "brioso-pro",sans-serif;
 }
 #fixedcontent p,h1,h2,h3,h4 { margin-left: 5px; }
 
@@ -295,7 +296,8 @@ Please tweak this and make it your own. :)
 
 
 a {
-  color: #115bf8;
+  color: #bbb;
+  text-decoration: none;
 }
 
 a img {
@@ -303,10 +305,11 @@ a img {
 }
 
 a:visited {
-  color: #115bf8;
+  color: #ddd;
 }
 
 a:hover {
+  color: #888;
   text-decoration: none;
 }
 
@@ -337,26 +340,26 @@ cite {
   font-style: normal;
 }
 
-.blog h2 {
-  border-bottom: 1px dotted #ccc;
-  font-size: 95%;
-  letter-spacing: 0.2em;
-  margin: 15px 0 2px 0;
-  padding-bottom: 2px;
-}
+//.blog h2 {
+//  border-bottom: 1px dotted #ccc;
+//  font-size: 95%;
+//  letter-spacing: 0.2em;
+//  margin: 15px 0 2px 0;
+//  padding-bottom: 2px;
+//}
 
-.blog h3 {
-  border-bottom: 1px dotted #eee;
-  margin-top: 0;
-}
+//.blog h3 {
+//  border-bottom: 1px dotted #eee;
+//  margin-top: 0;
+//}
 
 ol#comments li p {
   font-size: 100%;
 }
 
 .blog p,.blog li, .feedback {
-  font: 90%/175% 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-  letter-spacing: -1px;
+//  font: 90%/175% 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+//  letter-spacing: -1px;
 }
 
 /* classes used by the_meta() */
@@ -668,6 +671,16 @@ div.aligncenter {
     border-radius: 3px 3px 3px 3px;
     padding: 15px;
     text-align: center;
+}
+
+.shashinThumbnailDiv img{
+  margin: 0px !important; 
+  padding: 0px !important;
+}
+
+.wp-caption img{
+  margin: 0px !important; 
+  padding: 0px !important;
 }
 
 .shashinThumbnailCaption {

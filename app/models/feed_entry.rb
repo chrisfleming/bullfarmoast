@@ -17,7 +17,7 @@ def self.update_from_feed(feed_url)
       create!(
         :name         => item.title, 
         :summary      => item.summary,
-        :url          => item.url,
+        :url          => item.link,
         :content      => item.content_encoded,
         :published_at => item.pubDate,
         :guid         => item.id

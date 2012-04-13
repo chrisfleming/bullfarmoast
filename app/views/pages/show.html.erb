@@ -1,27 +1,27 @@
 <div id="centercontent">
   <div id="fixedcontent">
   <p id="notice"><%= notice %></p>
-  	
-    <%= raw(@page.content) %>
-  </div>
-  
-<% if @page.name == "index"%>
-  
-<div id="blog">
-<div>
- 
-<script language="JavaScript">
-$.ajax({
-  url: "<%= pages_show_blogfeed_path() %>",
-  format: "html",
-  cache: false,
-  success: function(html){
-    $("#blog").append(html);
-  }
-}); 
-</script>
-<% end %>
-</div>
+  <%= raw(@page.content) %>
+
+  <% if @page.name == "index"%>
+
+    <div id="blog">
+    </div>
+
+    <script language="JavaScript">
+    $.ajax({
+      url: "<%= pages_show_blogfeed_path() %>",
+      format: "html",
+      cache: false,
+      success: function(html){
+        $("#blog").append(html);
+      }
+    }); 
+    </script>
+  <% end %>
+      
+  </div><!-- FixedContent -->
+</div><!-- CenterContent -->
 
 
 <div id="headerright"></div>
@@ -31,30 +31,7 @@ $.ajax({
 </div>
    
    
-
-
-
-
-
-<!--
-<p>
-  <b>Name:</b>
-  <%= @page.name %>
-</p>
-
-<p>
-  <b>Title:</b>
-  <%= @page.title %>
-</p>
-
-<p>
-  <b>Keywords:</b>
-  <%= @page.keywords %>
-</p>
-
-
-
-
+12
 <%= link_to 'Edit', edit_page_path(@page) %> |
 <%= link_to 'Back', pages_path %>
 -->
