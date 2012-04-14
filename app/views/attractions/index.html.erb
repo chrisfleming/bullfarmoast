@@ -1,73 +1,44 @@
-
-<div id="map" style="border:1px; width:100%; height:500px;">
+<div id="leftcontent">
+  <p>Please select the place you want more information on, either on the map or from the list below.</p>
+  <div id="MapBuilderSideBar">
+    <div id="SideBarGardens">
+        Gardens [<a href="javascript:void(0)" onclick="HideLocationList(0)">-</a>]
+    </div>
+    <div style="overflow:auto;">
+        <ul id="GardenList">
+        </ul>
+    </div>
+    
+     <div id="SideBarCastle">
+        Castles and Houses [<a href="javascript:void(0)" onclick="HideLocationList(1)">-</a>]
+    </div>
+    <div style="overflow:auto;">
+        <ul id="CastleList">
+        </ul>
+    </div>
+    <div id="SideBarPlaces">
+        Places [<a href="javascript:void(0)" onclick="HideLocationList(2)">-</a>]
+    </div>
+    <div style="overflow:auto;">
+          <ul id="PlacesList">
+        </ul>
+    </div>
+    <div id="SideBarOther">
+        Other [<a href="javascript:void(0)" onclick="HideLocationList(3)">-</a>]
+    </div>
+    <div style="overflow:auto;">
+        <ul id="OtherList">
+        </ul>
+    </div>
+    
+    
+   
 </div>
-<!--
-<h1>Listing pages</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Category</th>
-    <th>Ownership</th>
-    <td>Location</th>
-  </tr>
-
-<% @attractions.each do |a| %>
-  <tr>
-    <td><%= link_to a.name, attraction_path(a.name) %></td>
-    <td><%= a.category %></td>
-    <td><%= a.ownership %></td>
-    <td><%= a.latlong%>
-  </tr>
-<% end %>
-</table>
--->
-
-	<div id="MapBuilderSideBar">
-		<div id="SideBarGardens">
-			Gardens [<a href="javascript:void(0)" onclick="HideLocationList(0)">-</a>]
-		</div>
-		<div style="overflow:auto;">
-			<ul id="GardenList">
-				<noscript>
-					<?= $noscriptText["garden"] ?>
-				</noscript>
-			</ul>
-		</div>
-		<div id="SideBarCastle">
-			Castles and Houses [<a href="javascript:void(0)" onclick="HideLocationList(1)">-</a>]
-		</div>
-		<div style="overflow:auto;">
-			<ul id="CastleList">
-				<noscript>
-					<?= $noscriptText["building"] ?>
-				</noscript>
-			</ul>
-		</div>
-		<div id="SideBarPlaces">
-			Places [<a href="javascript:void(0)" onclick="HideLocationList(2)">-</a>]
-		</div>
-		<div style="overflow:auto;">
-			<ul id="PlacesList">
-				<noscript>
-					<?= $noscriptText["places"] ?>
-				</noscript>
-			</ul>
-		</div>
-		<div id="SideBarOther">
-			Other [<a href="javascript:void(0)" onclick="HideLocationList(3)">-</a>]
-		</div>
-		<div style="overflow:auto;">
-			<ul id="OtherList">
-				<noscript>
-					<?= $noscriptText["other"] ?>
-				</noscript>
-			</ul>
-		</div>
-	</div>
-
-
-
+</div>
+<div id="centercontent">
+  <div id="map" style="border:1px; width:100%;  height:500px;">
+  </div>
+</div>
 <br />
 
 <script type="text/javascript">
@@ -125,17 +96,17 @@ function stateChanged( response ) {
 			for (i=0;i<plotlist.length;i++) {
 				// latlong  = POINT (51.1156 -0.5823)
 				
-				var latlong  = /(-*\d+\.\d+)\s+(-*\d+\.\d+)/g.exec( plotlist[i].latlong )
+				latlong = /(-*\d+\.\d+)\s+(-*\d+\.\d+)/.exec( plotlist[i].latlong )
 				
 				if (latlong==null) {
-					alert ("latlong is null :( " + plotlist[i].name + "<br> ll: " + plotlist[i].latlong );
+					alert ("latlong is null for "+ i + ": " + plotlist[i].name + " ll: " + plotlist[i].latlong );
 				}	
 				else {
 				var plotll = new L.LatLng( latlong[1], latlong[2], true);
 				var plotmark = new L.Marker(plotll, {icon: icon});
 				plotmark.data=plotlist[i];
 				map.addLayer(plotmark);
-				plotmark.bindPopup("<h3>"+plotlist[i].name+"</h3>"+plotlist[i].description);
+				plotmark.bindPopup("<h3><a href=\"/attractions/"+ plotlist[i].name +"\">  "+plotlist[i].name+"</a></h3>"+plotlist[i].description);
 				plotlayers.push(plotmark);
 				}
 			}
@@ -172,14 +143,14 @@ function createSideBar( plotlist ) {
 // Function is called to hide location list
 function HideLocationList(j)
 {
-document.getElementById(aCats[j][2]).innerHTML = '';
-document.getElementById(aCats[j][1]).innerHTML = aCats[j][3] +' [<a href="#" onclick="ShowLocationList(' + j + ')">+</a>]';
+  $('#' + aCats[j][2]).hide(3);
+  document.getElementById(aCats[j][1]).innerHTML = aCats[j][3] +' [<a href="#" onclick="ShowLocationList(' + j + ')">+</a>]';
 }
 // Function is called to show location list
 function ShowLocationList(j)
 {
-document.getElementById(aCats[j][2]).innerHTML = listNodeContent[j];
-document.getElementById(aCats[j][1]).innerHTML = aCats[j][3] + ' [<a href="#" onclick="HideLocationList(' + j + ')">-</a>]';
+  $('#' + aCats[j][2] ).show(3);
+  document.getElementById(aCats[j][1]).innerHTML = aCats[j][3] + ' [<a href="#" onclick="HideLocationList(' + j + ')">-</a>]';
 }
 // Function is called to show/hide location list
 var LocationListVisible = true;
