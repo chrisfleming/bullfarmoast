@@ -1,6 +1,6 @@
 <div id="leftcontent">
   <p>Please select the place you want more information on, either on the map or from the list below.</p>
-  <div id="MapBuilderSideBar">
+  <div id="MapSideBar">
     <div id="SideBarGardens">
         Gardens [<a href="javascript:void(0)" onclick="HideLocationList(0)">-</a>]
     </div>
@@ -75,16 +75,58 @@ function getXmlHttpObject() {
 
 function stateChanged( response ) {
 	
+	//var marker = new Array;
+	var iconImg = new Array;
+	var icon = new Array;
+	
 	var MyIcon = L.Icon.extend({
       iconUrl: '/assets/images/marker.png',
-      shadowUrl: '/assets/images/marker-shadow.png'
+      shadowUrl: '/assets/images/marker-shadow.png',
+      iconSize: new L.Point(32, 37),
+      shadowSize: new L.Point(51, 37)
+      
     });
 
-	var icon = new MyIcon();
-	var marker = new L.Marker(marker, {icon: icon});
+    // Define a set of icons for each category
+    
+    // Garden
+    iconImg['garden'] = L.Icon.extend({
+      iconUrl: '/assets/mapicons/6ec65b_classic/wetlands.png',
+      shadowUrl: '/assets/mapicons/shadow.png',
+      iconSize: new L.Point(32, 37),
+      shadowSize: new L.Point(51, 37)
+     // ,iconAnchor: new L.Point(25, 18)
+     // ,popupAnchor: new L.Point(0, 0)
+    });
+    icon['garden'] = new iconImg['garden'];
+
+    iconImg['building'] = L.Icon.extend({
+      iconUrl: '/assets/mapicons/6ec65b_classic/tower.png',
+      shadowUrl: '/assets/mapicons/shadow.png',
+      iconSize: new L.Point(32, 37),
+      shadowSize: new L.Point(51, 37)
+    });
+    icon['building'] = new iconImg['building'];
+    
+    iconImg['places'] = L.Icon.extend({
+      iconUrl: '/assets/mapicons/6ec65b_classic/smallcity.png',
+      shadowUrl: '/assets/mapicons/shadow.png',
+      iconSize: new L.Point(32, 37),
+      shadowSize: new L.Point(51, 37)
+    });
+    icon['places'] = new iconImg['places'];
+    
+    iconImg['other'] = L.Icon.extend({
+      iconUrl: '/assets/mapicons/6ec65b_classic/you-are-here-2.png',
+      shadowUrl: '/assets/mapicons/shadow.png',
+      iconSize: new L.Point(32, 37),
+      shadowSize: new L.Point(51, 37)
+    });
+    icon['other'] = new iconImg['other'];
+
 	
 	// if AJAX returned a list of markers, add them to the map
-	//if (ajaxRequest.readyState==4) {
+	//if (ajaxRequest.readyState==4) {i
 		//use the info here that was returned
 		//if (ajaxRequest.status==200  ) {
 			//plotlist=eval("(" + ajaxRequest.responseText + ")");
@@ -103,7 +145,7 @@ function stateChanged( response ) {
 				}	
 				else {
 				var plotll = new L.LatLng( latlong[1], latlong[2], true);
-				var plotmark = new L.Marker(plotll, {icon: icon});
+				var plotmark = new L.Marker(plotll, {icon: icon[plotlist[i].category] });
 				plotmark.data=plotlist[i];
 				map.addLayer(plotmark);
 				plotmark.bindPopup("<h3><a href=\"/attractions/"+ plotlist[i].name +"\">  "+plotlist[i].name+"</a></h3>"+plotlist[i].description);
