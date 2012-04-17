@@ -1,12 +1,13 @@
 attractions:
   name: attractions
   title: 'Attractions close to Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent '
-  content: "  <p>There are many places to visit from our Bed and Breakfast. Cranbrook
-    is a \n    picturesque town with it's distinctive windmill. Also close by, are
-    the world \n    famous <a href=\"/d/sissinghurst\">gardens at Sissinghurst.</a></p>\n
-    \ <p>We also have some pictures from the landscaped gardens of <a href=\"/d/sheffieldParkGardens\">Sheffield
+  content: "<p>There are many places to visit from our Bed and Breakfast. Cranbrook
+    is a picturesque town with it's distinctive windmill. Also close by, are
+    the world famous <a href=\"/d/sissinghurst\">gardens at Sissinghurst.</a></p>
+    
+    <p>We also have some pictures from the landscaped gardens of <a href=\"/d/sheffieldParkGardens\">Sheffield
     Park</a></p>\n  <p>We have a list of <a href=\"/d/fulllocation\">some of the local
-    attractions</a> \n    in the area</p>\n  <br />\n"
+    attractions</a> in the area</p>"
   sub_content: |
     <a href="/images/sissinghurst_large.jpg"><img src="/images/sissinghurst.jpg" alt="sissinghurst castle moat" width="150" height="220" border="0" /></a><br />
       <a href="/images/sissinghurst_large.jpg">Sissinghurst Moat</a>
@@ -511,7 +512,7 @@ merriments.html:
 rooms:
   name: rooms
   title: Rooms for Bed and Breakfast at Bull Farm` Oast, Cranbrook, Kent
-  content: |+
+  content:
     <h1>Rooms</h1>
       <p>We have a large en suite room with a double bed towards the front of the house, which can easily accommodate children
         with additional beds, if required. We have a further bright twin bedded room overlooking our garden at the rear of the house. </p>
@@ -527,16 +528,11 @@ rooms:
         <img src=http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=4" width="640" height="427" alt="Our twin room" style="float: none;"/>
         <div class="caption">Our twin room</div>
       </div>
-
-
       <p>Please click on any of the pictures shown on this page in order to see a larger version</p>
       <a href="http://s1.bullfarmoast.co.uk/image.php?g=rooms&id=4" rel="lightbox[rooms]"  title="Beds in the Twin Room"><img src="http://s1.bullfarmoast.co.uk/image.php?g=rooms&id=4&size=thumb" /></a>
        <a href="http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=5" rel="lightbox[rooms]"><img src="http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=5&size="thumb" /></a>
        <a href="http://s1.bullfarmoast.co.uk/image.php?g=rooms&id=3" rel="lightbox[rooms]"><img src="http://s1.bullfarmoast.co.uk/image.php?g=rooms&id=3&size=thumb" height="159" /></a>
        <a href="http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=6" rel="lightbox[rooms]"><img src="http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=6&size=thumb" /></a>
-
-
-
   sub_content: |2+
       <a href="http://s2.bullfarmoast.co.uk/images/blueroom.jpg" rel="lightbox[rooms]" title="The Blue Room"><img src="http://s2.bullfarmoast.co.uk/images/blueroom.jpg" width="240" /></a>
        <a href="http://s1.bullfarmoast.co.uk/image.php?g=rooms&id=1" rel="lightbox[rooms]"  title="Beds in the Twin Room"><img src="http://s1.bullfarmoast.co.uk/image.php?g=rooms&id=1&size=thumb" width="116" /></a>
@@ -622,30 +618,38 @@ sheffieldParkGardens:
 sissinghurst:
   name: sissinghurst
   title: Sissinghurst Castle Gardens
-  content: "<h1>Sissinghurst Castle</h1>\n  <p>One of the worlds most celebrated and
-    famous gardens, created by Vita Sackville-West \n    and her husband Sir Harold
-    Nicolson. The gardens are laid out around the surviving parts \n    of an Elizabethan
-    mansion with a central red-brick prospect tower. The gardens are made up\n    of
-    small, vibrant,  enclosed compartments, \n    provide outstanding design and colour
-    in an intimate atmosphere. The study, where \n    Vita worked, and Long Library
-    are also open to visitors.</p>\n  <p><img src=\"/images/sissinghurst_large.jpg\"
-    width=\"450\" height=\"300\" style=\"float:none\" /></p>\n  <p>The woodland and
-    Wealdon landscape around Sissinghurst Castle, which influenced the work in the
+  content: "<h1>Sissinghurst Castle</h1>
+    <p>One of the worlds most celebrated and
+    famous gardens, created by Vita Sackville-West and her husband Sir Harold
+    Nicolson. The gardens are laid out around the surviving parts of an Elizabethan
+    mansion with a central red-brick prospect tower. The gardens are made up of
+    small, vibrant,  enclosed compartments, provide outstanding design and colour
+    in an intimate atmosphere. The study, where Vita worked, and Long Library
+    are also open to visitors.</p>
+    
+    <p><img src=\"/images/sissinghurst_large.jpg\" width=\"450\" height=\"300\" style=\"float:none\" /></p>
+    
+    <p>The woodland and Wealdon landscape around Sissinghurst Castle, which influenced the work in the
     garden are always open and is free to access. The garden now also has a new vegetable
-    garden supplying fresh fruit and veg to the restaurant.</p>\n  <p><img src=\"/kent/Places/sissinghurst_images/woods.jpg\"
+    garden supplying fresh fruit and veg to the restaurant.</p>
+    
+    <p><img src=\"/kent/Places/sissinghurst_images/woods.jpg\"
     width=\"400\" height=\"267\" alt=\"Woodland around Sissinghurst Castle\" style=\"float:none\"
-    \ /></p>\n\n    <p>As well as staying with us have a look at <A HREF=\"HTTP://www.bedandbreakfasts.co.uk\">http://www.bedandbreakfasts.co.uk</a>\n
+    \ /></p>
+    
+    <p>As well as staying with us have a look at <A HREF=\"HTTP://www.bedandbreakfasts.co.uk\">http://www.bedandbreakfasts.co.uk</a>\n
     for more places to stay, or have a look at our <a href=\"/d/links\">links page</a>
-    </p>\n\n\n  <br />\n"
+    </p>"
   sub_content: "<p>Garden Opening Times: </p>\n  <p>13th March to 31 October 2011<br
-    />\n    Monday, Tuesday,  Friday, Saturday and Sunday  11am - 6pm.</p>\n\n  <p>Last
-    admission is always 5.30pm or an hour before dusk if earlier.</p>\n  <p><br />\n
-    \   Admission: &pound;10.50, child &pound;5.20, family &pound;26.00</p>\n  <p>&nbsp;</p>\n
-    \ <p>See also the <a href=\"/r?url=http://www.nationaltrust.org.uk/scripts/nthandbook.dll?ACTION=PROPERTY&amp;PROPERTYID=97\">National
-    \n    Trust</a> Website.</p>\n\n  <p><a href=\"/r?url=http://www.invectis.co.uk/sissing/\">Dave
-    Parker</a> has lots of \n    photos, maps and more detailed information about
-    the castle.</p>\n  <p><b>We are less than 4 miles or a 5 minute drive from Sissinghurst
-    Castle</b></p>\n\n"
+    />Monday, Tuesday,  Friday, Saturday and Sunday 11am - 6pm.</p>
+    <p>Last admission is always 5.30pm or an hour before dusk if earlier.</p>
+    <p>Admission: &pound;10.50, child &pound;5.20, family &pound;26.00</p>
+    <p>See also the <a href=\"/r?url=http://www.nationaltrust.org.uk/scripts/nthandbook.dll?ACTION=PROPERTY&amp;PROPERTYID=97\">National
+    Trust</a> Website.</p>
+    <p><a href=\"/r?url=http://www.invectis.co.uk/sissing/\">Dave
+    Parker</a> has lots of photos, maps and more detailed information about
+    the castle.</p>
+    <p><b>We are less than 4 miles or a 5 minute drive from Sissinghurst Castle</b></p>"
   keywords: Bed and Breakfast, accommodation, Cranbrook, UK, Kent, Gardens, Sissinghurst
   description: ""
   abstract: ""
