@@ -1,3 +1,4 @@
+require "rvm/capistrano"
 require "./config/capistrano_database_yml"
 
 set :application, "bullfarmoast"
@@ -6,6 +7,17 @@ set :repository,  "git@github.com:chrisfleming/bullfarmoast.git"
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 set :deploy_to, "/var/c-deploy/bullfarmoast"
+set :git_enable_submodules, 1
+
+# Enable Remote Cache From http://help.github.com/deploy-with-capistrano/
+set :deploy_via, :remote_cache
+
+
+
+set :rvm_ruby_string, 'ruby-1.9.3-p125' 
+
+before 'deploy:setup', 'rvm:install_rvm'
+before 'deploy:setup', 'rvm:install_ruby'
 
 set :use_sudo, false
 

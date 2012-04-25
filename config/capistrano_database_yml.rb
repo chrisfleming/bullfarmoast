@@ -114,7 +114,7 @@ Capistrano::Configuration.instance.load do
         capistrano-ext/multistaging to avoid multiple db:setup calls \ 
         when running deploy:setup for all stages one by one.
       DESC
-      task :setup, :except => { :no_release => true } do
+      task :set, :except => { :no_release => true } do
 
         default_template = <<-EOF
         base: &base
@@ -135,6 +135,8 @@ Capistrano::Configuration.instance.load do
         template = File.file?(location) ? File.read(location) : default_template
 
         config = ERB.new(template)
+
+        
 
         run "mkdir -p #{shared_path}/db" 
         run "mkdir -p #{shared_path}/config" 
