@@ -1,5 +1,7 @@
 require "rvm/capistrano"
 require "./config/capistrano_database_yml"
+require "bundler/capistrano"
+
 
 set :application, "bullfarmoast"
 set :repository,  "git@github.com:chrisfleming/bullfarmoast.git"

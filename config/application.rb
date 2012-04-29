@@ -3,7 +3,10 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 require 'active_record/connection_adapters/postgis_adapter/railtie'
 
+
 if defined?(Bundler)
+  require 'capistrano'
+
   # If you precompile assets before deploying to production, use this line
   Bundler.require(*Rails.groups(:assets => %w(development test)))
   # If you want your assets lazily compiled in production, use this line
