@@ -1,6 +1,6 @@
 class AccomodationEnquiry < ActionMailer::Base
-  default from: "login@chrisfleming.org"
-
+  default from: config.enq_to_address
+  # todo: Test e-mail variable Configuration.
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
   #
@@ -8,13 +8,8 @@ class AccomodationEnquiry < ActionMailer::Base
   #
   def acknowledge(enquiry)
     @enquiry = enquiry
-    #nights = @enquiry.night_count
-              
-    #@rooms = @enquiry.rooms
-    #@date = @enquiry.arrival_date
-    #@people = @enquiry.people
 
-    mail to: "me@chrisfleming.org"
+    mail to: enquiry.email
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
@@ -25,6 +20,6 @@ class AccomodationEnquiry < ActionMailer::Base
   def enquiry(enquiry)
     @enquiry = enquiry
 
-    mail to: "me@chrisfleming.org"
+    mail to: config.enq_to_address
   end
 end
