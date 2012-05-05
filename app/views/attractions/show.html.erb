@@ -2,7 +2,7 @@
   <div id="attrleftcontent">
     <div id="map" style="border:1px; width:300px; height:300px;"></div>
         <p><% if @attraction.page.respond_to?('sub_content') then %> 
-        	<%= raw(@attraction.page.sub_content) %> 
+        	<%= markdown(@attraction.page.sub_content) %> 
         <% end %></p>
         <h2>Nearby Places and Attractions</h2>
         <% @attraction.nearest_attractions(5).each { |a| %>
@@ -13,10 +13,10 @@
   <div id="fixedcontent">
     <p id="notice"><%= notice %></p>
     <% if  @attraction.page.respond_to?('content')  then %>
-        <%= raw(@attraction.page.content)  %> 
+        <%= markdown(@attraction.page.content)  %> 
     <% else%>
         <h1><%= @attraction.name  %></h1>  	
-        <p><%= raw(@attraction.description)  %></p>  
+        <p><%= markdown(@attraction.description)  %></p>  
 
     <% end%>
 

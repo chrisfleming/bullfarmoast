@@ -44,10 +44,10 @@ bodiamCastle:
     We are only around 6 miles(10 km), a 10 minute drive  from Bodiam and our accomodation makes a prefect base from which to explore this and many other 
     [local attractions].
     
-    [Bodiam Castle](/assets/attractions/bodiam-winter1.jpg")
-    [Bodiam Castle](/assets/attractions/bodiam-winter1.jpg")
+    ![Bodiam Castle](/assets/attractions/bodiam/bodiam-winter1.jpg")
+    ![Bodiam Castle](/assets/attractions/bodiam/bodiam-winter1.jpg")
   
-  sub_content: "
+  sub_content: |2+
     Opening Times:
     ==============
     Castle
@@ -502,23 +502,28 @@ merriments:
   name: merriments
   title: Merriments Gardens
   content: |
-    <h1>Merriments Gardens</h1>
-      <p>We are a short 10 minute drive from these gardens consisting of 4 acres of densely planted borders where plants grown in the nursery can be seen planted in situ. These lovely gardens are really worth a visit.
-        </p>
-      <p><img src="/image.php?g=attractions&id=1" width="640" style="float:none" /></p>
-      <p></p>
-      <p><img src="/image.php?g=attractions&id=2" width="640" height="425" alt="" style="float:none" /></p>
-      <p><img src="/image.php?g=attractions&id=3" width="640" height="425" alt="" style="float:none" />
-       Merriments Garden in the Early Spring</p>
-       <p><img src="/image.php?g=attractions&id=4" width="640" height="425" alt="" style="float:none" />
-       A Newly designed garden, in the Early Spring</p>
-      <br />
-  sub_content: "<p>Opening Times: </p>\n  <!--<p>14th April 2006 to mid October <br
-    />-->\n    Monday to Saturday 10am - 5.30pm.<br />\n    Sunday 10:30 - 5:30pm<br
-    />\n</p>\n\n  <p>\n    Admission: &pound;5.00, child &pound;2.00</p>\n  <p>&nbsp;</p>\n
-    \ <p>See also the <a href=\"/r?url=http://www.merriments.co.uk/\">Merriments Gardens</a>
-    \n  </a> Website.</p>\n\n  <p><b>We are 5 miles or less than a 10 minute drive
-    from Merriments Gardens</b></p>\n\n"
+    Merriments Gardens
+    ==================
+      
+      We are a short 10 minute drive from these gardens consisting of 4 acres of densely planted borders 
+      where plants grown in the nursery can be seen planted in situ. These lovely gardens are really worth a visit.
+      
+      ![Merriments](/assets/attractions/merriments/merriments1.jpg)
+      ![Merriments](/assets/attractions/merriments/merriments1.jpg)
+      ![Merriments](/assets/attractions/merriments/merriments1.jpg)
+      Merriments Garden in the Early Spring
+      ![Merriments](/assets/attractions/merriments/merriments1.jpg)
+      A Newly designed garden, in the Early Spring
+  sub_content: |
+    Opening Times
+    =============
+    Monday to Saturday 9am - 5pm
+    Sunday 10:30 - 5pm
+    
+    Admission: &pound;5.00, child &pound;2.00
+    
+    *We are 5 miles or less than a 10 minute drive
+    from Merriments Gardens*
   keywords: Merriments Gardens, Bed and Breakfast, accommodation,  Weald, East Sussex,
     UK, Kent, Gardens, Sissinghurst
   description: We are a short 10 minute drive from these gardens consisting of 4 acres
@@ -561,28 +566,31 @@ scotney:
   name: scotney
   title: Scotney Castle Garden & Estate
   content: |
-    <h1>Scotney Castle</h1>
-    <p>Scotney Castle, is a country house and garden located near Lamberhurst.<p>
-    <p>The Gardens, are centered around the ruins of a medieval, moated house, Scotney
+    Scotney Castle
+    ==============
+    
+    Scotney Castle, is a country house and garden located near Lamberhurst.
+    
+    The Gardens, are centered around the ruins of a medieval, moated house, Scotney
     Old Castle is on an island in a small lake. The lake is surrounded by sloping, wooded
     gardens with fine collections of rhododendrons, azaleas and camellias for spring colour,
-    summer wisteria and roses, and spectacular autumn colour.</p>
-      <p><img src="/images/scotney-gardens1.jpg" width="400" height="300" style="float:none" /></p>
-      <p><img src="/images/scotney-2.jpg" width="400" height="300" /></p>
-      <p><img src="/images/scotney-3.jpg" width="400" height="300" /></p>
-
-
-      <br />
+    summer wisteria and roses, and spectacular autumn colour.
+    
+    ![Scotney Gardens](/assets/attractions/scotney/scotney-gardens1.jpg)
+    ![Scotney Gardens](/assets/attractions/scotney/scotney-2.jpg)
+    ![Scotney Gardens](/assets/attractions/scotney/scotney-3.jpg)
   sub_content: |2+
-      <p>The House and Gardens are open from 23rd February 2011 until 30th October 2011, on Wednesday through to Sundays, 11am to 5pm, and from 5th November to 11th December, on the weekends between 11am and 4pm. See <a href="http://www.nationaltrust.org.uk/main/w-vh/w-visits/w-findaplace/w-scotneycastlegarden.htm">National Trust Website</a> for more details.
-      <p><br />
-        Admission: <b>House and garden:</b> &pound;10 (&pound;9), child &pound;5 (&pound;4.50), family &pound;25.50 (&pound;23).<br /><b>Garden:</b> &pound;7.75 (&pound;7), child &pound;4.25 (&pound;3.75), family &pound;21.50 (&pound;19).</p>
-      <p>&nbsp;</p>
-
-     <p>Estate Walks can be done all year round and are Free</p>
-
-    <p><b>We are a 6 miles drive, from Scotney Casle. This will take around 15 minutes. See <a href="/r?url=http://maps.google.co.uk/maps?q=from%3A+TN17+2ST+to%3A+TN3+8JN&ll=51.095545,0.459194&spn=0.069234,0.119373&f=d&hl=en">Google</a> for maps and directions.</b></p>
-
+    The House and Gardens are open from 23rd February 2012 until 2nd November 2012, on Wednesday through to Sundays, 11am to 4:30pm, 
+    and from 3rd November to 23rd December, on the weekends between 11am and 2pm. 
+    
+    Admission: *House and garden:* &pound;14 (&pound;12.60), child &pound;7 (&pound;6.30), family &pound;35.00 (&pound;31.50).
+    *Garden:* &pound;9.00 (&pound;8.10), child &pound;5.50 (&pound;4.95), family &pound;25.00 (&pound;22.50).
+    
+    Estate Walks can be done all year round and are Free
+    
+    *We are a 6 miles drive, from Scotney Casle. This will take around 15 minutes. 
+    See [Google](http://maps.google.co.uk/maps?q=from%3A+TN17+2ST+to%3A+TN3+8JN&ll=51.095545,0.459194&spn=0.069234,0.119373&f=d&hl=en)
+    for maps and directions.*
   keywords: Bed and Breakfast,accommodation, Cranbrook, UK, Kent, Gardens, Scotney
   description: '[description'
   abstract: ""
@@ -602,23 +610,29 @@ sendMail:
 sheffieldParkGardens:
   name: sheffieldParkGardens
   title: Sheffield Park Gardens near Bull Farm Oast Bed and Breakfast
-  content: |2
-      <h1>Sheffield Park Gardens</h1>
-      <p>Lose yourself in the seemingly endless winding paths of Capability Browns majestic landscaped gardens.</p>
-      <p><img src="/kent/Places/sheffieldPark/sheffieldGardens1.jpg" width="500" height="333" style="float:none" /><br /></p>
-      <p> The 100 acres of gardens designed in the 18 Centuary entice and entertain visitors all year round.</p>
+  content: |
+    Sheffield Park Gardens
+    ======================
+      
+      Lose yourself in the seemingly endless winding paths of Capability Browns majestic landscaped gardens.
+      
+      ![Gardens](/assets/attractions/sheffieldPark/sheffieldGardens1.jpg)  
+      The 100 acres of gardens designed in the 18 Centuary entice and entertain visitors all year round.
+      
+      ![Gardens](/assets/attractions/sheffieldPark/sheffieldGardens2.jpg)
+  sub_content: |2
+      *Opening Times*
+      
+      14 Feb to 31 Oct 12  
+      Monday to Sunday 10:30am to 5:30 pm
+      
+      1 Nov to 31 Dec 12  
+      Monday to Sunday 10:30am to 4:00 pm
+      
+      Last admission is always
+      one hour before closing or dusk if earlier.
 
-      <p><img src="/kent/Places/sheffieldPark/sheffieldGardens2.jpg" width="500" height="333" /></p>
-
-      <br />
-  sub_content: "  <p><b>Opening Times:</b> </p>\n  <p>1 Jan to 13 Feb 11 <br />\n
-    \   Saturday and Sunday 10:30am to 4:00 pm</p> \n  <p>14 Feb to 31 Oct 11 <br
-    />\n    Monday to Sunday 10:30am to 5:30 pm</p>\n  <p>1 Nov to 31 Dec 11 <br />\n
-    \   Monday to Sunday 10:30am to 4:00 pm</p>\n   \n  <p>Last admission is always
-    one hour before closing or dusk if earlier.</p>\n\n  <p><br />\n    Adult Admission
-    &pound;8.20 (&pound;7.40), Child &pound;4.10 (&pound;3.70), Family &pound;20.50
-    (&pound;18.50) </p>\n\n  <p>&nbsp;</p>\n  <p>See the <a href=\"/r?url=http://www.nationaltrust.org.uk/scripts/nthandbook.dll?ACTION=PROPERTY&PropertyId=109\">National
-    \n    Trust Website</a> for more Information</p> \n"
+      Adult Admission &pound;9.00 (&pound;8.10), Child &pound;4.50 (&pound;4.05), Family &pound;22.50 (&pound;20.25)
   keywords: Sheffield Park Gardens, Sheffield, park, gardens, lakes, Capability Brown,
     photos
   description: Lose yourself in the seemingly endless winding paths of Capability
@@ -630,38 +644,43 @@ sheffieldParkGardens:
 sissinghurst:
   name: sissinghurst
   title: Sissinghurst Castle Gardens
-  content: "<h1>Sissinghurst Castle</h1>
-    <p>One of the worlds most celebrated and
+  content: |
+    Sissinghurst Castle
+    ===================
+    
+    One of the worlds most celebrated and
     famous gardens, created by Vita Sackville-West and her husband Sir Harold
     Nicolson. The gardens are laid out around the surviving parts of an Elizabethan
     mansion with a central red-brick prospect tower. The gardens are made up of
     small, vibrant,  enclosed compartments, provide outstanding design and colour
     in an intimate atmosphere. The study, where Vita worked, and Long Library
-    are also open to visitors.</p>
+    are also open to visitors.
     
-    <p><img src=\"/images/sissinghurst_large.jpg\" width=\"450\" height=\"300\" style=\"float:none\" /></p>
+    ![Moat](/assets/attractions/sissinghurst/sissinghurst_large.jpg)
     
-    <p>The woodland and Wealdon landscape around Sissinghurst Castle, which influenced the work in the
+    The woodland and Wealdon landscape around Sissinghurst Castle, which influenced the work in the
     garden are always open and is free to access. The garden now also has a new vegetable
-    garden supplying fresh fruit and veg to the restaurant.</p>
+    garden supplying fresh fruit and veg to the restaurant.
     
-    <p><img src=\"/kent/Places/sissinghurst_images/woods.jpg\"
-    width=\"400\" height=\"267\" alt=\"Woodland around Sissinghurst Castle\" style=\"float:none\"
-    \ /></p>
+    ![Sissinghurst Woods](/assets/attractions/sissinghurst/woods.jpg)
     
-    <p>As well as staying with us have a look at <A HREF=\"HTTP://www.bedandbreakfasts.co.uk\">http://www.bedandbreakfasts.co.uk</a>\n
-    for more places to stay, or have a look at our <a href=\"/d/links\">links page</a>
-    </p>"
-  sub_content: "<p>Garden Opening Times: </p>\n  <p>13th March to 31 October 2011<br
-    />Monday, Tuesday,  Friday, Saturday and Sunday 11am - 6pm.</p>
-    <p>Last admission is always 5.30pm or an hour before dusk if earlier.</p>
-    <p>Admission: &pound;10.50, child &pound;5.20, family &pound;26.00</p>
-    <p>See also the <a href=\"/r?url=http://www.nationaltrust.org.uk/scripts/nthandbook.dll?ACTION=PROPERTY&amp;PROPERTYID=97\">National
-    Trust</a> Website.</p>
-    <p><a href=\"/r?url=http://www.invectis.co.uk/sissing/\">Dave
-    Parker</a> has lots of photos, maps and more detailed information about
-    the castle.</p>
-    <p><b>We are less than 4 miles or a 5 minute drive from Sissinghurst Castle</b></p>"
+    As well as staying with us have a look at <http://www.bedandbreakfasts.co.uk>
+    for more places to stay, or have a look at our [links page](/links)
+  sub_content: |
+    Garden Opening Times:
+      
+    13th March to 28 October 2012  
+    Monday, Tuesday,  Friday, Saturday and Sunday 10:30am - 5:30pm.
+    
+    Last admission is always 5.30pm or an hour before dusk if earlier.</p>
+    
+    Admission: &pound;11.50, child &pound;5.50, family &pound;29.00
+
+    [Dave Parker](http://www.invectis.co.uk/sissing/) 
+    has lots of photos, maps and more detailed information about
+    the gardens.
+    
+    *We are less than 4 miles or a 5 minute drive from Sissinghurst Castle*
   keywords: Bed and Breakfast, accommodation, Cranbrook, UK, Kent, Gardens, Sissinghurst
   description: ""
   abstract: ""
