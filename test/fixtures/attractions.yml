@@ -13,14 +13,14 @@
   name: Bedgebury Pinetum
   category: garden
   latlong: POINT(51.0882133999 0.4518127)
-  description: This park was setup by the Royal Botanic Gardens, Kew and the Forestory
-    Commission in 1924. it contains one of the most compete collections of conifers
-    on one site anywhere in the world.<br><br>As well as walks iaround the collection
+  description: This park was setup by the Royal Botanic Gardens, Kew and the Forestry
+    Commission in 1924. It contains one of the most complete collections of conifers
+    on one site anywhere in the world.<br><br>As well as walks around the collection,
     there are singletrack mountain biking routes, an extraordinary  play area for
     children and horse riding trails. We have more information <a href=/d/places/BedgeburyPinetum>available</a>
 3:
   url: http://www.bullfarmoast.co.uk/r?url=http://www.bewl.co.uk/
-  name: Bewl water
+  name: Bewl Water
   category: garden
   latlong: POINT(51.0802336999 0.3900146)
   description: "The reservoir is host to a huge variety of wildlife. Many recreational
@@ -32,9 +32,10 @@
   name: Great Dixter
   category: garden
   latlong: POINT(50.996824 0.594364)
-  description: The original house dates back to the 15th Century, the gardens features
-    topiary, a long border, an orchid and a wild flower meadow. The planting is profuse,
-    yet structured featuring many bold experiments of form, colour and combination
+  description: Another mst see garden. The original house dates back to the 15th
+    Century, the gardens features  topiary, a long border, an orchid and a wild flower 
+    meadow. The planting is profuse, yet structured featuring many bold experiments of 
+    form, colour and combination
 5:
   url: http://www.bullfarmoast.co.uk/r?url=http://www.marleplace.co.uk/
   name: Marle Place
@@ -50,10 +51,7 @@
   name: Yalding Gardens
   category: garden
   latlong: POINT(51.217022 0.430355)
-  description: Just re-opened, with a new Farm Shop and Cafe, This is a unique tour
-    through garden history and organic gardening techniques. Fourteen Individual Gardens
-    are laid out, including a Woodland Walk, Apothecary's Garden, Medieval Garden,
-    Herbaceous Borders and a Victorian Artisan's Garden
+  description: Just closed!
 7:
   url: /d/places/PashleyManorGardens
   name: Pashley Manor Gardens
@@ -70,8 +68,8 @@
   name: Merriments Gardens and Nursery
   category: garden
   latlong: POINT(51.024591 0.472384)
-  description: These gardens consist of 4 acres of densly planted borders where plants
-    grown in the nursery can be seen plated in context. These lovely gardens are really
+  description: These gardens consist of 4 acres of densely planted borders where
+    plants grown in the nursery can be seen in situ. These lovely gardens are really
     worth a visit.
 9:
   url: /d/scotney
@@ -79,9 +77,9 @@
   name: Scotney Castle Garden
   category: garden
   latlong: POINT(51.092783 0.408196)
-  description: These picturesque gardens are laid out around the ruins of of medieval,
+  description: These picturesque gardens are laid out around the ruins of a medieval,
     moated manor house located on a island on a small lake. This lake is surrounded
-    by wooded gardens containing fine collections of rhododendrons, azaleasm wisteria
+    by wooded gardens containing fine collections of rhododendrons, azaleas, wisteria
     and roses. <a href=/d/scotney>Have a look at some of our spectacular pictures
     taken at Scotney.</a>
 10:
@@ -91,7 +89,7 @@
   category: garden
   latlong: POINT(51.255923 0.122245)
   description: This charming informal garden, is known for it's glorious spring flowers
-    shrubs and rare and exotic tree producing dramatic autumn colours from this hilltop
+    shrubs and rare and exotic trees producing dramatic autumn colours from this hilltop
     location.
 11:
   ownership: NT
@@ -223,8 +221,8 @@
   name: Bateman's
   category: building
   latlong: POINT(50.989344 0.379296)
-  description: This Jacobean house was once the home of Rudyard Kipling, and has been
-    left just as he left it. Highlights include original illustrations for the Jungle
+  description: This Jacobean house was once the home of Rudyard Kipling, and has remained 
+    just as he left it. Highlights include original illustrations for the Jungle
     Book,  Kiplings 1928 Phanton 1 Rolls-Royce, and gardens running down to the River
     Dudwell with it's working water mill.
 26:
@@ -308,7 +306,7 @@
   category: building
   latlong: POINT(51.039599 0.698427)
   description: Visit Ellen Terry's early 16th Century house and cottage gardens, highlights
-    include a collection of theatrical costumes and peronal mementoes, Thatched barn
+    include a collection of theatrical costumes and personal mementoes, Thatched barn
     theatre and rose garden, a childrens quiz and trail in a tranquil rural setting
 35:
   url: http://www.visithastings.com/
@@ -316,19 +314,19 @@
   category: places
   latlong: POINT(50.85315442 0.56931495)
   description: Visit the town of Hastings and walk along the seafront of this historic
-    town before enjoing a fish and chips made with fish caught by the local beach
-    biased fishing fleet, one of the largest in England.
+    town before enjoying fish and chips using fish caught by the local beach
+    based fishing fleet, one of the largest in England.
 36:
   url: http://www.rye.org.uk/
   name: Rye
   category: places
-  latlong: POINT(50.9502624 0.73247909)
-  description: This small hill top medieval town boosts some fine buildings such as
-    the 12th Century Church, The Ypres Tower, the Landgate and Town wall as well half
-    timbered Tudor houses and handsome Georgian buildings in the cobbled streets.
+  latlong: POINT(50.9502624 0.73247909)boasts some fine buildings such as
+    the 12th Century Church, The Ypres Tower, the Landgate and town wall as well as half
+    timbered Tudor houses and handsome Georgian buildings
+  description: This small hill top medieval town with cobbled streets.
     Visitors can also browse the antique shops, art galleries, book shops and potteries
     or have a bite to eat at one of the tea shops, restaurants or pubs. One of the
-    most picturesque ancient towns a must if you are in the area.
+    most picturesque ancient towns,a must see if you are in the area.
 37:
   url: http://www.visittunbridgewells.com/pages/index.asp
   name: Royal Tunbridge Wells
@@ -344,8 +342,8 @@
   category: places
   latlong: POINT(51.27893761 1.08078002)
   description: This world heritage site is dominated by the Norman cathedral, which
-    has been visited by pilgrims for Centuries. The compact city centre, also contains
-    a wide variety of ancient buildings, shops bars and resturants. Well worth a vist.
+    has been visited by pilgrims for centuries. The compact city centre also contains
+    a wide variety of ancient buildings, shops,bars and restaurants. Well worth a vist.
 39:
   url: http://tourism.brighton.co.uk/
   name: Brighton
@@ -354,7 +352,8 @@
   description: Brighton is one of the largest and most famous seaside resorts, it's
     major landmarks include The Royal Pavilion, Brighton Pier and Volk's Electric
     Railway running along the beach front. The  beach is lined with a variety of bars,
-    restaurants, night clubs and amusement arcades.
+    restaurants, night clubs and amusement arcades.Visit The Lanes for a widw variety of 
+    shops
 42:
   url: http://www.kesr.org.uk/
   ownership: private
@@ -385,8 +384,11 @@
   ownership: private
   name: Cobtree-Museum of Kent Life
   category: other
+  
+ 
   latlong: POINT(51.297285 0.508171)
-  description: ""
+  description: "See the collection of historic buildings and period homes including 
+    original artifacts and memorabilia, "
 46:
   url: http://www.rhdr.org.uk/rhdr/rhdr.html
   ownership: private
@@ -410,7 +412,7 @@
   name: Bentley Wildfowl and Motor Museum
   category: other
   latlong: POINT(50.924318 0.110889)
-  description: An unusual combination of 100's swans, geese and ducks from acound
+  description: An unusual combination of 100's swans, geese and ducks from around
     the world, along with a superb collection of Veteran, Edwardian and Vintage Cars
     and Motorcycles.
 49:
@@ -420,13 +422,14 @@
   category: other
   latlong: POINT(51.039599 0.698427)
   description: Tenterden Vineyard is the home of the Chapel Down wine brand. Visitors
-    can wander around the landscaped grounds, herb gardens and vineyards, and Tours
+    can wander around the landscaped grounds, herb gardens and vineyards, and tours
     of the Winery and tastings are also available
 50:
   name: Beachy Head
   category: other
   latlong: POINT(50.752023 0.206693)
-  description: ~
+  description: "Take a walk along Britain's highest chalk cliffs and take in the breath
+    taking scenery."
 51:
   url: http://www.nepicarfarm.co.uk/index.htm
   ownership: private
@@ -440,12 +443,15 @@
   name: Chiddingstone
   category: places
   latlong: POINT(51.186176 0.148487)
-  description: ~
+  description: "Cjiddingstone is unique inthat apart from the church and castle , 
+    the entire village is owned by the National Trust and is decribed as being the
+    most perfect example of a Tudor village in the country."
+ 
 53:
   name: Alfriston
   category: places
   latlong: POINT(50.807562 0.156555)
-  description: ~
+  description: A lovely village with specialist shops and The Clergy House."
 54:
   url: http://www.charleston.org.uk
   name: Charleston
@@ -453,18 +459,18 @@
   latlong: POINT(50.839 0.120)
   description: Home of artists Vanessa Bell and Duncan Grant and retreat for the Bloomsbury
     Group including Virgina Woolf. This beautiful house encapsulates the creative
-    and Bohemian way of life. They decorated the walls and furnature and filled it
-    with textiles ceramics and paintings by them and their contemporaries. A unique
+    and Bohemian way of life. They decorated the walls and furniture and filled it
+    with textiles.ceramics and paintings by them and their contemporaries. A unique
     experience unlike any other museum.
 55:
   url: http://www.nationaltrust.org.uk/main/w-vh/w-visits/w-findaplace/w-monkshouse/
   name: Monk&#39;s House
   category: places
   latlong: POINT(50.838 0.015)
-  description: This building was the home of Leonard and Virgina Woold until 1969,
+  description: This building was the home of Leonard and Virgina Woolf until 1969,
     the rooms reflect the life and times of literary circle in which they moved as
     well as displaying extracts from Virginia's diaries and with photographs on display.
     This property in administrated and largely maintained on the Trusts behalf by
     a tenant and so is only open between April and October on Wednesday and Saturday
-    Afternoons.
+    afternoons.
 ...
