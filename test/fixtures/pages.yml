@@ -2,10 +2,10 @@ attractions:
   name: attractions
   title: 'Attractions close to Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent '
   content: "<p>There are many places to visit from our Bed and Breakfast. Cranbrook
-    is a picturesque town with it's distinctive windmill. Also close by, are
+    is a picturesque town with it's distinctive windmill. Also close by, are the
     the world famous <a href=\"/d/sissinghurst\">gardens at Sissinghurst.</a></p>
     
-    <p>We also have some pictures from the landscaped gardens of <a href=\"/d/sheffieldParkGardens\">Sheffield
+    <p>We also we have some pictures from the landscaped gardens of <a href=\"/d/sheffieldParkGardens\">Sheffield
     Park</a></p>\n  <p>We have a list of <a href=\"/d/fulllocation\">some of the local
     attractions</a> in the area</p>"
   sub_content: |
@@ -20,7 +20,7 @@ availability:
   name: availability
   title: Room Availability at Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent
   content: "<p>Enter details of when you are planning to arrive and how long you would
-    like to stay, we will get back to you within 1 day to confirm your booking.</p>
+    like to stay, we will get back to you as soon as possible to confirm availability.</p>
     \n"
   sub_content: |
     <p>
@@ -130,7 +130,7 @@ contact:
 
 dayTrip1:
   name: dayTrip1
-  title: 'Day trip to Battle Abbey, Hastings, Bateman''s and Scotney Castle from Bed
+  title: 'Day trip to Battle Abbey, Hastings, Bateman's and Scotney Castle from Bed
     and Breakfast at Bull Farm Oast, Cranbrook, Kent '
   content: "<h1>Day trip to Battle Abbey, Hastings, Bateman's and Scotney Castle</h2>\n\n
     All visits only available Wednesdays, Saturdays and Sundays!!\n\n<table>\n<tr>\n<td><b>Mile</b></td><td><b>Km</b></td></tr>\t\n<tr><td>0</td><td>0</td><td>Turn
@@ -167,7 +167,7 @@ dayTrip1:
     11 .6  Sat & Sun 12-6   Old Castle only opens May to 1 Sept.</p>\n<p>\n\n\t\tLeave
     Scotney and turn right onto the A21 and just through Lamberhurst<br />\n\t\tTurn
     right onto the B2162  and the at the cross road turn right onto the A262<br />\n\t\tGo
-    through Goudhurst stopping to see church/pond and pretty village- good pubs/restaurants<br
+    through Goudhurst stopping to see church, pond and pretty village- good pubs/restaurants<br
     />\n\t\tTurn right onto B2085 at the Peacock Inn<br />\n\t\tTurn right into Bull
     Farm Oast<br />\n</p>\n\n\n"
   sub_content: |
@@ -337,7 +337,7 @@ index:
     castle, Merriments, Pashley Manor, Leeds Castle, National Trust, Scotney castle,
     Merriments, Pashley Manor, Leeds Castle, National Trust, accomodation, High Weald
   description: We provide a family run bed and breakfast just outside Cranbrook, Kent
-    we provide a perfect base to explore the South East of England, Sissinghurst is
+    we providing a perfect base to explore the South East of England, Sissinghurst is
     1 mile away.
   abstract: A picturesque Bed and Breakfast near Cranbrook in Kent.
   lightbox: "true"
@@ -485,7 +485,7 @@ merriments.html:
   title: Merriments Gardens
   content: |
     <h1>Merriments Gardens</h1>
-      <p>We are a short 10 minute drive from these gardens consisting of 4 acres of densly planted borders where plants grown in the nursery can be seen planted in context. These lovely gardens are really worth a visit.
+      <p>We are a short 10 minute drive from these gardens consisting of 4 acres of densely planted borders where plants grown in the nursery can be seen planted in situ. These lovely gardens are really worth a visit.
         </p>
       <p><img src="/image.php?g=attractions&id=1" width="640" style="float:none" /></p>
       <p></p>
@@ -505,7 +505,7 @@ merriments.html:
     UK, Kent, Gardens, Sissinghurst
   description: We are a short 10 minute drive from these gardens consisting of 4 acres
     of densly planted borders where plants grown in the nursery can be seen planted
-    in context. These lovely gardens are really worth a visit.
+    in situ. These lovely gardens are really worth a visit.
   abstract: ""
   lightbox: "false"
 
@@ -516,8 +516,8 @@ rooms:
     <h1>Rooms</h1>
       <p>We have a large en suite room with a double bed towards the front of the house, which can easily accommodate children
         with additional beds, if required. We have a further bright twin bedded room overlooking our garden at the rear of the house. </p>
-      <p>Our twin room is available from 62 pounds and the double is available from 67  pounds for the room. </p>
-      <p>All our rooms have TV's with freeview available along with Tea and Coffee making facilities and ample space for storage of luggage and chairs for
+      <p>Our twin room is available from 70 pounds and the double is available from 75  pounds for the room. </p>
+      <p>All our rooms have TV's  along with Tea and Coffee making facilities and ample space for storage of luggage and chairs for
     relaxing in. Free wireless internet is available throught our property. All our rooms have individual  heating  controls and hairdryers are available on
     request.</p>
     <div class="image">
@@ -552,8 +552,8 @@ scotney:
     <h1>Scotney Castle</h1>
     <p>Scotney Castle, is a country house and garden located near Lamberhurst.<p>
     <p>The Gardens, are centered around the ruins of a medieval, moated house, Scotney
-    Old Castle on an island in a small lake. The lake is surrounded by sloping, wooded
-    gardens with fine collections of rhododendrons, azaleas and kalmia for spring colour,
+    Old Castle is on an island in a small lake. The lake is surrounded by sloping, wooded
+    gardens with fine collections of rhododendrons, azaleas and camellias for spring colour,
     summer wisteria and roses, and spectacular autumn colour.</p>
       <p><img src="/images/scotney-gardens1.jpg" width="400" height="300" style="float:none" /></p>
       <p><img src="/images/scotney-2.jpg" width="400" height="300" /></p>
