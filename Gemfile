@@ -48,6 +48,10 @@ end
 # for rss blog parsing....
 gem 'simple-rss', '1.2.3'
 
+# Markdown
+gem 'rdiscount', '~> 1.6.8'
+
+
 # Not sure why we need this, but I keep getting errors without it.
 gem 'highline'
 

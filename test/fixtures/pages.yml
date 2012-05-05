@@ -1,20 +1,17 @@
 attractions:
   name: attractions
   title: 'Attractions close to Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent '
-  content: "<p>There are many places to visit from our Bed and Breakfast. Cranbrook
+  content: "There are many places to visit from our Bed and Breakfast. Cranbrook
     is a picturesque town with it's distinctive windmill. Also close by, are the
-    the world famous <a href=\"/d/sissinghurst\">gardens at Sissinghurst.</a></p>
+    the world famous [gardens at Sissinghurst.](/attractions/Sissinghurst Castle)
     
-    <p>We also we have some pictures from the landscaped gardens of <a href=\"/d/sheffieldParkGardens\">Sheffield
-    Park</a></p>\n  <p>We have a list of <a href=\"/d/fulllocation\">some of the local
-    attractions</a> in the area</p>"
-  sub_content: |
-    <a href="/images/sissinghurst_large.jpg"><img src="/images/sissinghurst.jpg" alt="sissinghurst castle moat" width="150" height="220" border="0" /></a><br />
-      <a href="/images/sissinghurst_large.jpg">Sissinghurst Moat</a>
+    We also we have some pictures from the landscaped gardens of [Sheffield
+    Park](/attractions/Sheffield Park Garden)"
+  sub_content: 
   keywords: 'Bed and Breakfast, Attractions, Cranbrook, UK, Kent, Sussex, Sissinghurst,
     Sheffield, Bodium, Castle '
   description: Places to Visit near Bull Farm Oast, Cranbrook, Kent
-  abstract: ""
+  abstract: 
   lightbox: "false"
 availability:
   name: availability
@@ -33,40 +30,42 @@ availability:
   abstract: Room availability at Bull Farm Oast.
   lightbox: "false"
 
-blank:
-  name: blank
-  title: Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent
-  content: ""
-  sub_content: ""
-  keywords: 'Bed and Breakfast, accommodation, Cranbrook, UK, Kent, Sussex, comfortable,
-    double, twin '
-  description: ""
-  abstract: ""
-  lightbox: "false"
-
 bodiamCastle:
   name: bodiamCastle
   title: Bodiam Castle near Bull Farm Oast Bed and Breakfast
   content: |2
-    <h1>Bodiam Castle</h1>
-    <p>With the outside  appearing intact, this castle build in 1385 makes a spectacular sight. The grounds can be visited for free
+    Bodiam Castle
+    =============
+    
+    With the outside  appearing intact, this castle build in 1385 makes a spectacular sight. The grounds can be visited for free
     and the castle can be viewed across the moat. The inside is largely ruined, however some of the towers can be climbed and the walls
-    explored.</p>
-    <p>We are only around 6 miles(10 km), a 10 minute drive  from Bodiam and our accomodation makes a prefect base from which to explore this and many other <a href="/places">local attractions</a>.
-      <p><img src="/assets/bodiam-winter1.jpg" width="450" height="300" style="float:none" /><br /></p>
-      <p><img src="/assets/bodiam-winter2.jpg" width="300" height="450" style="float:none" /></p>
-      <br />
-  sub_content: "<p>Opening Times:<br/><strong>Castle</strong><br>\n  8 Jan
-    to 6 Feb 2011<br />\n\n    Saturday and Sunday 11:00 am to 4:00 pm</p>\n  <p>12
-    Feb to 30 Oct 11 <br />\n    All week 10:30 am to 5:00 pm</p>\n  <p>2rd Nov to
-    18 December 11 <br />\n    Wednesday to Sunday 11:00am to 4:00 pm</p>
-    <p>Last
-    admission is always one hour before closing or dusk if earlier.</p>
-    <p>Adult Admission &pound;6.50 (&pound;5.80), Child &pound;3.20 (&pound;2.90),
-    Family &pound;17 (&pound;15.00)</p><p>Distance: 6 miles (10km)<br /> 10 minutes driving.<br />
-    See <a href=\"http://maps.google.co.uk/maps?q=from%3A+TN17+2ST+to%3A+TN32+5UA\">Google
-    Maps</a> for maps and directions.</p>  
-    <p>See the <a href=\"http://www.nationaltrust.org.uk/main/w-vh/w-visits/w-findaplace/w-bodiamcastle/\">National Trust Website</a> for more Information</p>"
+    explored.
+    
+    We are only around 6 miles(10 km), a 10 minute drive  from Bodiam and our accomodation makes a prefect base from which to explore this and many other 
+    [local attractions].
+    
+    [Bodiam Castle](/assets/attractions/bodiam-winter1.jpg")
+    [Bodiam Castle](/assets/attractions/bodiam-winter1.jpg")
+  
+  sub_content: "
+    Opening Times:
+    ==============
+    Castle
+    ------
+      12 Feb to 4 Nov 2012 All week 10:30 am to 5:00 pm
+  
+      7th Nov to 23 December 12  Wednesday to Sunday 11:00am to 4:00 pm
+      
+      Last admission is always one hour before closing or dusk if earlier.
+      
+    Adult Admission £7, Child £3.50,
+    Family £18.60
+    
+    Distance: 6 miles (10km)
+    10 minutes driving.<br />
+    See [Google Maps](http://maps.google.co.uk/maps?q=from%3A+TN17+2ST+to%3A+TN32+5UA) for maps and directions.
+      
+    See the [National Trust Website](http://www.nationaltrust.org.uk/bodiam-castle/) for more Information"
   keywords: Bodiam Castle, Bodium, Castle, Ruins
   description: With the outside  appearing intact, this castle build in 1385 makes
     a spectacular sight. The grounds can be visited for free and the castle can be
@@ -78,60 +77,59 @@ bodiamCastle:
 breakfast:
   name: breakfast
   title: Breakfast at Bull Farm Oast B&B, Cranbrook, Kent
-  content: " <h1>Breakfast</h1>\n  <p>We provide a breakfast tailored to your requirements,
-    a full English breakfast \n    consisting of bacon, local free range eggs, delicious
-    sausages, grilled tomatoes, \n    and freshly cooked mushrooms. </p>\n  <p>Vegetarians,
-    vegans and those with specific dietary requirements are welcome. An example breakfast
-    would\t be made up from of a selection \n     of smoked tofu sausages, grilled
-    tomatoes and freshly cooked mushrooms. Addtional options are available on request.</p>\n
-    \ <div class=\"image\">\n    <img src=\"/images/breakfast/PoachedEgg_Bacon_Tomato_Bread_Mushrooms.jpg\"
-    width=\"640\" height=\"427\" alt=\"PoachedEgg, Bacon, Tomato, Bread and Mushrooms\"
-    style=\"float: none;\"/>\n    <div class=\"caption\">PoachedEgg, Bacon, Tomato,
-    Bread and Mushrooms</div>\n  </div>\n  <div class=\"image\">\n    <img src=\"/images/breakfast/Set_Table_For_Breakfast.jpg\"
-    width=\"640\" height=\"427\" alt=\"Our Dinning Room all set for breakfast\" style=\"float:
-    none;\">\n    <div class=\"caption\">Our Dinning Room ready for breakfast.</div>\n
-    \ </div>  \n  <div class=\"image\">\n    <img src=\"/images/breakfast/Guests_Enjoying_Breakfast.jpg\"
-    width=\"640\" height=\"427\" alt=\"Some of our guests enjoying breakfast.\" style=\"float:
-    none;\">\n    <div class=\"caption\">Some of our guests enjoying breakfast.</div>\n
-    \ </div>\n\n"
+  content: |
+    Breakfast
+    =========
+    
+    We provide a breakfast tailored to your requirements,
+    a full English breakfast consisting of bacon, local free range eggs, delicious
+    sausages, grilled tomatoes, and freshly cooked mushrooms.
+    
+    Vegetarians, vegans and those with specific dietary requirements are welcome. An example breakfast
+    would be made up from of a selection of smoked tofu sausages, grilled
+    tomatoes and freshly cooked mushrooms. Addtional options are available on request.
+    
+    ![Poached Egg, Bacon, Tomato, Bread and Mushrooms](/assets/breakfast/PoachedEgg_Bacon_Tomato_Bread_Mushrooms.jpg )
+    Poached Eggs, Bacon, Tomato, Bread and Mushrooms.
+    
+    ![Our dinning room, ready for breakfast](/assets/breakfast/Set_Table_For_Breakfast.jpg)
+    Our dinning room, ready for breakfast.
+    
+    ![Some of our guests enjoying breakfast](/assets/breakfast/Guests_Enjoying_Breakfast.jpg )
+    Some of our guests enjoying breakfast.
   sub_content: |
-    <a href="/image.php?g=breakfast&id=1" rel="lightbox"><img src="/image.php?g=breakfast&id=1&size=thumb" width="200"></a>
+    ![Cooking](/assets/breakfast/cooking.jpg)
   keywords: 'Bed and Breakfast, accommodation, Cranbrook, UK, breakfast, vegatarian,
     full engilish, bacon, mushrooms, eggs, sausage '
-  description: We provide a breakfast tailored to your requirements, a full English
+  description: "We provide a breakfast tailored to your requirements, a full English
     breakfast consisting of bacon, local free range eggs, delicious sausages, grilled
-    tomatoes and freshly cooked mushrooms.
-  abstract: We provide a breakfast tailored to your requirements, a full English breakfast
-    consisting of bacon, local free range eggs, delicious sausages, grilled tomatoes
+    tomatoes and freshly cooked mushrooms."
+  abstract: "We provide a breakfast tailored to your requirements, a full English breakfast
+    consisting of bacon, local free range eggs, delicious sausages, grilled tomatoes"
   lightbox: "false"
-
 contact:
   name: contact
   title: Contact Details for Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent
-  content: "    <p>Our address is:</p>\n    <p style=\"margin-left:10px\">Bull Farm
-    Oast<br />\n\tHawkhurst Road<br />\n\tCranbrook<br />\n\tKent<br />\n\tTN17 2ST</p>\n
-    \ \n  <p>You can e-mail us on: <a href=\"mailto:b+b@bullfarmoast.co.uk\">b+b@bullfarmoast.co.uk</a><br
-    />\nOr phone us on 01580 714 140.</p>\n\n  <p>This site was designed by <a href=\"/r?url=http://www.chrisfleming.org/\">Chris
-    \n    Fleming</a>. It is fully compliant with the XML 1.0 and CSS 2 and should
-    look \n    okay if you are using a compliant browser.</p>\n\n  <p> <a href=\"/r?url=http://validator.w3.org/check/referer\"><img\n
-    \ \t\t  style=\"border:0;width:88px;height:31px\"\n          src=\"http://www.w3.org/Icons/valid-xhtml10\"\n
-    \         alt=\"Valid XHTML 1.0!\" /></a> <a href=\"/r?url=http://jigsaw.w3.org/css-validator/\">
-    \n    <img style=\"border:0;width:88px;height:31px\"\n       src=\"http://jigsaw.w3.org/css-validator/images/vcss\"
-    \n       alt=\"Valid CSS!\" /></a>\n\n </p>\n"
+  content: |
+    Our address is:  
+    > Bull Farm Oast  
+    > Hawkhurst Road  
+    > Cranbrook  
+    > TN17 2ST  
+    
+    You can e-mail us on:[b+b@bullfarmoast.co.uk](mailto:b+b@bullfarmoast.co.uk) Or phone us on 01580 714 140.
+    
+    This site was designed by [Chris Fleming](http://www.chrisfleming.org/)
   sub_content: |+
-    <img src="/images/house.jpg" alt="our oast house" width="200" /><br />
-    <img src="/images/icons/4st_BandB_100x142.png" alt="4 stars" width="100" height="142" />
-    <img src="/images/icons/SilverAward_100x142.png" alt="Silver Award" width="100" height="142" />
-
+    ![Our Oast House](/assets/house.jpg)
   keywords: Contact, email, Bed and Breakfast
   description: ""
   abstract: ""
   lightbox: "false"
-
 dayTrip1:
   name: dayTrip1
-  title: 'Day trip to Battle Abbey, Hastings, Bateman's and Scotney Castle from Bed
-    and Breakfast at Bull Farm Oast, Cranbrook, Kent '
+  title: "Day trip to Battle Abbey, Hastings, Bateman's and Scotney Castle from Bed
+    and Breakfast at Bull Farm Oast, Cranbrook, Kent"
   content: "<h1>Day trip to Battle Abbey, Hastings, Bateman's and Scotney Castle</h2>\n\n
     All visits only available Wednesdays, Saturdays and Sundays!!\n\n<table>\n<tr>\n<td><b>Mile</b></td><td><b>Km</b></td></tr>\t\n<tr><td>0</td><td>0</td><td>Turn
     Right onto A229 and go straight through Hawkhurst</td></tr>\n<tr><td>6.0</td><td>9.7</td><td>\tTurn
@@ -294,23 +292,42 @@ fulllocation:
 guestbook:
   name: guestbook
   title: Bull Farm Oast Guest Book
-  content: "  <h1>Guest Book</h1>\n\n<div id=\"TA_selfserveprop51\" class=\"TA_selfserveprop\">\n<ul
-    id=\"YFFKeYO3zed\" class=\"TA_links fl6mScsn7y\">\n            <li id=\"augEu3B303\"
-    class=\"bFi9fNeP\">Offering 11 reviews of <a target=\"_blank\" href=\"http://www.tripadvisor.co.uk/Hotel_Review-g186315-d487638-Reviews-Bull_Farm_Oast_Bed_and_Breakfast-Royal_Tunbridge_Wells_Kent_England.html\">Bull
-    Farm Oast Bed and Breakfast</a> in Royal Tunbridge Wells</li>\n      </ul>\n  </div>\n<script
-    src=\"http://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=51&amp;locationId=487638&amp;lang=en_UK&amp;rating=true&amp;nreviews=3&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=true&amp;linkt=2\"></script>\n\n\n
-    \ <p>Comments from some of our guests.</p>\n  <p><img src=\"/images/guest_book.jpg\"
-    width=\"400\" height=\"334\" style=\"float:none\" /><br />\n  </p>\n  <p>\"We
-    loved staying here! very nice, we felt really welcome here. We liked \n    the
-    room also. Thank you!\" <BR>\n    Hessika en Paul Yd Broek - Holland</p>\n\n  <p><img
-    src=\"/images/guest_book_belgium.gif\" style=\"float:none\"/> \"This is without
-    \n    exaggeration,<BR>\n    the best B&B of the nation.<BR>\n    This is a veggie
-    paradise<BR>\n    and ever so nice<BR>\n    Such a lovely mum and son <BR>\n\n
-    \   hopefully this will go on and on.<BR>\n    See you !! - Ellen Straelens, Belgium<BR>\n
-    \ </p>\n  <p>\"Thanks a lot for such an enjoyable stay in a real family house!
-    It makes \n    it even harder to say Goodbye to you and England!\" - Anja, Germany</p>\n"
+  content: |
+    Guest Book
+    ==========
+    
+    <div id="TA_selfserveprop51" class="TA_selfserveprop">
+    <ul id="YFFKeYO3zed" class="TA_links fl6mScsn7y">
+      <li id="augEu3B303" class="bFi9fNeP">Offering 11 reviews of <a target="_blank" href="http://www.tripadvisor.co.uk/Hotel_Review-g186315-d487638-Reviews-Bull_Farm_Oast_Bed_and_Breakfast-Royal_Tunbridge_Wells_Kent_England.html">Bull
+    Farm Oast Bed and Breakfast</a> in Royal Tunbridge Wells</li>
+    </ul></div>
+    <script src="http://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=51&amp;locationId=487638&amp;lang=en_UK&amp;rating=true&amp;nreviews=3&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=true&amp;linkt=2"></script>
+    
+    Comments from some of our guests.
+    ---------------------------------
+      
+      ![Guest Book](/assets/guestbook/guest_book.jpg)
+    
+    "We loved staying here! very nice, we felt really welcome here. We liked the
+    room also. Thank you!"  
+      Hessika en Paul Yd Broek - Holland
+      
+      ![Guest Book](/assets/guestbook/guest_book_belgium.gif)
+      
+      "This is without exaggeration,  
+      the best B&B of the nation.  
+      This is a veggie paradise  
+      and ever so nice  
+      Such a lovely mum and son
+      
+      
+      Hopefully this will go on and on.  
+      See you !! - Ellen Straelens, Belgium
+      
+      "Thanks a lot for such an enjoyable stay in a real family house!  
+      It makes it even harder to say Goodbye to you and England!" - Anja, Germany"
   sub_content: |
-    <img src="/images/family_outside.jpg" width="150" height="225" /><br />
+    ![A Visiting Family](/assets/guestbook/family_outside.jpg)  
     A visiting family in the Garden.
   keywords: 'Bed and Breakfast,  Cranbrook, Guest Book '
   description: ""
@@ -320,18 +337,22 @@ guestbook:
 index:
   name: index
   title: Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent
-  content: "<h1>Welcome to Bull Farm Oast Bed and Breakfast</h1>\n<p>Prue and Andrew
-    offer a genuine taste of <a href=\"/places\">Kentish</a> hospitality in their
+  content: |
+    Welcome to Bull Farm Oast Bed and Breakfast
+    ===========================================
+    
+    Prue and Andrew offer a genuine taste of [Kentish](/attractions) hospitality in their
     authentic oasthouse and gardens, charmingly converted into Cranbrook's most welcoming
-    B&B, moments from <a href=\"/d/sissinghurst\">Sissinghurst</a>. Enjoy a beautiful
-    night's sleep in our <a href=\"/d/rooms\">rooms</a> before waking to a <a href=\"/d/breakfast\">Breakfast</a>
-    of freshly baked bread, homemade preserved and local farm eggs and bacon.\n  </p>\n
-    \ <p>We are happy to help you plan your stay with our extensive knowledge of \n
-    \   <a href=\"/places\">the area</a>.  \n    There are a large number of gardens
-    open to the public \n    in the surrounding area, as well as many other fabulous
-    attractions for the \n    visitor.</p>\n\n"
+    B&B, moments from [Sissinghurst](/attractions/Sissinghurst Castle). Enjoy a beautiful
+    night's sleep in our [rooms](/rooms) before waking to a [breakfast](/breakfast)
+    of freshly baked bread, homemade preserved and local farm eggs and bacon.
+    
+    We are happy to help you plan your stay with our extensive knowledge of [the area](/attractions)
+    There are a large number of gardens
+    open to the public in the surrounding area, as well as many other fabulous
+    attractions for the visitor."
   sub_content: |
-    <img src="http://s1.bullfarmoast.co.uk/images/house.jpg" alt="our oast house" width="199" height="267" /><br />
+    ![Our Oast House](/assets/house.jpg)
   keywords: Bed and Breakfast, accommodation, Cranbrook, UK, Kent, Sussex, High Weald,
     sissinghurst, oasthouse,  guest, guesthouse,Great Dixter, Garden, holiday,  Scotney
     castle, Merriments, Pashley Manor, Leeds Castle, National Trust, Scotney castle,
@@ -346,12 +367,11 @@ links:
   name: links
   title: Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent
   content: |+
-    <p>Here are links that you may find useful, both to other bed and breakfasts in the area and also to other sites. For local attractions, please visit out <a href="/places">Places</a> Page.</p>
-    <ul>
-      <li><A HREF="HTTP://www.bedandbreakfasts.co.uk">http://www.bedandbreakfasts.co.uk</A></li>
-      <li><a href="http://www.cranbrookuk.co.uk/">Quality assured Cranbrook, Bed and Breakfasts<a></li>
-      <li><a href="http://www.simplyspecial.org.uk/">Simply Special Places to Stay in the Weald of Kent</li>
-    </ul>
+    Here are links that you may find useful, both to other bed and breakfasts in the area and also to other sites. For local attractions, please visit our 
+    [Places](/attractions)
+    *   <http://www.bedandbreakfasts.co.uk>
+    *   [Quality assured Cranbrook, Bed and Breakfasts](http://www.cranbrookuk.co.uk/)
+    *   [Simply Special Places to Stay in the Weald of Kent](http://www.simplyspecial.org.uk/)
 
 
   sub_content: ""
@@ -365,8 +385,6 @@ location:
   name: location
   title: Location of Bull Farm Oast Bed and Breakfast, Cranbrook, Kent, TN17 2ST
   content: |2
-
-    <h1>Location</h1>
 
 
     <div id="map" style="width: 500px; height: 500px; color: black"></div>
@@ -480,8 +498,8 @@ map:
   abstract: ""
   lightbox: "false"
 
-merriments.html:
-  name: merriments.html
+merriments:
+  name: merriments
   title: Merriments Gardens
   content: |
     <h1>Merriments Gardens</h1>
@@ -512,31 +530,25 @@ merriments.html:
 rooms:
   name: rooms
   title: Rooms for Bed and Breakfast at Bull Farm` Oast, Cranbrook, Kent
-  content:
-    <h1>Rooms</h1>
-      <p>We have a large en suite room with a double bed towards the front of the house, which can easily accommodate children
-        with additional beds, if required. We have a further bright twin bedded room overlooking our garden at the rear of the house. </p>
-      <p>Our twin room is available from 70 pounds and the double is available from 75  pounds for the room. </p>
-      <p>All our rooms have TV's  along with Tea and Coffee making facilities and ample space for storage of luggage and chairs for
+  content: |+
+    Rooms
+    =====
+      
+    We have a large en suite room with a double bed towards the front of the house, which can easily accommodate children
+    with additional beds, if required. We have a further bright twin bedded room overlooking our garden at the rear of the house.
+      
+    Our twin room is available from 70 pounds and the double is available from 75 pounds for the room.
+      
+    All our rooms have TV's  along with Tea and Coffee making facilities and ample space for storage of luggage and chairs for
     relaxing in. Free wireless internet is available throught our property. All our rooms have individual  heating  controls and hairdryers are available on
-    request.</p>
-    <div class="image">
-        <img src="http://s1.bullfarmoast.co.uk/images/rooms/blue_room.jpg" width="640" height="427" alt="Our Double Blue Room" style="float: none;"/>
-        <div class="caption">Our Double Blue Room</div>
-      </div>
-    <div class="image">
-        <img src=http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=4" width="640" height="427" alt="Our twin room" style="float: none;"/>
-        <div class="caption">Our twin room</div>
-      </div>
-      <p>Please click on any of the pictures shown on this page in order to see a larger version</p>
-      <a href="http://s1.bullfarmoast.co.uk/image.php?g=rooms&id=4" rel="lightbox[rooms]"  title="Beds in the Twin Room"><img src="http://s1.bullfarmoast.co.uk/image.php?g=rooms&id=4&size=thumb" /></a>
-       <a href="http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=5" rel="lightbox[rooms]"><img src="http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=5&size="thumb" /></a>
-       <a href="http://s1.bullfarmoast.co.uk/image.php?g=rooms&id=3" rel="lightbox[rooms]"><img src="http://s1.bullfarmoast.co.uk/image.php?g=rooms&id=3&size=thumb" height="159" /></a>
-       <a href="http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=6" rel="lightbox[rooms]"><img src="http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=6&size=thumb" /></a>
+    request.
+    
+    ![Our Double Blue Room](/assets/rooms/blue_room.jpg)
+    Our Double Blue Room
+    
+    ![Our Twin Room](/assets/rooms/twin_room.jpg)
+    Our Twin Room
   sub_content: |2+
-      <a href="http://s2.bullfarmoast.co.uk/images/blueroom.jpg" rel="lightbox[rooms]" title="The Blue Room"><img src="http://s2.bullfarmoast.co.uk/images/blueroom.jpg" width="240" /></a>
-       <a href="http://s1.bullfarmoast.co.uk/image.php?g=rooms&id=1" rel="lightbox[rooms]"  title="Beds in the Twin Room"><img src="http://s1.bullfarmoast.co.uk/image.php?g=rooms&id=1&size=thumb" width="116" /></a>
-       <a href="http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=2" rel="lightbox[rooms]"><img src="http://s2.bullfarmoast.co.uk/image.php?g=rooms&id=2&size=thumb" width="115" /></a>
 
   keywords: 'Bed and Breakfast, accommodation, Cranbrook, UK, Kent, Sussex, comfortable,
     double, twin '

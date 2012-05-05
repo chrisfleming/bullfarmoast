@@ -1,7 +1,7 @@
 <div id="centercontent">
   <div id="fixedcontent">
   <p id="notice"><%= notice %></p>
-  <%= raw(@page.content) %>
+  <%= markdown(@page.content) %>
 
   <% if @page.name == "index"%>
 
@@ -27,11 +27,5 @@
 <div id="headerright"></div>
 
 <div id="leftcontent">
-  <%= raw(@page.sub_content) %>
+  <%= markdown(@page.sub_content) %>
 </div>
-   
-   
-12
-<%= link_to 'Edit', edit_page_path(@page) %> |
-<%= link_to 'Back', pages_path %>
--->
