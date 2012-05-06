@@ -54,15 +54,5 @@ module Bullfarmoast
    
     config.action_mailer.delivery_method = :sendmail
 
-    config.action_mailer.smtp_settings = { 
-      address: "localhost",
-      port: 1465,
-      domain: "chrisfleming.org", 
-      authentication: "plain",
-      user_name: "ilogin@chrisfleming.org", 
-      password: "lmip00!", 
-      enable_starttls_auto: true
-    }
-
   end
 end
