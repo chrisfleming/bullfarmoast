@@ -4,7 +4,7 @@ for <%= pluralize(@enquiry.people, 'person') %> staying in <%= pluralize(@enquir
 Bull Farm Oast.
 
 We will check availability and should get back to you within one day. If you would like more
-information then please phone us on <%= config.phone_number %> or e-mail us at <%= config.email_display %>
+information then please phone us on <%= Rails.configuration.phone_number %> or e-mail us at <%= Rails.configuration.email_display %>
 
 Thank you
 Prue and Andrew Fleming

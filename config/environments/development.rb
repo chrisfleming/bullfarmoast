@@ -36,9 +36,10 @@ Bullfarmoast::Application.configure do
 
   script_dir = "/usr/local/pgsql/share/contrib/postgis-1.5/"
 
-  config.email_display = "me@chrisfleming.org"
+  config.email_display = "display@chrisfleming.org"
   config.phone_number = "+44 (0)1580 714 140"
-  config.enq_to_address = "me@chrisfleming.org"
+  config.enq_to_address = "to@chrisfleming.org"
+  config.enq_bcc_address = "bcc@chrisfleming.org"
  
 
 end

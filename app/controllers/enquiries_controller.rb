@@ -1,25 +1,25 @@
 class EnquiriesController < ApplicationController
   # GET /enquiries
   # GET /enquiries.json
-  def index
-    @enquiries = Enquiry.all
+  #def index
+  #  @enquiries = Enquiry.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @enquiries }
-    end
-  end
+  #  respond_to do |format|
+  #    format.html # index.html.erb
+  #    format.json { render json: @enquiries }
+  #  end
+  #end
 
   # GET /enquiries/1
   # GET /enquiries/1.json
-  def show
-    @enquiry = Enquiry.find(params[:id])
+  #def show
+  #  @enquiry = Enquiry.find(params[:id])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @enquiry }
-    end
-  end
+  #  respond_to do |format|
+  #    format.html # show.html.erb
+  #    format.json { render json: @enquiry }
+  #  end
+  #end
 
   # GET /enquiries/new
   # GET /enquiries/new.json
@@ -33,9 +33,9 @@ class EnquiriesController < ApplicationController
   end
 
   # GET /enquiries/1/edit
-  def edit
-    @enquiry = Enquiry.find(params[:id])
-  end
+  #def edit
+  #  @enquiry = Enquiry.find(params[:id])
+  #end
 
   # POST /enquiries
   # POST /enquiries.json
@@ -48,7 +48,6 @@ class EnquiriesController < ApplicationController
     respond_to do |format|
       if @enquiry.save 
         
-        
         # Send request to Bull Farm Oast
         AccomodationEnquiry.enquiry(@enquiry).deliver
         
@@ -57,40 +56,42 @@ class EnquiriesController < ApplicationController
           AccomodationEnquiry.acknowledge(@enquiry).deliver
         end
         
-        format.html { redirect_to @enquiry, notice: 'Enquiry was successfully submitted.', action: "success" }
-        format.json { render json: @enquiry, status: :created, location: @enquiry }
+        #redirect_to @enquiry, notice: 'Enquiry successfully submitted.', action: "success" 
+        #format.json { render json: @enquiry, status: :created, location: @enquiry }
+        format.html { render notice: 'Enquiry successfully submitted.', action: "success" }
+        
       else
-        format.html { render action: "new" }
-        format.json { render json: @enquiry.errors, status: :unprocessable_entity }
+        render action: "new" 
+        #format.json { render json: @enquiry.errors, status: :unprocessable_entity }
       end
     end
   end
 
   # PUT /enquiries/1
   # PUT /enquiries/1.json
-  def update
-    @enquiry = Enquiry.find(params[:id])
+  #def update
+  #  @enquiry = Enquiry.find(params[:id])
 
-    respond_to do |format|
-      if @enquiry.update_attributes(params[:enquiry])
-        format.html { redirect_to @enquiry, notice: 'Enquiry was successfully updated.' }
-        format.json { head :ok }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @enquiry.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  #  respond_to do |format|
+  #    if @enquiry.update_attributes(params[:enquiry])
+  #      format.html { redirect_to @enquiry, notice: 'Enquiry was successfully updated.' }
+  #      format.json { head :ok }
+  #    else
+  #      format.html { render action: "edit" }
+  #      format.json { render json: @enquiry.errors, status: :unprocessable_entity }
+  #    end
+  #  end
+  #end
 
   # DELETE /enquiries/1
   # DELETE /enquiries/1.json
-  def destroy
-    @enquiry = Enquiry.find(params[:id])
-    @enquiry.destroy
+  #def destroy
+  #  @enquiry = Enquiry.find(params[:id])
+  #  @enquiry.destroy
 
-    respond_to do |format|
-      format.html { redirect_to enquiries_url }
-      format.json { head :ok }
-    end
-  end
+  #  respond_to do |format|
+  #    format.html { redirect_to enquiries_url }
+  #    format.json { head :ok }
+  #  end
+  #end
 end
