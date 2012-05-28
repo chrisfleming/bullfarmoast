@@ -250,21 +250,21 @@ function initmap() {
 	//map.on('moveend', onMapMove);
 	
 	var BfoIcon = L.Icon.extend({
-        iconUrl: 'http://localhost:3000/assets/images/marker.png',
-        shadowUrl: '/assets/images/marker-shadow.png',
-        iconSize: new L.Point(38, 95),
-        shadowSize: new L.Point(68, 95),
-        iconAnchor: new L.Point(22, 94),
-        popupAnchor: new L.Point(-3, -76)
+      iconUrl: '/assets/mapicons/cowl_blue.png',
+      shadowUrl: '/assets/mapicons/shadow.png',
+      iconSize: new L.Point(32, 37),
+      shadowSize: new L.Point(51, 37)
     });
     
+    var bfo_icon = new BfoIcon;
     var bfo = new L.Popup();
     
-    var bfoMarker = new L.Marker(new L.LatLng(51.104, 0.5105), {icon: BfoIcon});
-   //map.addLayer(bfoMarker);
+    var bfoMarker = new L.Marker(new L.LatLng(51.0843672, 0.5094063), {icon: bfo_icon});
     
-    bfo.setLatLng(new L.LatLng(51.104, 0.5105));
-    bfo.setContent("This is Bull Farm Oast");
+    map.addLayer(bfoMarker);
+    
+    //bfo.setLatLng(new L.LatLng(51.084, 0.5095));
+    //bfo.setContent("This is Bull Farm Oast");
     
     //map.openPopup(bfo);
 
