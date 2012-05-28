@@ -60,10 +60,11 @@ Bullfarmoast::Application.routes.draw do
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
 
+  match "/sitemap", :controller => 'sitemap', :action => "index"
+
   match "/d/:id" => redirect("/%{id}")
   match ":id", :controller => "pages", :action => "show"
   
-   
   root :to => 'pages#show', :defaults => { :id => 'index' }
 
   # See how all your routes lay out with "rake routes"
