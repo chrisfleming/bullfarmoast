@@ -21,6 +21,7 @@
     there are singletrack mountain biking routes, an extraordinary  play area for
     children and horse riding trails. We have more information <a href="/attractions/Bedgebury_Pinetum">available</a>
   published: true
+  page: Bedgebury
 3:
   url: http://www.bewl.co.uk/
   name: Bewl Water
@@ -41,6 +42,7 @@
     meadow. The planting is profuse, yet structured featuring many bold experiments of 
     form, colour and combination.
   published: true
+  page: GreatDixter
 5:
   url: http://www.marleplace.co.uk/
   name: Marle Place
@@ -177,6 +179,7 @@
     and other hardy and half hardy plants. The Salvia Specialist Nurseries are located
     here.
   published: true
+  page: GreatComp
 19:
   url: http://www.wychcross.co.uk/
   ownership: private

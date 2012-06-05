@@ -62,8 +62,25 @@ Bullfarmoast::Application.routes.draw do
 
   match "/sitemap", :controller => 'sitemap', :action => "index"
 
-  match "/d/:id" => redirect("/%{id}")
+
   match ":id", :controller => "pages", :action => "show"
+  
+  # Legacy re-directs
+  match "/d/fr/index" => redirect("/fr/")
+  match "/d/de/index" => redirect("/de/")
+  match "/d/nl/index" => redirect("/nl/")
+  match "/a/availability" => redirect("/availability")
+  match "/d/bodiamCastle"  => redirect("/attractions/Bodiam_Castle")
+  match "/d/merriments.html" => redirect("/attractions/Merriments_Gardens_and_Nursery")
+  match "/places" => redirect("/attractions")
+  match "/d/scotney" => redirect("/attractions/Scotney_Castle_Garden")
+  match "/d/sheffieldParkGardens" => redirect("/attractions/Sheffield_Park_Garden")
+  match "/d/sissinghurst" => redirect("/attractions/Sissinghurst_Castle")
+  match "/d/places/BedgeburyPinetum" => redirect("/attractions/Bedgebury_Pinetum")
+  match "/d/places/GreatCompGarden" => redirect("/attractions/Great_Comp_Garden")
+  match "/d/places/PashleyManorGardens" => redirect("/attractions/Pashley_Manor_Gardens")
+  match "/d/places/GreatDixter" => redirect("/attractions/Great_Dixter")
+  match "/d/:id" => redirect("/%{id}")
   
   root :to => 'pages#show', :defaults => { :id => 'index' }
 
