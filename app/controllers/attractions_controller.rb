@@ -15,7 +15,9 @@ class AttractionsController < ApplicationController
   # GET /Attractions/1
   # GET /Attractions/1.xml
   def show
-    @attraction   = Attraction.find_by_name(params[:id])  # GET/pages/name
+    this_id = params[:id].gsub!(/_/, ' ')
+  
+    @attraction   = Attraction.find_by_name( this_id )  # GET/pages/name
     @attraction ||= Attraction.find(params[:id])
     
     @nearby = @attraction.nearest_attractions(5)

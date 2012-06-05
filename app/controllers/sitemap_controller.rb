@@ -4,7 +4,7 @@ class SitemapController < ApplicationController
   def index
       headers['Content-Type'] = 'application/xml'
      
-      @pages = Page.lightbox
+      @pages = Page.not_attraction.published
       @attractions = Attraction.all
 
       last_page = Page.last

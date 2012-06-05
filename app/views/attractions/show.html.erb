@@ -6,7 +6,7 @@
         <% end %></p>
         <h2>Nearby Places and Attractions</h2>
         <% @attraction.nearest_attractions(5).each { |a| %>
-            <%= display_miles(a.distance) %> <%= link_to a.name, a.name %><br/>
+            <%= display_miles(a.distance) %> <%= link_to a.name, a.name.gsub(/ /, '_') %><br/>
         <% } %>
   </div>
    	

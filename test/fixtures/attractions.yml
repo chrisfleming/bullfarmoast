@@ -6,11 +6,12 @@
   description: One of the worlds most celebrated and famous gardens, created by Vita
     Sackville-West and her husband Sir Harold Nicolson. The gardens are laid out around
     the surviving parts of an Elizabethan mansion with a central red-brick
-    prospect tower. The gardens are made up of small, vibrant,  enclosed compartments,
+    prospect tower. The gardens are made up of small, vibrant, enclosed compartments,
     providing outstanding design and colour in an intimate atmosphere.
   page: sissinghurst
+  published: true
 2:
-  url: /d/places/BedgeburyPinetum
+  url: http://www.forestry.gov.uk/bedgebury
   name: Bedgebury Pinetum
   category: garden
   latlong: POINT(51.0882133999 0.4518127)
@@ -18,27 +19,30 @@
     Commission in 1924. It contains one of the most complete collections of conifers
     on one site anywhere in the world.<br><br>As well as walks around the collection,
     there are singletrack mountain biking routes, an extraordinary  play area for
-    children and horse riding trails. We have more information <a href=/d/places/BedgeburyPinetum>available</a>
+    children and horse riding trails. We have more information <a href="/attractions/Bedgebury_Pinetum">available</a>
+  published: true
 3:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.bewl.co.uk/
+  url: http://www.bewl.co.uk/
   name: Bewl Water
   category: garden
   latlong: POINT(51.0802336999 0.3900146)
   description: "The reservoir is host to a huge variety of wildlife. Many recreational
     activities such as sailing, trout fishing and walking take place on and around
-    the reservoir; this makes it one of the region\u2019s most popular attractions.
+    the reservoir; this makes it one of the region's most popular attractions.
     There is also a passenger boat, a restaurant, conference facility and gift shop."
+  published: true
 4:
-  url: http://www.bullfarmoast.co.uk/d/places/GreatDixter
+  url: http://www.greatdixter.co.uk/
   name: Great Dixter
   category: garden
   latlong: POINT(50.996824 0.594364)
   description: Another mst see garden. The original house dates back to the 15th
     Century, the gardens features  topiary, a long border, an orchid and a wild flower 
     meadow. The planting is profuse, yet structured featuring many bold experiments of 
-    form, colour and combination
+    form, colour and combination.
+  published: true
 5:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.marleplace.co.uk/
+  url: http://www.marleplace.co.uk/
   name: Marle Place
   category: garden
   latlong: POINT(51.132691 0.401038)
@@ -47,12 +51,14 @@
     Rockery and walled fragrant garden. The 19th Century greenhouse has a Orchid Collection,
     a mosaic terrace and ornamental ponds. It also features an art gallery and art
     days.
+  published: true
 6:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.yaldinggardens.org/
+  url: http://www.yaldinggardens.org/
   name: Yalding Gardens
   category: garden
   latlong: POINT(51.217022 0.430355)
   description: Just closed!
+  published: false
 7:
   url: /d/places/PashleyManorGardens
   name: Pashley Manor Gardens
@@ -64,6 +70,7 @@
     plantings and fine old trees, fountains, springs and large ponds. Definitly One
     of our favorite gardens to visit and well worth stopping for an excellent lunch
     and tea.
+  published: false
 8:
   url: http://www.merriments.co.uk/
   name: Merriments Gardens and Nursery
@@ -73,6 +80,7 @@
     plants grown in the nursery can be seen in situ. These lovely gardens are really
     worth a visit.
   page: merriments
+  published: true
 9:
   url: http://www.nationaltrust.org.uk/scotney-castle/
   ownership: NT
@@ -85,8 +93,9 @@
     and roses. Have a look at some of our spectacular pictures
     taken at Scotney.
   page: scotney
+  published: true
 10:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.nationaltrust.org.uk/main/w-vh/w-visits/w-findaplace/w-emmettsgarden/
+  url: http://www.nationaltrust.org.uk/emmetts-garden/
   ownership: NT
   name: Emmetts Garden
   category: garden
@@ -94,6 +103,7 @@
   description: This charming informal garden, is known for it's glorious spring flowers
     shrubs and rare and exotic trees producing dramatic autumn colours from this hilltop
     location.
+  published: true
 11:
   ownership: NT
   url: http://www.nationaltrust.org.uk/sheffield-park-and-garden/
@@ -107,33 +117,37 @@
     Century entice and entertain visitors all year round.</p><p><img src="/kent/Places/sheffieldPark/sheffieldGardens2.jpg"
     width="500" height="333" /></p>
   page: sheffieldParkGardens
+  published: true
 12:
   ownership: NT
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.nationaltrust.org.uk/main/w-vh/w-visits/w-findaplace/w-spriversgarden/
+  url: http://www.nationaltrust.org.uk/sprivers-garden/
   name: Sprivers Garden
   category: garden
   latlong: POINT(51.131152 0.420741)
-  description: This small formal Eighteenth-century style garden has walled and heged
-    compartments, herbaceous borders and a rose garden
+  description: This small formal Eighteenth-century style garden has walled and hedged
+    compartments, herbaceous borders and a rose garden.
+  published: true
 13:
   ownership: NT
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.nationaltrust.org.uk/main/w-vh/w-visits/w-findaplace/w-nymansgarden2/
+  url: http://www.nationaltrust.org.uk/nymans/
   name: Nymans Garden
   category: garden
   latlong: POINT(51.050594 -0.198441)
   description: This historic garden, is set amidst the romantic ruins of a Gothic
     mansion. Many walks will take you around the the rock garden and explore the sunken
     garden, topiary, lakes and cascades.
+  published: true
 15:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.groombridge.co.uk/
+  url: http://www.groombridge.co.uk/
   ownership: private
   name: Groombridge Place Gardens & Enchanted Forest
   category: garden
   latlong: POINT(51.117090 0.189293)
   description: See the magic and mystery at these peacefull gardens, combining the
-    traditional heritage garden with the ancient woodland
+    traditional heritage garden with the ancient woodland.
+  published: true
 16:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.hadlow.ac.uk/broadview.aspx
+  url: http://www.broadviewgardens.co.uk/
   ownership: private
   name: Broadview Gardens
   category: garden
@@ -141,18 +155,20 @@
   description: Part of Hadlow Colledge, these gardens that are open to the public
     to providing inspiration to amateurs and professionals. The gardens include a
     traditional Italian garden, a Sensory garden, the wild Sandell Lake Garden and
-    a modern Medicinal Garden
+    a modern Medicinal Garden.
+  published: true
 17:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.rbgkew.org.uk/places/wakehurst/index.html
-  ownership: private
+  url: http://www.nationaltrust.org.uk/wakehurst-place/
+  ownership: NT
   name: Wakehurst Place
   category: garden
   latlong: POINT(51.068694 -0.084050)
   description: 'Wakehurst Place, in the beautiful High Weald of Sussex, is an outstanding
     botanic garden and conservation area, managed by the Royal Botanic Gardens, Kew.
     It''s easy to spend a whole day here. '
+  published: true
 18:
-  url: http://www.bullfarmoast.co.uk/d/places/GreatCompGarden
+  url: http://www.greatcompgarden.co.uk/
   ownership: private
   name: Great Comp Garden
   category: garden
@@ -160,8 +176,9 @@
   description: A  garden of 7 acres, comprising many beautiful and rare shrubs, perennials
     and other hardy and half hardy plants. The Salvia Specialist Nurseries are located
     here.
+  published: true
 19:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.wychcross.co.uk/
+  url: http://www.wychcross.co.uk/
   ownership: private
   name: Wych Cross Rose & Garden Center
   category: garden
@@ -169,8 +186,9 @@
   description: Wych Cross Nurseries are set right in the heart of Ashdown Forest,
     one of the loveliest areas of outstanding natural beauty in South-East England.
     This is the location where A.A. Milne set his 'Winnie The Pooh' stories.
+  published: true
 20:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.brogdale.org/
+  url: http://www.brogdale.org/
   ownership: private
   name: Brogdale World of Fruit
   category: garden
@@ -181,14 +199,16 @@
     as smaller collections of nuts & vines are grown here in 150 acres of beautiful
     orchards. Spectacular in blossom time, the orchards are also at their best in
     late summer & autumn, when the ripe fruit is ready for picking.
+  published: true
 21:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.marsh-maize-maze.co.uk/
+  url: http://www.marsh-maize-maze.co.uk/
   ownership: private
   name: Maize Maze
   category: garden
   latlong: POINT(51.023527 0.962248)
   description: Have a fun day out in this giant maze made up of naturally grown maze
     that reaches a height of over 6 foot
+  published: true
 22:
   url: http://www.nationaltrust.org.uk/bodiam-castle/
   ownership: NT
@@ -199,8 +219,9 @@
     Although from the oustside it looks complete inside you are free to explore the
     ruins and climb the turrets. A must for all visitors.
   page: bodiamCastle
+  published: true
 23:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.hevercastle.co.uk/
+  url: http://www.hevercastle.co.uk/
   ownership: private
   name: Hever Castle
   category: building
@@ -209,8 +230,9 @@
     of Anne Boleyn, set in a majestic Italian Garden and topiary, as well as the informal
     lakeside and Sunday Walk. Those after a challenge can explore the Water Maze on
     Sixteen Acre Island and the Yew Maze.
+  published: true
 24:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.leeds-castle.com/
+  url: http://www.leeds-castle.com/
   ownership: private
   name: Leeds Castle
   category: building
@@ -219,8 +241,9 @@
     exploring the castle and grounds which include an aviary home to 100 species,
     Museam on Castle Island, Formal Gardens, and a maze with a secret underground
     grotto.
+  published: true
 25:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.nationaltrust.org.uk/main/w-vh/w-visits/w-findaplace/w-batemans.htm
+  url: http://www.nationaltrust.org.uk/batemans/
   ownership: NT
   name: Bateman's
   category: building
@@ -229,8 +252,9 @@
     just as he left it. Highlights include original illustrations for the Jungle
     Book,  Kiplings 1928 Phanton 1 Rolls-Royce, and gardens running down to the River
     Dudwell with it's working water mill.
+  published: true
 26:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.nationaltrust.org.uk/main/w-vh/w-visits/w-findaplace/w-chartwell/
+  url: http://www.nationaltrust.org.uk/chartwell/
   ownership: NT
   name: Chartwell
   category: building
@@ -238,8 +262,9 @@
   description: This was the Family home of Sir Winston Churchill, see the unrivalled
     collection of Churchill paintings, photographs and memorabilia. A very interesting
     place to visit in a lovely part of the coutryside
+  published: true
 27:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.nationaltrust.org.uk/main/w-vh/w-visits/w-findaplace/w-knole/
+  url: http://www.nationaltrust.org.uk/knole/
   name: Knole
   category: building
   latlong: POINT(51.419944 0.462165)
@@ -247,8 +272,9 @@
     1000 acre deer park. It features a rare collection of Royal Stuart furniture,
     important portraits by Van Dyke, Gainsburgh and Reynolds and has an important
     link with Sissinghurst as the birthplace of Vita Sackville-West
+  published: true
 28:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.nationaltrust.org.uk/main/w-vh/w-visits/w-findaplace/w-ighthammote.htm
+  url: http://www.nationaltrust.org.uk/ighthammote/
   ownership: NT
   name: Ightham Mote
   category: building
@@ -256,8 +282,9 @@
   description: 'This is a Superb 14th Century moated manor house has a Tudor Chapel
     with a hand-painted ceiling, and lovely gardens, with lakeside and woodland walks,
     in a secluded valley. '
+  published: true
 29:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.penshurstplace.com/
+  url: http://www.penshurstplace.com/
   ownership: NT
   name: Penshurst Place
   category: building
@@ -265,8 +292,9 @@
   description: The history of Penshurst Place dates back 650 years, it has one of
     the most complete examples of 14th century domestic architecture with a 60' high
     arched chestnut roof, and formal gardens.
+  published: true
 30:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.squerryes.co.uk/
+  url: http://www.squerryes.co.uk/
   ownership: private
   name: Squerryes Court
   category: building
@@ -275,8 +303,9 @@
     the Warde family home since 1731. It is surrounded by 20 acres of attractive and
     historic gardens which include a lake, restored parterres and an 18th century
     dovecote. Have tea or a light lunch in their delightful seculded garden.
+  published: true
 31:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.english-heritage.org.uk/battleabbey/
+  url: http://www.english-heritage.org.uk/battleabbey/
   ownership: EH
   name: Battle Abbey
   category: building
@@ -284,8 +313,9 @@
   description: The site of the 1066 Battle of Hastings, you can walk the site of the
     battle where King Harold fell and see the ruins of the abbey built by William
     the Conqueror to atone for the bloody conquest
+  published: true
 32:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.herstmonceux-castle.com/
+  url: http://www.herstmonceux-castle.com/
   ownership: private
   name: Herstmonceux Castle
   category: building
@@ -294,8 +324,9 @@
     and gardens. Walk around the Elizabethan walled gardens and the many woodland
     trails, leading to delightful discoveries such as Rhododendron Gardens, Rose Garden,
     Herb Garden and lily covered lakes.
+  published: true
 33:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.sussexpast.co.uk/property/site.php?site_id=15
+  url: http://sussexpast.co.uk/properties-to-discover/michelham-priory
   ownership: private
   name: Michelham Priory
   category: building
@@ -303,8 +334,9 @@
   description: This beautiful historic property offers much to interest visitors;
     history, exhibits, superbly kept gardens, art exhibitions, wildlife, and a working
     watermill
+  published: true
 34:
-  url: http://www.bullfarmoast.co.uk/r?url=http://www.nationaltrust.org.uk/main/w-vh/w-visits/w-findaplace/w-smallhytheplace/
+  url: http://www.nationaltrust.org.uk/smallhythe-place/
   ownership: NT
   name: Smallhythe Place
   category: building
@@ -312,6 +344,7 @@
   description: Visit Ellen Terry's early 16th Century house and cottage gardens, highlights
     include a collection of theatrical costumes and personal mementoes, Thatched barn
     theatre and rose garden, a childrens quiz and trail in a tranquil rural setting
+  published: true
 35:
   url: http://www.visithastings.com/
   name: Hastings
@@ -320,6 +353,7 @@
   description: Visit the town of Hastings and walk along the seafront of this historic
     town before enjoying fish and chips using fish caught by the local beach
     based fishing fleet, one of the largest in England.
+  published: true
 36:
   url: http://www.rye.org.uk/
   name: Rye
@@ -332,8 +366,9 @@
     Visitors can also browse the antique shops, art galleries, book shops and potteries
     or have a bite to eat at one of the tea shops, restaurants or pubs. One of the
     most picturesque ancient towns, a must see if you are in the area.
+  published: true
 37:
-  url: http://www.visittunbridgewells.com/pages/index.asp
+  url: http://www.visittunbridgewells.com/
   name: Royal Tunbridge Wells
   category: places
   latlong: POINT(51.13380067 0.26410102)
@@ -341,6 +376,7 @@
     of the Chalybeate Spring in 1606, today the colonnaded walkway forms the area
     known as The Pantiles and it has a variety of small specialist shops, antique
     shops and open-air cafes, restaurants and bars.
+  published: true
 38:
   url: http://www.canterbury.co.uk/
   name: Canterbury
@@ -349,6 +385,7 @@
   description: This world heritage site is dominated by the Norman cathedral, which
     has been visited by pilgrims for centuries. The compact city centre also contains
     a wide variety of ancient buildings, shops,bars and restaurants. Well worth a vist.
+  published: true
 39:
   url: http://tourism.brighton.co.uk/
   name: Brighton
@@ -359,6 +396,7 @@
     Railway running along the beach front. The  beach is lined with a variety of bars,
     restaurants, night clubs and amusement arcades.Visit The Lanes for a widw variety of 
     shops
+  published: true
 42:
   url: http://www.kesr.org.uk/
   ownership: private
@@ -367,6 +405,7 @@
   latlong: POINT(51.069653 0.684987)
   description: This line joins runs from Tenterden to Bodiam Castle, passing the town
     of Northiam on the way
+  published: true
 43:
   url: http://www.bluebell-railway.co.uk/
   ownership: private
@@ -375,6 +414,7 @@
   latlong: POINT(50.995701 -0.001138)
   description: This preserved line, re-opening part of the Lewes to East Grinstead
     line of the old London Brighton & South Coast Railway since 1960
+  published: true
 44:
   url: http://www.spavalleyrailway.co.uk/
   ownership: private
@@ -384,18 +424,18 @@
   description: "The Spa Valley Railway runs for 3\xBD miles through the picturesque
     Kentish Weald countryside between the town of Royal Tunbridge  Wells and the village
     \ of Groombridge, stopping off in between at High Rocks."
+  published: true
 45:
   url: http://www.museum-kentlife.co.uk/
   ownership: private
   name: Cobtree-Museum of Kent Life
   category: other
-  
- 
   latlong: POINT(51.297285 0.508171)
   description: "See the collection of historic buildings and period homes including 
-    original artifacts and memorabilia, "
+    original artifacts and memorabilia."
+  published: true
 46:
-  url: http://www.rhdr.org.uk/rhdr/rhdr.html
+  url: http://www.rhdr.org.uk/
   ownership: private
   name: Romney, Hythe & Dymchurch Railway
   category: other
@@ -403,6 +443,7 @@
   description: This 25 inch guage heritage railway runs 13 miles from the picturesque
     Cinque Port of Hythe, near the channel tunnel, to the fishermans cottages and
     lighthouses at Dungeness.
+  published: true
 47:
   url: http://www.thehopfarm.co.uk/
   ownership: private
@@ -411,6 +452,7 @@
   latlong: POINT(51.200832 0.393772)
   description: This once working Hop Farm, has something for everyone including childrens
     play area's, animal encounters, interactive museums and the impressive Shire horses.
+  published: true
 48:
   url: http://www.bentley.org.uk/
   ownership: private
@@ -420,8 +462,9 @@
   description: An unusual combination of 100's swans, geese and ducks from around
     the world, along with a superb collection of Veteran, Edwardian and Vintage Cars
     and Motorcycles.
+  published: true
 49:
-  url: http://www.englishwinesgroup.com/vineyards/tenterden.asp
+  url: http://www.chapeldown.com/our-home.aspx
   ownership: private
   name: Tenterden Vineyard Park
   category: other
@@ -429,14 +472,17 @@
   description: Tenterden Vineyard is the home of the Chapel Down wine brand. Visitors
     can wander around the landscaped grounds, herb gardens and vineyards, and tours
     of the Winery and tastings are also available
+  published: true
 50:
+  url: http://www.beachyhead.org.uk/
   name: Beachy Head
   category: other
   latlong: POINT(50.752023 0.206693)
   description: "Take a walk along Britain's highest chalk cliffs and take in the breath
     taking scenery."
+  published: true
 51:
-  url: http://www.nepicarfarm.co.uk/index.htm
+  url: http://www.nepicarfarm.co.uk/
   ownership: private
   name: Nepicar Farm
   category: other
@@ -444,19 +490,23 @@
   description: Nepicar Farm, promises fun for all the family with the full variety
     of traditional farm animals, farm and woodland walks, tractor rides, animal petting
     and a tea rooms and picnic area.
+  published: true
 52:
+  url: http://www.chiddingstone.net/
   name: Chiddingstone
   category: places
   latlong: POINT(51.186176 0.148487)
   description: "Cjiddingstone is unique inthat apart from the church and castle , 
     the entire village is owned by the National Trust and is decribed as being the
     most perfect example of a Tudor village in the country."
- 
+  published: true
 53:
+  url: http://www.alfriston-village.co.uk/
   name: Alfriston
   category: places
   latlong: POINT(50.807562 0.156555)
   description: A lovely village with specialist shops and The Clergy House."
+  published: true
 54:
   url: http://www.charleston.org.uk
   name: Charleston
@@ -467,8 +517,9 @@
     and Bohemian way of life. They decorated the walls and furniture and filled it
     with textiles.ceramics and paintings by them and their contemporaries. A unique
     experience unlike any other museum.
+  published: true
 55:
-  url: http://www.nationaltrust.org.uk/main/w-vh/w-visits/w-findaplace/w-monkshouse/
+  url: http://www.nationaltrust.org.uk/monks-house/
   name: Monk&#39;s House
   category: places
   latlong: POINT(50.838 0.015)
@@ -478,4 +529,5 @@
     This property in administrated and largely maintained on the Trusts behalf by
     a tenant and so is only open between April and October on Wednesday and Saturday
     afternoons.
-...
+  published: true
+

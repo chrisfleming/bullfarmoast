@@ -13,7 +13,11 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.json
   def show
-    @page = Page.find_by_name(params[:id])  # GET/pages/name
+    # Get page name and replace _ with spaces
+    this_id = params[:id]
+    this_id.gsub(/_/, '*')
+    
+    @page = Page.find_by_name( this_id )  # GET/pages/name
     @page ||= Page.find(params[:id]) # GET/pages/id
     
     @feed_entries = FeedEntry.all

@@ -3,16 +3,16 @@ attractions:
   title: 'Attractions close to Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent '
   content: "There are many places to visit from our Bed and Breakfast. Cranbrook
     is a picturesque town with it's distinctive windmill. Also close by, are the
-    the world famous [gardens at Sissinghurst.](/attractions/Sissinghurst Castle)
+    the world famous [gardens at Sissinghurst.](/attractions/Sissinghurst_Castle)
     
-    We also we have some pictures from the landscaped gardens of [Sheffield
-    Park](/attractions/Sheffield Park Garden)"
+    We also we have some pictures from the landscaped gardens of [Sheffield_Park](/attractions/Sheffield Park Garden)"
   sub_content: 
   keywords: 'Bed and Breakfast, Attractions, Cranbrook, UK, Kent, Sussex, Sissinghurst,
     Sheffield, Bodium, Castle '
   description: Places to Visit near Bull Farm Oast, Cranbrook, Kent
   abstract: 
   lightbox: "false"
+  published: false
 availability:
   name: availability
   title: Room Availability at Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent
@@ -29,9 +29,10 @@ availability:
   description: Are rooms available at Bull Farm Oast, Bed and Breakfast
   abstract: Room availability at Bull Farm Oast.
   lightbox: "false"
-
+  published: false
 bodiamCastle:
   name: bodiamCastle
+  parent: attractions
   title: Bodiam Castle near Bull Farm Oast Bed and Breakfast
   content: |2
     Bodiam Castle
@@ -73,7 +74,7 @@ bodiamCastle:
     can be climbed and the walls explored.
   abstract: ""
   lightbox: "false"
-
+  published: true
 breakfast:
   name: breakfast
   title: Breakfast at Bull Farm Oast B&B, Cranbrook, Kent
@@ -107,6 +108,7 @@ breakfast:
   abstract: "We provide a breakfast tailored to your requirements, a full English breakfast
     consisting of bacon, local free range eggs, delicious sausages, grilled tomatoes"
   lightbox: "false"
+  published: true
 contact:
   name: contact
   title: Contact Details for Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent
@@ -126,7 +128,7 @@ contact:
   description: ""
   abstract: ""
   lightbox: "false"
-
+  published: true
 guestbook:
   name: guestbook
   title: Bull Farm Oast Guest Book
@@ -170,7 +172,7 @@ guestbook:
   description: ""
   abstract: ""
   lightbox: "false"
-
+  published: true
 index:
   name: index
   title: Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent
@@ -180,7 +182,7 @@ index:
     
     Prue and Andrew offer a genuine taste of [Kentish](/attractions) hospitality in their
     authentic oasthouse and gardens, charmingly converted into Cranbrook's most welcoming
-    B&B, moments from [Sissinghurst](/attractions/Sissinghurst Castle). Enjoy a beautiful
+    B&B, moments from [Sissinghurst](/attractions/Sissinghurst_Castle). Enjoy a beautiful
     night's sleep in our [rooms](/rooms) before waking to a [breakfast](/breakfast)
     of freshly baked bread, homemade preserved and local farm eggs and bacon.
     
@@ -201,7 +203,7 @@ index:
     1 mile away.
   abstract: A picturesque Bed and Breakfast near Cranbrook in Kent.
   lightbox: "true"
-
+  published: true
 links:
   name: links
   title: Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent
@@ -219,7 +221,7 @@ links:
   description: ""
   abstract: ""
   lightbox: "false"
-
+  published: true
 location:
   name: location
   title: Location of Bull Farm Oast Bed and Breakfast, Cranbrook, Kent, TN17 2ST
@@ -258,7 +260,7 @@ location:
     in Staplehurst and there is a bus stop nearby. '
   abstract: ""
   lightbox: "false"
-
+  published: true
 map:
   name: map
   title: 'Bull Farm Oast - B&B - Local Places to visit '
@@ -336,9 +338,10 @@ map:
   description: ""
   abstract: ""
   lightbox: "false"
-
+  published: false
 merriments:
   name: merriments
+  parent: attractions
   title: Merriments Gardens
   content: |
     Merriments Gardens
@@ -370,7 +373,7 @@ merriments:
     in situ. These lovely gardens are really worth a visit.
   abstract: ""
   lightbox: "false"
-
+  published: true
 rooms:
   name: rooms
   title: Rooms for Bed and Breakfast at Bull Farm` Oast, Cranbrook, Kent
@@ -400,9 +403,10 @@ rooms:
     with additional beds, if required. We have a further twin bedded room.
   abstract: 'Rooms at Bull Farm Oast '
   lightbox: "false"
-
+  published: true
 scotney:
   name: scotney
+  parent: attractions
   title: Scotney Castle Garden & Estate
   content: |
     Scotney Castle
@@ -434,7 +438,7 @@ scotney:
   description: '[description'
   abstract: ""
   lightbox: "false"
-
+  published: true
 sendMail:
   name: sendMail
   title: Room Availability at Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent
@@ -445,9 +449,10 @@ sendMail:
   description: Are rooms available at Bull Farm Oast, Bed and Breakfast
   abstract: Room availability at Bull Farm Oast.
   lightbox: "false"
-
+  published: false
 sheffieldParkGardens:
   name: sheffieldParkGardens
+  parent: attractions
   title: Sheffield Park Gardens near Bull Farm Oast Bed and Breakfast
   content: |
     Sheffield Park Gardens
@@ -479,9 +484,10 @@ sheffieldParkGardens:
     18 Century entice and entertain visitors all year round.
   abstract: ""
   lightbox: "false"
-
+  published: true
 sissinghurst:
   name: sissinghurst
+  parent: attractions
   title: Sissinghurst Castle Gardens
   content: |
     Sissinghurst Castle
@@ -524,7 +530,7 @@ sissinghurst:
   description: ""
   abstract: ""
   lightbox: "false"
-
+  published: true
 dayTrip1:
   name: dayTrip1
   title: "Day trip to Battle Abbey, Hastings, Bateman's and Scotney Castle from Bed
@@ -576,7 +582,7 @@ dayTrip1:
   description: Places to Visit near Bull Farm Oast, Cranbrook, Kent
   abstract: ""
   lightbox: "false"
-
+  published: false
 dayTrip2:
   name: dayTrip2
   title: 'Attractions close to Bed and Breakfast at Bull Farm Oast, Cranbrook, Kent '
@@ -608,7 +614,7 @@ dayTrip2:
   description: Places to Visit near Bull Farm Oast, Cranbrook, Kent
   abstract: ""
   lightbox: "false"
-
+  published: false
 fulllocation:
   name: fulllocation
   title: 'Bull Farm Oast - B&B - Local Places to visit '
@@ -689,4 +695,4 @@ fulllocation:
   description: ""
   abstract: ""
   lightbox: "false"
-
+  published: false

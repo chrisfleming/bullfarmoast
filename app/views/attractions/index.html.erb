@@ -148,7 +148,7 @@ function stateChanged( response ) {
 				var plotmark = new L.Marker(plotll, {icon: icon[plotlist[i].category] });
 				plotmark.data=plotlist[i];
 				map.addLayer(plotmark);
-				plotmark.bindPopup("<h3><a href=\"/attractions/"+ plotlist[i].name +"\">  "+plotlist[i].name+"</a></h3>"+plotlist[i].description);
+				plotmark.bindPopup("<h3><a href=\"/attractions/"+ plotlist[i].name.replace(/ /g, '_') +"\">  "+plotlist[i].name+"</a></h3>"+plotlist[i].description);
 				plotlayers.push(plotmark);
 				}
 			}
