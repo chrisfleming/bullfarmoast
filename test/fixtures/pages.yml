@@ -829,40 +829,66 @@ GreatDixter:
   abstract: ""
   lightbox: "false"
   published: true
-
-template:
-  name:
+PashleyManor:
+  name: Pashley Manor Gardens
   parent: attractions
-  title: 
+  title: Pashley Manor Gardens near Bull Farm Oast Bed and Breakfast
   content: |2
-    Bodiam Castle
-    =============
-   
-    ![Bodiam Castle](/assets/attractions/bodiam/bodiam-winter1.jpg")
+    Pashley Manor Gardens
+    =====================
+    
+    A quintessential English Garden, located in South East England, surrounding a private Grade I listed
+    timber-framed house, dating from 1550 and enlarged in 1720. The Gardens offer a sumptuous blend of romantic
+    landscaping, imaginative plantings and fine old trees, fountains, springs and large ponds. Definitly One
+    of our favorite gardens to visit and well worth stopping for an excellent lunch and tea.
+     
+    ![Bench](/assets/attractions/pashely/BenchToRelacOn.jpg")
+    A Bench to relax on.
+    
+    ![Flower Beds](/assets/attractions/pashely/Bed.jpg")
+    Some of the flower beds.
 
-  
+    ![Cafe](/assets/attractions/pashely/cafe.jpg")
+    The cafe at Pashley.
+    
+    ![Ducks](/assets/attractions/pashely/Ducks.jpg")
+    Ducks!
+    
+    ![Lake](/assets/attractions/pashely/Lake.jpg")
+    The lake in the grounds.
+    
+    ![Manor House](/assets/attractions/pashely/Manor_House_2.jpg")
+    The Pashley Manor House.
+    
+    ![Path through gardens](/assets/attractions/pashely/Path_2.jpg")
+    A path through the gardens
+    
+    ![Statue](/assets/attractions/pashely/Statue.jpg")
+    A Statue in the garden.
+    
+    ![Statue in Beds.](/assets/attractions/pashely/Statues.jpg")
+    Statues amongst the flowers.
+    
   sub_content: |2+
     Opening Times:
     ==============
-    Castle
-    ------
-      12 Feb to 4 Nov 2012 All week 10:30 am to 5:00 pm
-  
-          Last admission is always one hour before closing or dusk if earlier.
-      
-    Adult Admission £7, Child £3.50,
-    Family £18.60
     
-    Distance: 6 miles (10km)
-    10 minutes driving.<br />
-    See [Google Maps](http://maps.google.co.uk/maps?q=from%3A+TN17+2ST+to%3A+TN32+5UA) for maps and directions.
+    ## 3rd April to 29th September 2012 ##
+    
+    Gardens, Café and Gift Shop Open, Tuesdays, Wednesdays, Thursdays, Saturdays, Bank Holiday Mondays and Special Event days – 11.00am to 5.00pm
+ 
+    ## October 2012 ##    
+    Monday to Friday - 10.00 am to 3.00 pm. Garden only - Gift Shop and Café closed
       
-    See the [National Trust Website](http://www.nationaltrust.org.uk/bodiam-castle/) for more Information"
-  keywords: Bodiam Castle, Bodium, Castle, Ruins
-  description: With the outside  appearing intact, this castle build in 1385 makes
-    a spectacular sight. The grounds can be visited for free and the castle can be
-    viewed across the moat. The inside is largely ruined, however some of the towers
-    can be climbed and the walls explored.
+    Adult Admission £9, Child £5.00,
+    
+    We are around 8 miles (12km)
+    or about 15 minutes driving.
+    
+    See (Google Maps)[http://maps.google.co.uk/maps?f=d&saddr=Cranbrook,+Kent+TN17+2ST,+UK&daddr=TN5+7HE&hl=en&geocode=&mra=ls&sll=53.800651,-4.064941&sspn=17.497481,57.128906&ie=UTF8&z=13] for maps and directions.
+
+  keywords: Pashley Manor Gardens, b&b, bed, breakfast, kent, garden, visit, Gardens in East Sussex, gardens in east Sussex, garden in east Sussex
+  description: 
   abstract: ""
   lightbox: "false"
   published: true

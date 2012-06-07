@@ -62,7 +62,7 @@
   description: Just closed!
   published: false
 7:
-  url: /d/places/PashleyManorGardens
+  url: http://www.pashleymanorgardens.com/
   name: Pashley Manor Gardens
   category: garden
   latlong: POINT(51.040688 0.426564)
@@ -73,6 +73,7 @@
     of our favorite gardens to visit and well worth stopping for an excellent lunch
     and tea.
   published: false
+  page: PashleyManor
 8:
   url: http://www.merriments.co.uk/
   name: Merriments Gardens and Nursery
