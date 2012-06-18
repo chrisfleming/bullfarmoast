@@ -64,9 +64,9 @@ Bullfarmoast::Application.configure do
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
 
-  config.email_display = "BandB@chrisfleming.org"
+  config.email_display = "B+B@bullfarmoast.co.uk"
   config.phone_number = "+44 (0)1580 714 140"
-  config.enq_to_address = "b+b@chrisfleming.org,me@chrisfleming"
-
+  config.enq_to_address = "b+b@bullfarmoast.co.uk"
+  config.enq_bcc_address = "me@chrisfleming.org"
 
 end
