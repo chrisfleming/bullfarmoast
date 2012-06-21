@@ -29,7 +29,10 @@
   latlong: POINT(51.0802336999 0.3900146)
   description: "The reservoir is host to a huge variety of wildlife. Many recreational
     activities such as sailing, trout fishing and walking take place on and around
-    the reservoir; this makes it one of the region's most popular attractions.
+    the reservoir.
+
+    The walk around the whole reservoir is 13 miles.
+    
     There is also a passenger boat, a restaurant, conference facility and gift shop."
   published: true
 4:
@@ -106,6 +109,8 @@
   description: This charming informal garden, is known for it's glorious spring flowers
     shrubs and rare and exotic trees producing dramatic autumn colours from this hilltop
     location.
+
+    The bluebells in spring are spectacular here.
   published: true
 11:
   ownership: NT
@@ -137,7 +142,7 @@
   category: garden
   latlong: POINT(51.050594 -0.198441)
   description: This historic garden, is set amidst the romantic ruins of a Gothic
-    mansion. Many walks will take you around the the rock garden and explore the sunken
+    mansion. Many walks will take you around the rock garden and explore the sunken
     garden, topiary, lakes and cascades.
   published: true
 15:
@@ -146,7 +151,7 @@
   name: Groombridge Place Gardens & Enchanted Forest
   category: garden
   latlong: POINT(51.117090 0.189293)
-  description: See the magic and mystery at these peacefull gardens, combining the
+  description: See the magic and mystery at these peaceful gardens, combining the
     traditional heritage garden with the ancient woodland.
   published: true
 16:
@@ -201,7 +206,7 @@
     of varieties of fruit trees in the world. Over 2,300 different varieties of apple,
     550 of pear, 350 of plum, 220 of cherry, 320 varieties of bush fruits, as well
     as smaller collections of nuts & vines are grown here in 150 acres of beautiful
-    orchards. Spectacular in blossom time, the orchards are also at their best in
+    orchards. Spectacular in blossom time, the orchards are at their best in
     late summer & autumn, when the ripe fruit is ready for picking.
   published: true
 21:
@@ -211,7 +216,7 @@
   category: garden
   latlong: POINT(51.023527 0.962248)
   description: Have a fun day out in this giant maze made up of naturally grown maze
-    that reaches a height of over 6 foot
+    that reaches a height of over 6 foot.
   published: true
 22:
   url: http://www.nationaltrust.org.uk/bodiam-castle/
@@ -243,7 +248,7 @@
   latlong: POINT(51.249120 0.630412)
   description: This castle is set in 500 acres of beautiful parkland. Spend your time
     exploring the castle and grounds which include an aviary home to 100 species,
-    Museam on Castle Island, Formal Gardens, and a maze with a secret underground
+    Museum on Castle Island, Formal Gardens, and a maze with a secret underground
     grotto.
   published: true
 25:
@@ -265,7 +270,7 @@
   latlong: POINT(51.243132 0.081853)
   description: This was the Family home of Sir Winston Churchill, see the unrivalled
     collection of Churchill paintings, photographs and memorabilia. A very interesting
-    place to visit in a lovely part of the coutryside
+    place to visit in a lovely part of the countryside
   published: true
 27:
   url: http://www.nationaltrust.org.uk/knole/
@@ -306,7 +311,7 @@
   description: Squerryes Court is a beautiful 17th century manor house which has been
     the Warde family home since 1731. It is surrounded by 20 acres of attractive and
     historic gardens which include a lake, restored parterres and an 18th century
-    dovecote. Have tea or a light lunch in their delightful seculded garden.
+    dovecote. Have tea or a light lunch in their delightful secluded garden.
   published: true
 31:
   url: http://www.english-heritage.org.uk/battleabbey/
@@ -379,7 +384,7 @@
   description: Visitors have been coming here for over 400 years since the discovery
     of the Chalybeate Spring in 1606, today the colonnaded walkway forms the area
     known as The Pantiles and it has a variety of small specialist shops, antique
-    shops and open-air cafes, restaurants and bars.
+    shops and open-air cafés, restaurants and bars.
   published: true
 38:
   url: http://www.canterbury.co.uk/
@@ -388,7 +393,7 @@
   latlong: POINT(51.27893761 1.08078002)
   description: This world heritage site is dominated by the Norman cathedral, which
     has been visited by pilgrims for centuries. The compact city centre also contains
-    a wide variety of ancient buildings, shops,bars and restaurants. Well worth a vist.
+    a wide variety of ancient buildings, shops,bars and restaurants. Well worth a visit.
   published: true
 39:
   url: http://tourism.brighton.co.uk/
@@ -398,8 +403,8 @@
   description: Brighton is one of the largest and most famous seaside resorts, it's
     major landmarks include The Royal Pavilion, Brighton Pier and Volk's Electric
     Railway running along the beach front. The  beach is lined with a variety of bars,
-    restaurants, night clubs and amusement arcades.Visit The Lanes for a widw variety of 
-    shops
+    restaurants, night clubs and amusement arcades. Visit The Lanes for a wide variety of 
+    unusual shops.
   published: true
 42:
   url: http://www.kesr.org.uk/
@@ -444,8 +449,8 @@
   name: Romney, Hythe & Dymchurch Railway
   category: other
   latlong: POINT(50.986280 0.954456)
-  description: This 25 inch guage heritage railway runs 13 miles from the picturesque
-    Cinque Port of Hythe, near the channel tunnel, to the fishermans cottages and
+  description: This 25 inch gauge heritage railway runs 13 miles from the picturesque
+    Cinque Port of Hythe, near the channel tunnel, to the fisherman's cottages and
     lighthouses at Dungeness.
   published: true
 47:
@@ -454,8 +459,8 @@
   name: Hop Farm Country Park
   category: other
   latlong: POINT(51.200832 0.393772)
-  description: This once working Hop Farm, has something for everyone including childrens
-    play area's, animal encounters, interactive museums and the impressive Shire horses.
+  description: This once working Hop Farm, has something for everyone including children's
+    play areas, animal encounters, interactive museums and the impressive Shire horses.
   published: true
 48:
   url: http://www.bentley.org.uk/
@@ -475,7 +480,7 @@
   latlong: POINT(51.039599 0.698427)
   description: Tenterden Vineyard is the home of the Chapel Down wine brand. Visitors
     can wander around the landscaped grounds, herb gardens and vineyards, and tours
-    of the Winery and tastings are also available
+    of the Winery and tastings are also available.
   published: true
 50:
   url: http://www.beachyhead.org.uk/
@@ -500,8 +505,8 @@
   name: Chiddingstone
   category: places
   latlong: POINT(51.186176 0.148487)
-  description: "Cjiddingstone is unique inthat apart from the church and castle , 
-    the entire village is owned by the National Trust and is decribed as being the
+  description: "Cjiddingstone is unique in that apart from the church and castle , 
+    the entire village is owned by the National Trust and is described as being the
     most perfect example of a Tudor village in the country."
   published: true
 53:
@@ -509,7 +514,7 @@
   name: Alfriston
   category: places
   latlong: POINT(50.807562 0.156555)
-  description: A lovely village with specialist shops and The Clergy House."
+  description: A lovely village with specialist shops and The Clergy House.
   published: true
 54:
   url: http://www.charleston.org.uk
