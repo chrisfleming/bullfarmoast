@@ -10,8 +10,7 @@ def self.update_from_feed(feed_url)
     puts "Title: #{item.title}"
     puts "Link: #{item.link}"
     puts "Guid: #{item.guid}"
-    puts "Content: #{item.content_encoded}"
-    puts "=" * 80
+    #puts "Content: #{item.content_encoded}"
     
     unless exists? :guid => item.guid
       create!(
@@ -20,10 +19,15 @@ def self.update_from_feed(feed_url)
         :url          => item.link,
         :content      => item.content_encoded,
         :published_at => item.pubDate,
-        :guid         => item.id
+        :guid         => item.guid
       )
+
+      puts "ADDED"
     end
+      puts "=" * 80
+
   end
+
 end
 
 

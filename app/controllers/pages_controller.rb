@@ -31,7 +31,7 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.json
   def show_blogfeed
-    @feed_entries = FeedEntry.all
+    @feed_entries = FeedEntry.order("published_at DESC")
    
     respond_to do |format|
       format.html { render 'show_blogfeed', :layout => false}  # show_blogfeed.html.erb
