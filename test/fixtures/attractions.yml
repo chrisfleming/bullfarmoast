@@ -539,4 +539,12 @@
     a tenant and so is only open between April and October on Wednesday and Saturday
     afternoons.
   published: true
+56:
+  url: http://www.holepark.com/
+  name: Hole Park
+  category: garden
+  latlong: POINT(51.06279, 0.613157)
+  description: Allways popular with our guests, it has long borders designed by Christopher Lloyd and in springtime the woodland
+    walk is a spectacular display of bluebells and wild garlic. We recommend stopping here for the homemade cakes and tea in the stableyard.
+  published: true
 
