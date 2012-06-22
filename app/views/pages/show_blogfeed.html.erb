@@ -2,7 +2,7 @@
 <% @feed_entries.each do |feed_entry|  %>
   <div id="<%= feed_entry.guid %>" class="blog post class-post">
   	<h2 class="">
-  	  <a href="<%= feed_entry.url %>"><%= feed_entry.published_at.strftime("%d %B") %>: <%= feed_entry.name %></a>	
+  	  <a href="<%= feed_entry.url %>"><%= feed_entry.published_at.strftime("%d %B") %>: <%= feed_entry.name.html_safe %></a>	
   	</h2>  
     <div class="storycontent">
     	<%= raw(feed_entry.content) %>
