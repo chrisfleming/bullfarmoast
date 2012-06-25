@@ -15,11 +15,14 @@ class PagesController < ApplicationController
   def show
     # Get page name and replace _ with spaces
     this_id = params[:id]
-    this_id.gsub(/_/, '*')
+    this_id = this_id.gsub!(/_/, '*') || this_id
     
     @page = Page.find_by_name( this_id )  # GET/pages/name
     @page ||= Page.find(params[:id]) # GET/pages/id
     
+    @title = @page.name + " at Bull Farm Oast B&B"
+
+
     @feed_entries = FeedEntry.all
    
     respond_to do |format|

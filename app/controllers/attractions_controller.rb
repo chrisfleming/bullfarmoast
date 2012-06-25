@@ -5,6 +5,7 @@ class AttractionsController < ApplicationController
   # GET /Attractions.xml
   def index
     @attractions = Attraction.all
+    @title = "Attractions around Bull Farm Oast B&B in the weald of Kent."
 
     respond_to do |format|
       format.html # index.html.erb
@@ -15,13 +16,13 @@ class AttractionsController < ApplicationController
   # GET /Attractions/1
   # GET /Attractions/1.xml
   def show
-    this_id = params[:id].gsub!(/_/, ' ')
+    this_id = params[:id].gsub!(/_/, ' ') || params[:id]
   
     @attraction   = Attraction.find_by_name( this_id )  # GET/pages/name
     @attraction ||= Attraction.find(params[:id])
     
     @nearby = @attraction.nearest_attractions(5)
-
+    @title = @attraction.name
     
     respond_to do |wants|
       wants.html # show.html.erb
