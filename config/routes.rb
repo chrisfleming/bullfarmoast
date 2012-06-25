@@ -71,6 +71,7 @@ Bullfarmoast::Application.routes.draw do
   match "/d/nl/index" => redirect("/nl/")
   match "/a/availability" => redirect("/availability")
   match "/d/bodiamCastle"  => redirect("/attractions/Bodiam_Castle")
+  match "/d/bodiamcastle"  => redirect("/attractions/Bodiam_Castle")
   match "/d/merriments.html" => redirect("/attractions/Merriments_Gardens_and_Nursery")
   match "/places" => redirect("/attractions")
   match "/d/scotney" => redirect("/attractions/Scotney_Castle_Garden")
