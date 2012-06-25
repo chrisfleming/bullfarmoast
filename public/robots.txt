@@ -4,7 +4,7 @@
 # User-Agent: *
 # Disallow: /
 User-Agent: *
-Disallow:
+Disallow: /blog/wp-content/plugins/
 
 SITEMAP: http://bullfarmoast.co.uk/sitemap.xml
 
