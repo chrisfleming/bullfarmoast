@@ -20,7 +20,8 @@ class PagesController < ApplicationController
     @page = Page.find_by_name( this_id )  # GET/pages/name
     @page ||= Page.find(params[:id]) # GET/pages/id
     
-    @title = @page.name + " at Bull Farm Oast B&B"
+    @page.name == "index" ? @title = "Cranbrook Bed and Breakfast" : @title = @page.name
+    @title += " at Bull Farm Oast B&B"
 
 
     @feed_entries = FeedEntry.all
