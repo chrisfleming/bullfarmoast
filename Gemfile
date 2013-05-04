@@ -8,6 +8,8 @@ gem 'rails', '3.2.3'
 gem 'sqlite3'
 gem 'haml'
 gem 'activerecord-postgis-adapter'
+gem 'pg'
+
 
 group :development do
     gem 'rspec-rails'
