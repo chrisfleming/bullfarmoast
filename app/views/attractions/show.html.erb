@@ -8,6 +8,10 @@
         <% @attraction.nearest_attractions(5).each { |a| %>
             <%= display_miles(a.distance) %> <%= link_to a.name, a.name.gsub(/ /, '_') %><br/>
         <% } %>
+        <br/>
+        <% if @attraction.respond_to?('url') then %>
+            <a href="<%= @attraction.url %>">Website</a>
+        <% end %>
   </div>
    	
   <div id="fixedcontent">
