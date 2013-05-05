@@ -7,8 +7,6 @@
       %lastmod=page.updated_at.utc.strftime("%Y-%m-%dT%H:%M:%S+00:00")
       %changefreq monthly
       %priority 0.8
-      %parent #{page.parent}
-      %published #{page.published}
   - for page in @attractions
     %url
       %loc #{base_url}/attractions/#{page.name.gsub(/ /, '_')}
