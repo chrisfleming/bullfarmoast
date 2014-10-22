@@ -48,12 +48,17 @@ class EnquiriesController < ApplicationController
     respond_to do |format|
       if @enquiry.save 
         
-        # Send request to Bull Farm Oast
-        AccomodationEnquiry.enquiry(@enquiry).deliver
+        # Send request to Bull Farm Oast, but only if we return min of 5 links/
+        # watch words
+        if @enquiry.IsCommentSpam < 5
+            AccomodationEnquiry.enquiry(@enquiry).deliver
         
-        # Only send reply if we've not tagged this as spam
-        unless @enquiry.IsCommentSpam 
-          AccomodationEnquiry.acknowledge(@enquiry).deliver
+            # Only send reply if we've not tagged this as spam at all
+            unless @enquiry.IsCommentSpam 
+              AccomodationEnquiry.acknowledge(@enquiry).deliver
+            end
+        else 
+        	  logger.info "Ignoring Spam Score: #{@enquiry.IsCommentSpam}"
         end
         
         #redirect_to @enquiry, notice: 'Enquiry successfully submitted.', action: "success" 
