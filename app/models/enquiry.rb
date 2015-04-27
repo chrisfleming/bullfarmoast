@@ -24,10 +24,28 @@ class Enquiry < ActiveRecord::Base
     #}
     #}
     
-    banned_words = ["phentermine", "xenical", "paxil", "xanax", "meridia","<a href", "drug", "diazepam", "casino", "pussy", "fuck", "lesbian", "Hello, nice site look this", "Erotic", "anal", "tit", "http\:\/\/", "Hydrocodone", "prescription", "Good site, admin." ]
+    banned_words = ["phentermine", "xenical", "paxil", "xanax", "meridia","<a href", "drug", "diazepam", "casino", "pussy", "fuck", "lesbian", "Hello, nice site look this", "Erotic", "anal", "tit", "http\:\/\/", "Hydrocodone", "prescription", "Good site, admin.", "Levitra", "cialis" ]
     r =  banned_words.join('|') 
     regexp = Regexp.new(r, Regexp::IGNORECASE | Regexp::MULTILINE)
-    return self.comment.scan(regexp).size
+    score =  self.comment.scan(regexp).size
+
+	non_letter_number = self.phone.gsub(/\D/, '')
+	if non_letter_number.length < 5
+		score = score + 2
+	end
+
+	if self.phone == "123456":
+		score = score + 3
+	end
+
+	if self.night_count < 1:
+		score = score + 2
+	end
+
+	if self.arrival_date < DateTime.now:
+		score = score + 2
+
+    return score
   
   end
 end
