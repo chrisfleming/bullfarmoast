@@ -9,13 +9,17 @@
 # from scratch. The latter is a flawed and unsustainable approach (the more migrations
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
-# It's strongly recommended to check this file into your version control system.
+# It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120605205127) do
+ActiveRecord::Schema.define(version: 20120605205127) do
 
-  create_table "attractions", :force => true do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+  enable_extension "postgis"
+
+  create_table "attractions", force: :cascade do |t|
     t.string   "name"
-    t.spatial  "latlong",     :limit => {:srid=>4326, :type=>"point", :geographic=>true}
+    t.point    "latlong"
     t.string   "category"
     t.string   "url"
     t.string   "ownership"
@@ -26,7 +30,7 @@ ActiveRecord::Schema.define(:version => 20120605205127) do
     t.boolean  "published"
   end
 
-  create_table "enquiries", :force => true do |t|
+  create_table "enquiries", force: :cascade do |t|
     t.string   "firstname"
     t.string   "surname"
     t.string   "phone"
@@ -40,7 +44,7 @@ ActiveRecord::Schema.define(:version => 20120605205127) do
     t.datetime "updated_at"
   end
 
-  create_table "feed_entries", :force => true do |t|
+  create_table "feed_entries", force: :cascade do |t|
     t.string   "name"
     t.text     "summary"
     t.string   "url"
@@ -51,7 +55,7 @@ ActiveRecord::Schema.define(:version => 20120605205127) do
     t.text     "content"
   end
 
-  create_table "pages", :force => true do |t|
+  create_table "pages", force: :cascade do |t|
     t.string   "name"
     t.string   "title"
     t.text     "keywords"

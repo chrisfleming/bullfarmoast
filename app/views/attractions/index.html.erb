@@ -80,47 +80,56 @@ function stateChanged( response ) {
 	var icon = new Array;
 	
 	var MyIcon = L.Icon.extend({
-      iconUrl: '/assets/images/marker.png',
-      shadowUrl: '/assets/images/marker-shadow.png',
-      iconSize: new L.Point(32, 37),
-      shadowSize: new L.Point(51, 37)
-      
+		options: {
+			iconUrl: '/assets/images/marker.png',
+			shadowUrl: '/assets/images/marker-shadow.png',
+			iconSize: new L.Point(32, 37),
+			shadowSize: new L.Point(51, 37)
+		} 
     });
 
     // Define a set of icons for each category
     
     // Garden
-    iconImg['garden'] = L.Icon.extend({
-      iconUrl: '/assets/mapicons/6ec65b_classic/wetlands.png',
-      shadowUrl: '/assets/mapicons/shadow.png',
-      iconSize: new L.Point(32, 37),
-      shadowSize: new L.Point(51, 37)
-     // ,iconAnchor: new L.Point(25, 18)
-     // ,popupAnchor: new L.Point(0, 0)
+	iconImg['garden'] = L.Icon.extend({
+		options: {
+			iconUrl: '/assets/mapicons/6ec65b_classic/wetlands.png',
+			shadowUrl: '/assets/mapicons/shadow.png',
+			iconSize: new L.Point(32, 37),
+			shadowSize: new L.Point(51, 37)
+			// ,iconAnchor: new L.Point(25, 18)
+			// ,popupAnchor: new L.Point(0, 0)
+		}
     });
     icon['garden'] = new iconImg['garden'];
 
-    iconImg['building'] = L.Icon.extend({
-      iconUrl: '/assets/mapicons/6ec65b_classic/tower.png',
-      shadowUrl: '/assets/mapicons/shadow.png',
-      iconSize: new L.Point(32, 37),
-      shadowSize: new L.Point(51, 37)
+	iconImg['building'] = L.Icon.extend({
+		options: {
+			iconUrl: '/assets/mapicons/6ec65b_classic/tower.png',
+			shadowUrl: '/assets/mapicons/shadow.png',
+			iconSize: new L.Point(32, 37),
+			shadowSize: new L.Point(51, 37)
+		}
     });
     icon['building'] = new iconImg['building'];
     
-    iconImg['places'] = L.Icon.extend({
-      iconUrl: '/assets/mapicons/6ec65b_classic/smallcity.png',
-      shadowUrl: '/assets/mapicons/shadow.png',
-      iconSize: new L.Point(32, 37),
-      shadowSize: new L.Point(51, 37)
+	iconImg['places'] = L.Icon.extend({
+		options: {
+			iconUrl: '/assets/mapicons/6ec65b_classic/smallcity.png',
+			shadowUrl: '/assets/mapicons/shadow.png',
+			iconSize: new L.Point(32, 37),
+			shadowSize: new L.Point(51, 37)
+		}
     });
     icon['places'] = new iconImg['places'];
     
-    iconImg['other'] = L.Icon.extend({
-      iconUrl: '/assets/mapicons/6ec65b_classic/you-are-here-2.png',
-      shadowUrl: '/assets/mapicons/shadow.png',
-      iconSize: new L.Point(32, 37),
-      shadowSize: new L.Point(51, 37)
+	iconImg['other'] = L.Icon.extend({
+		options: {
+			iconUrl: '/assets/mapicons/6ec65b_classic/you-are-here-2.png',
+			shadowUrl: '/assets/mapicons/shadow.png',
+			iconSize: new L.Point(32, 37),
+			shadowSize: new L.Point(51, 37)
+		}
     });
     icon['other'] = new iconImg['other'];
 
@@ -248,12 +257,15 @@ function initmap() {
 	
 	//askForPlots();
 	//map.on('moveend', onMapMove);
-	
-	var BfoIcon = L.Icon.extend({
-      iconUrl: '/assets/mapicons/cowl_blue.png',
-      shadowUrl: '/assets/mapicons/shadow.png',
-      iconSize: new L.Point(32, 37),
-      shadowSize: new L.Point(51, 37)
+     
+
+	var BfoIcon = L.Icon.extend({ 
+		options: {
+			iconUrl: '/assets/mapicons/cowl_blue.png',
+			shadowUrl: '/assets/mapicons/shadow.png',
+			iconSize: new L.Point(32, 37),
+			shadowSize: new L.Point(51, 37)
+		}
     });
     
     var bfo_icon = new BfoIcon;

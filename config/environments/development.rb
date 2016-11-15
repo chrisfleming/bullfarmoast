@@ -40,6 +40,8 @@ Bullfarmoast::Application.configure do
   config.phone_number = "+44 (0)1580 714 140"
   config.enq_to_address = "to@chrisfleming.org"
   config.enq_bcc_address = "bcc@chrisfleming.org"
+
+  config.eager_load = false
  
 
 end

@@ -1,6 +1,6 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-gem 'rails', '3.2.3'
+gem 'rails', '~> 4.2', '>= 4.2.7.1'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -13,6 +13,7 @@ gem 'pg'
 
 group :development do
     gem 'rspec-rails'
+    gem "vendorer"
 end
 
 
@@ -20,8 +21,8 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.5'
-  gem 'coffee-rails', '~> 3.2.2'
+  gem 'sass-rails'
+  gem 'coffee-rails'
   gem 'uglifier', '>= 1.0.3'
 end
 
@@ -35,7 +36,7 @@ gem 'jquery-rails'
 
 # Deploy with Capistrano
 # gem 'capistrano'
-gem 'rvm-capistrano'
+gem 'rvm-capistrano', require: false
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
@@ -48,14 +49,14 @@ group :test do
 end
 
 # for rss blog parsing....
-gem 'simple-rss', '1.2.3'
+gem 'simple-rss'
 
 # Markdown
-gem 'rdiscount', '~> 1.6.8'
+gem 'rdiscount'
 
 
 # Not sure why we need this, but I keep getting errors without it.
 gem 'highline'
 
-
 gem 'devise'
+

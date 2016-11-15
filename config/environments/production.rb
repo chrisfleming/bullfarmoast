@@ -71,4 +71,6 @@ Bullfarmoast::Application.configure do
   config.enq_to_address = "b+b@bullfarmoast.co.uk"
   config.enq_bcc_address = "me@chrisfleming.org"
 
+  config.eager_load = true
+
 end
