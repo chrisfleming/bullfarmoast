@@ -9,7 +9,7 @@ Bullfarmoast::Application.configure do
   config.action_controller.perform_caching = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
-  config.serve_static_assets = false
+  config.serve_static_files = false
 
   # Compress JavaScripts and CSS
   config.assets.compress = true
@@ -18,10 +18,10 @@ Bullfarmoast::Application.configure do
   config.assets.compile = false
 
   # Generate digests for assets URLs
-  config.assets.digest = true
+  config.assets.digest = false
 
   # Defaults to Rails.root.join("public/assets")
-  config.assets.manifest = Rails.root.join("public/assets")
+  #config.assets.manifest = Rails.root.join("public/assets")
 
   # Specifies the header that your server uses for sending files
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
@@ -31,8 +31,8 @@ Bullfarmoast::Application.configure do
   # config.force_ssl = true
 
   # See everything in the log (default is :info)
-  # config.log_level = :debug
-
+  # csonfig.log_level = :debug
+   config.log_level = :info
   # Use a different logger for distributed setups
   # config.logger = SyslogLogger.new
 

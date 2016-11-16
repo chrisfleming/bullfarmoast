@@ -16,7 +16,7 @@ set :deploy_via, :remote_cache
 
 
 
-set :rvm_ruby_string, 'ruby-1.9.3-p125' 
+set :rvm_ruby_string, 'ruby-2.2.4' 
 
 before 'deploy:setup', 'rvm:install_rvm'
 before 'deploy:setup', 'rvm:install_ruby'
@@ -24,9 +24,9 @@ before 'deploy:setup', 'rvm:install_ruby'
 set :use_sudo, false
 
 role :web, "blur.coherentbits.co.uk"                          # Your HTTP server, Apache/etc
-role :web, "oasis.coherentbits.co.uk"                          # This may be the same as your `Web` server
+role :web, "bullfarmoast@oasis.coherentbits.co.uk"                          # This may be the same as your `Web` server
 role :app, "blur.coherentbits.co.uk"
-role :app, "oasis.coherentbits.co.uk"
+role :app, "bullfarmoast@oasis.coherentbits.co.uk"
 role :db,  "blur.coherentbits.co.uk", :primary => true # This is where Rails migrations will run
 #role :db,  "your slave db-server here"
 
@@ -46,17 +46,17 @@ namespace :deploy do
 end
 
 # Precompile assets
-namespace :assets do
-    task :precompile, :roles => :web do
+#namespace :assets do
+#    task :precompile, :roles => :web do
         #run "cd #{current_path} && RAILS_ENV=production bundle exec rake assets:precompile:all"
-        run "cd #{current_path} && bundle exec rake assets:precompile RAILS_ENV=production -s"
+#        run "cd #{current_path} && bundle exec rake assets:precompile RAILS_ENV=production -s"
 
-    end
+#    end
 
-    task :cleanup, :roles => :web do
-        run "cd #{current_path} && RAILS_ENV=production bundle exec rake assets:clean"
-    end
-end
+#j    task :cleanup, :roles => :web do
+#        run "cd #{current_path} && RAILS_ENV=production bundle exec rake assets:clean"
+#    end
+#end
 
 
 
