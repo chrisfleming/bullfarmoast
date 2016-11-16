@@ -11,10 +11,10 @@ gem 'activerecord-postgis-adapter'
 gem 'pg'
 
 
+gem "capistrano", "~> 3.6"
 group :development do
     gem 'rspec-rails', require: false
     gem "vendorer", require: false
-    gem "capistrano", "~> 3.6"
     gem 'capistrano-rails',   '~> 1.1', require: false
     gem 'capistrano-bundler', '~> 1.1', require: false
     gem 'capistrano-rvm',   '~> 0.1', require: false 
