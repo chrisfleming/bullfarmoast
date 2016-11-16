@@ -34,3 +34,6 @@ set :default_env, { path: "/home/bullfarmoast/.rvm/rubies/ruby-2.2.4/bin/:$PATH"
 
 # Default value for keep_releases is 5
 set :keep_releases, 10
+
+set :rvm_ruby_version, '2.2.4'
+
