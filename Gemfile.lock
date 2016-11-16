@@ -39,16 +39,28 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    airbrussh (1.1.0)
+      sshkit (>= 1.6.1, != 1.7.0)
     ansi (1.5.0)
     arel (6.0.3)
     bcrypt (3.1.11)
     builder (3.2.2)
-    capistrano (2.15.9)
-      highline
-      net-scp (>= 1.0.0)
-      net-sftp (>= 2.0.0)
-      net-ssh (>= 2.0.14)
-      net-ssh-gateway (>= 1.1.0)
+    capistrano (3.6.1)
+      airbrussh (>= 1.0.0)
+      capistrano-harrow
+      i18n
+      rake (>= 10.0.0)
+      sshkit (>= 1.9.0)
+    capistrano-bundler (1.1.4)
+      capistrano (~> 3.1)
+      sshkit (~> 1.2)
+    capistrano-harrow (0.5.3)
+    capistrano-rails (1.1.7)
+      capistrano (~> 3.1)
+      capistrano-bundler (~> 1.1)
+    capistrano-rvm (0.1.2)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.2.x)
@@ -88,11 +100,7 @@ GEM
     minitest (5.9.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
-    net-sftp (2.1.2)
-      net-ssh (>= 2.6.5)
     net-ssh (3.2.0)
-    net-ssh-gateway (1.2.0)
-      net-ssh (>= 2.6.5)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
@@ -149,8 +157,6 @@ GEM
       rspec-mocks (~> 3.5.0)
       rspec-support (~> 3.5.0)
     rspec-support (3.5.0)
-    rvm-capistrano (1.5.6)
-      capistrano (~> 2.15.4)
     sass (3.4.22)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
@@ -167,6 +173,9 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.3.12)
+    sshkit (1.11.2)
+      net-scp (>= 1.1.2)
+      net-ssh (>= 2.8.0)
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.5)
@@ -189,6 +198,9 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-postgis-adapter
+  capistrano-bundler (~> 1.1)
+  capistrano-rails (~> 1.1)
+  capistrano-rvm (~> 0.1)
   coffee-rails
   devise
   haml
@@ -198,7 +210,6 @@ DEPENDENCIES
   rails (~> 4.2, >= 4.2.7.1)
   rdiscount
   rspec-rails
-  rvm-capistrano
   sass-rails
   simple-rss
   sqlite3

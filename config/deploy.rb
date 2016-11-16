@@ -1,66 +1,36 @@
-require "rvm/capistrano"
-require "./config/capistrano_database_yml"
-require "bundler/capistrano"
+# config valid only for current version of Capistrano
+lock '3.6.1'
 
+set :application, 'bullfarmoast'
+set :repo_url, 'git@github.com:chrisfleming/bullfarmoast.git'
 
-set :application, "bullfarmoast"
-set :repository,  "git@github.com:chrisfleming/bullfarmoast.git"
+# Default branch is :master
+# ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
-set :scm, :git
-# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
-set :deploy_to, "/var/c-deploy/bullfarmoast"
-set :git_enable_submodules, 1
+# Default deploy_to directory is /var/www/my_app_name
+set :deploy_to, '/var/c-deploy/bullfarmoast'
 
-# Enable Remote Cache From http://help.github.com/deploy-with-capistrano/
-set :deploy_via, :remote_cache
+# Default value for :scm is :git
+# set :scm, :git
 
+# Default value for :format is :airbrussh.
+# set :format, :airbrussh
 
+# You can configure the Airbrussh format using :format_options.
+# These are the defaults.
+# set :format_options, command_output: true, log_file: 'log/capistrano.log', color: :auto, truncate: :auto
 
-set :rvm_ruby_string, 'ruby-2.2.4' 
+# Default value for :pty is false
+# set :pty, true
 
-before 'deploy:setup', 'rvm:install_rvm'
-before 'deploy:setup', 'rvm:install_ruby'
+# Default value for :linked_files is []
+append :linked_files, 'config/database.yml'
 
-set :use_sudo, false
+# Default value for linked_dirs is []
+append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system'
 
-role :web, "blur.coherentbits.co.uk"                          # Your HTTP server, Apache/etc
-role :web, "bullfarmoast@oasis.coherentbits.co.uk"                          # This may be the same as your `Web` server
-role :app, "blur.coherentbits.co.uk"
-role :app, "bullfarmoast@oasis.coherentbits.co.uk"
-role :db,  "blur.coherentbits.co.uk", :primary => true # This is where Rails migrations will run
-#role :db,  "your slave db-server here"
+# Default value for default_env is {}
+set :default_env, { path: "/home/bullfarmoast/.rvm/rubies/ruby-2.2.4/bin/:$PATH" }
 
-# if you want to clean up old releases on each deploy uncomment this:
-# after "deploy:restart", "deploy:cleanup"
-
-# if you're still using the script/reaper helper you will need
-# these http://github.com/rails/irs_process_scripts
-
-# If you are using Passenger mod_rails uncomment this:
-namespace :deploy do
-  task :start do ; end
-  task :stop do ; end
-  task :restart, :roles => :app, :except => { :no_release => true } do
-    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
-  end
-end
-
-# Precompile assets
-#namespace :assets do
-#    task :precompile, :roles => :web do
-        #run "cd #{current_path} && RAILS_ENV=production bundle exec rake assets:precompile:all"
-#        run "cd #{current_path} && bundle exec rake assets:precompile RAILS_ENV=production -s"
-
-#    end
-
-#j    task :cleanup, :roles => :web do
-#        run "cd #{current_path} && RAILS_ENV=production bundle exec rake assets:clean"
-#    end
-#end
-
-
-
-after 'deploy:update_code' do
-     run "cd #{release_path} && bundle exec rake assets:precompile RAILS_ENV=production -s"
-end
-
+# Default value for keep_releases is 5
+set :keep_releases, 10

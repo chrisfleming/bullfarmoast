@@ -12,8 +12,11 @@ gem 'pg'
 
 
 group :development do
-    gem 'rspec-rails'
-    gem "vendorer"
+    gem 'rspec-rails', require: false
+    gem "vendorer", require: false
+    gem 'capistrano-rails',   '~> 1.1', require: false
+    gem 'capistrano-bundler', '~> 1.1', require: false
+    gem 'capistrano-rvm',   '~> 0.1', require: false 
 end
 
 
@@ -21,9 +24,9 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'sass-rails', require: false
+  gem 'coffee-rails', require: false
+  gem 'uglifier', '>= 1.0.3', require: false
 end
 
 gem 'jquery-rails'
@@ -34,18 +37,14 @@ gem 'jquery-rails'
 # Use unicorn as the web server
 # gem 'unicorn'
 
-# Deploy with Capistrano
-# gem 'capistrano'
-gem 'rvm-capistrano', require: false
-
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test do
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
-  gem 'rspec-rails'
-  gem 'webrat', '0.7.1'
+  gem 'rspec-rails', :require => false
+  gem 'webrat', '0.7.1', :require => false
 end
 
 # for rss blog parsing....
