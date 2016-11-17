@@ -36,4 +36,4 @@ set :default_env, { path: "/home/bullfarmoast/.rvm/rubies/ruby-2.2.4/bin/:$PATH"
 set :keep_releases, 10
 
 set :rvm_ruby_version, '2.2.4'
-
+set :passenger_restart_with_touch, true

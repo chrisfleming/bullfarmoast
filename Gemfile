@@ -52,11 +52,13 @@ end
 gem 'simple-rss'
 
 # Markdown
-gem 'rdiscount'
+#gem 'rdiscount'
+gem 'redcarpet'
 
 
 # Not sure why we need this, but I keep getting errors without it.
 gem 'highline'
 
 gem 'devise'
+
 
