@@ -2,7 +2,7 @@
   url: http://www.nationaltrust.org.uk/sissinghurst-castle/
   name: Sissinghurst Castle
   category: garden
-  latlong: POINT(51.1156 0.5823)
+  latlong: 'POINT(51.1156 0.5823)'
   description: One of the worlds most celebrated and famous gardens, created by Vita
     Sackville-West and her husband Sir Harold Nicolson. The gardens are laid out around
     the surviving parts of an Elizabethan mansion with a central red-brick
@@ -14,7 +14,7 @@
   url: http://www.forestry.gov.uk/bedgebury
   name: Bedgebury Pinetum
   category: garden
-  latlong: POINT(51.0882133999 0.4518127)
+  latlong: 'POINT(51.0882133999 0.4518127)'
   description: This park was setup by the Royal Botanic Gardens, Kew and the Forestry
     Commission in 1924. It contains one of the most complete collections of conifers
     on one site anywhere in the world.<br><br>As well as walks around the collection,

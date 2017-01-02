@@ -2,7 +2,7 @@ class CreateAttractions < ActiveRecord::Migration
   def change
     create_table :attractions do |t|
       t.string :name
-      t.point :latlong, :geographic => true
+      t.st_point :latlong, :geographic => true
       t.string :category
       t.string :url
       t.string :ownership

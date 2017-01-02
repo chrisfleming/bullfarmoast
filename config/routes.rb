@@ -1,4 +1,5 @@
-Bullfarmoast::Application.routes.draw do
+Rails.application.routes.draw do
+  resources :enquiries
   resources :enquiries
   resources :attractions
   
@@ -83,7 +84,8 @@ Bullfarmoast::Application.routes.draw do
   get "/d/places/GreatDixter" => redirect("/attractions/Great_Dixter")
   get "/d/:id" => redirect("/%{id}")
   
-  root :to => 'pages#show', :defaults => { :id => 'index' }
+  #root :to => 'pages#show', :defaults => { :id => 'index' }
+  root :to => 'pages#show', :id => 'index' 
 
   # See how all your routes lay out with "rake routes"
 

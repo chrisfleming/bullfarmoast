@@ -40,7 +40,8 @@ class EnquiriesController < ApplicationController
   # POST /enquiries
   # POST /enquiries.json
   def create
-    @enquiry = Enquiry.new(params[:enquiry])
+  	params.fetch(:blog, {}).permit(:title, :author)
+    @enquiry = Enquiry.create(params.fetch(:enquiry, {}).permit(:firstname, :surname, :phone, :email, :arrival_date, :night_count, :people, :rooms, :comment))
     
     logger.info "New enquiry: #{@enquiry.attributes.inspect}"
 
@@ -71,6 +72,11 @@ class EnquiriesController < ApplicationController
       end
     end
   end
+
+  private
+	def enquiry_params
+		params.require(:enquiry).permit(:firstname, :surname, :phone, :email, :arrival_date, :night_count, :people, :rooms, :comment)
+	end
 
   # PUT /enquiries/1
   # PUT /enquiries/1.json

@@ -9,9 +9,9 @@ module ApplicationHelper
  
   class RenderImageswithhelper < Redcarpet::Render::HTML
     def image(link, title, alt_text)
-#        link.slice! "/assets/"
-#        link.slice! "images/"
-        %(<pre>#{link}</pre> #{image_tag(link,  alt: alt_text, title: title)})
+        link.slice! "/assets/"
+        link.slice! "images/"
+        image_tag(link,  alt: alt_text, title: title)
     end
   end
  
