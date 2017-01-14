@@ -1,33 +1,38 @@
-<div id="centercontent" style="margin-left: 350px;">
-  <div id="attrleftcontent">
-    <div id="map" style="border:1px; width:300px; height:300px;"></div>
-        <p><% if @attraction.page.respond_to?('sub_content') then %> 
-        	<%= markdown(@attraction.page.sub_content) %> 
-        <% end %></p>
-        <h2>Nearby Places and Attractions</h2>
-        <% @attraction.nearest_attractions(5).each { |a| %>
-            <%= display_miles(a.distance) %> <%= link_to a.name, a.name.gsub(/ /, '_') %><br/>
-        <% } %>
-        <br/>
-        <% if @attraction.respond_to?('url') then %>
-            <a href="<%= @attraction.url %>">Website</a>
-        <% end %>
-  </div>
-   	
-  <div id="fixedcontent">
-    <p id="notice"><%= notice %></p>
-    <% if  @attraction.page.respond_to?('content')  then %>
-        <%= markdown(@attraction.page.content)  %> 
-    <% else%>
-        <h1><%= @attraction.name  %></h1>  	
-        <p><%= markdown(@attraction.description)  %></p>  
+<% content_for :includes do %>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+<% end %>
 
-    <% end%>
 
-  </div>
-  
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 sidebar">
+            <div id="map" style="border:1px; width:300px; height:300px;"></div>
+				<p><% if @attraction.page.respond_to?('sub_content') then %> 
+					<%= markdown(@attraction.page.sub_content) %> 
+				<% end %></p>
+				<h2>Nearby Places and Attractions</h2>
+				<% @attraction.nearest_attractions(5).each { |a| %>
+					<%= display_miles(a.distance) %> <%= link_to a.name, a.name.gsub(/ /, '_') %><br/>
+				<% } %>
+				<br/>
+				<% if @attraction.respond_to?('url') then %>
+					<a href="<%= @attraction.url %>">Website</a>
+				<% end %>
+		</div>
+		<div class="col-md-8 maincontent">
+			<p id="notice"><%= notice %></p>
+			<% if  @attraction.page.respond_to?('content')  then %>
+				<%= markdown(@attraction.page.content)  %> 
+			<% else%>
+				<h1><%= @attraction.name  %></h1>  	
+				<p><%= markdown(@attraction.description)  %></p>  
+
+			<% end%>
+
+        </div>
+    </div>
 </div>
-
 
 <script>
 

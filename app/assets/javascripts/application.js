@@ -8,4 +8,5 @@
 //= require jquery_ujs
 //= require_tree .
 //= require leaflet.js
-
+//= require tether
+//= require bootstrap-sprockets

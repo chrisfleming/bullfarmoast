@@ -1,0 +1,67 @@
+$body-bg:    #7fb6e0;
+$body-color: #eeeeee;
+
+nav {
+	background-color: #6fc65b;
+}
+
+.bfoheader {
+	background-color: #3ea533 !important;
+	color: #eeeeee;
+	font-size: 35px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+  a {
+	color: #eeeeee;
+	font-size: 35px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+  }
+  h1 {
+	padding-top: 19px;
+  }
+  }
+
+.bfo-nav {
+	background-color: #6fc65b!important;
+
+	a {
+	}
+}
+
+blog {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.maincontent {
+	img {
+		margin: 5px;
+		background-color: white;
+		padding: 15px;
+	}
+}
+
+.sidebar {
+	margin-top: 15px;
+}
+
+$navbar-light-color:                rgba(238,238,238,1);
+$navbar-light-hover-color:          rgba(221,221,221,.8);
+$navbar-light-active-color:         rgba(238,238,238,.9);
+$navbar-light-disabled-color:       rgba(0,0,0,.3);
+$navbar-light-toggler-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+$navbar-light-toggler-border:       rgba(0,0,0,.1);
+
+$font-family-sans-serif: "brioso-pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-serif:      "facitweb", "Georgia", "Times New Roman", Times, serif;
+$font-family-base:       $font-family-serif;
+$headings-font-family:   $font-family-sans-serif;
+
+
+
+

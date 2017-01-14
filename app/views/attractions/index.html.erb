@@ -1,3 +1,53 @@
+<% content_for :includes do %>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+  <%= stylesheet_link_tag "attractions" %>
+<% end %>
+
+
+   <div id="container-fluid">
+      <div id="sidebar">
+        <div class="sidebar-wrapper" style="height: 100%">
+          <div class="card" id="features" style="height: 100%">
+            <div class="card-heading">
+              <h3 class="card-header">Attractions
+				  <button type="button" class="btn btn-sm btn-default pull-right" id="sidebar-hide-btn"><i class="fa fa-chevron-left"></i></button></h3>
+            </div>
+            <div class="card-block" style="display: none">
+              <div class="row">
+                <div class="col-xs-8 col-md-8">
+                  <input type="text" class="form-control search" placeholder="Filter" />
+                </div>
+                <div class="col-xs-4 col-md-4">
+                  <button type="button" class="btn btn-primary pull-right sort" data-sort="feature-name" id="sort-btn"><i class="fa fa-sort"></i>&nbsp;&nbsp;Sort</button>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-table">
+              <table class="table table-hover" id="feature-list">
+                <thead style="display: none;">
+                  <tr>
+                    <th>Icon</th>
+                  <tr>
+                  <tr>
+                    <th>Name</th>
+                  <tr>
+                  <tr>
+                    <th>Chevron</th>
+                  <tr>
+                </thead>
+                <tbody class="list"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+
+
+<!--
+<div id="map" style="border:1px; width:auto;  height:100%;">
 <div id="leftcontent">
   <p>Please select the place you want more information on, either on the map or from the list below.</p>
   <div id="MapSideBar">
@@ -30,23 +80,41 @@
         <ul id="OtherList">
         </ul>
     </div>
-    
-    
-   
-</div>
-</div>
-<div id="centercontent">
-  <div id="map" style="border:1px; width:100%;  height:500px;">
   </div>
 </div>
-<br />
+-->
 
+<!--
 <script type="text/javascript">
 //<![CDATA[
 var map;
+map = new L.Map('map');
+
+	// create the tile layer with correct attribution
+	var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+	var osmAttrib='Map data © OpenStreetMap contributors';
+	var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 18, attribution: osmAttrib});		
+
+	// start the map in South-East England
+	map.setView(new L.LatLng(51.104, 0.5105),11);
+	map.addLayer(osm);
+	
+//]]>
+</script>
+-->
+
+<script type="text/javascript">
+//<![CDATA[
 var ajaxRequest;
 var plotlist;
-var plotlayers=[];
+var plotlayers={};
+var plots=[];
+var overlayMaps = {}
+
+plotlayers['garden'] = []
+plotlayers['building'] = []
+plotlayers['places'] = []
+plotlayers['other'] = []
 
 //set up array of locations
 //var aLocations = new Array;
@@ -59,13 +127,37 @@ aCats[1] = new Array("building", "SideBarCastle", "CastleList", "Castles and Hou
 aCats[2] = new Array("places", "SideBarPlaces", "PlacesList", "Places");
 aCats[3] = new Array("other", "SideBarOther", "OtherList", "Other"); 
 
-
+var categoryNames = {
+	garden: "Gardens",
+	building: "Castles and Houses",
+	places: "Places",
+	other: "Other Attractions"
+}
 // Storage for sidebar list
 var listNodeContent = new Array; 
 
 function openPopup( i ) {
-	plotlayers[i].openPopup();
+	plots[i].openPopup();
 }
+
+$(document).on("click", ".feature-row", function(e) {
+  //$(document).off("mouseout", ".feature-row", clearHighlight);
+  sidebarClick(parseInt($(this).attr("id"), 10));
+});
+
+
+function sidebarClick(id) {
+  //var layer = markerClusters.getLayer(id);
+  //map.setView([layer.getLatLng().lat, layer.getLatLng().lng], 17);
+  //layer.fire("click");
+  /* Hide sidebar and go to the map on small screens */
+  //if (document.body.clientWidth <= 767) {
+  //  $("#sidebar").hide();
+  //  map.invalidateSize();
+  //}
+  openPopup(id)
+}
+
 
 function getXmlHttpObject() {
 	if (window.XMLHttpRequest) { return new XMLHttpRequest(); }
@@ -133,37 +225,42 @@ function stateChanged( response ) {
     });
     icon['other'] = new iconImg['other'];
 
-	
 	// if AJAX returned a list of markers, add them to the map
 	//if (ajaxRequest.readyState==4) {i
 		//use the info here that was returned
 		//if (ajaxRequest.status==200  ) {
 			//plotlist=eval("(" + ajaxRequest.responseText + ")");
-		
 
-			plotlist = response;
-			removeMarkers();
-			
-			for (i=0;i<plotlist.length;i++) {
-				// latlong  = POINT (51.1156 -0.5823)
-				
-				latlong = /(-*\d+\.\d+)\s+(-*\d+\.\d+)/.exec( plotlist[i].latlong )
-				
-				if (latlong==null) {
-					alert ("latlong is null for "+ i + ": " + plotlist[i].name + " ll: " + plotlist[i].latlong );
-				}	
-				else {
-				var plotll = new L.LatLng( latlong[1], latlong[2], true);
-				var plotmark = new L.Marker(plotll, {icon: icon[plotlist[i].category] });
-				plotmark.data=plotlist[i];
-				map.addLayer(plotmark);
-				plotmark.bindPopup("<h3><a href=\"/attractions/"+ plotlist[i].name.replace(/ /g, '_') +"\">  "+plotlist[i].name+"</a></h3>"+plotlist[i].description);
-				plotlayers.push(plotmark);
-				}
-			}
+	plotlist = response;
+	removeMarkers();
+	
+    $("#feature-list tbody").empty();
+	for (i=0;i<plotlist.length;i++) {
+		latlong = /(-*\d+\.\d+)\s+(-*\d+\.\d+)/.exec( plotlist[i].latlong )
+		
+		if (latlong==null) {
+			alert ("latlong is null for "+ i + ": " + plotlist[i].name + " ll: " + plotlist[i].latlong );
+		}	
+		else {
+			var plotll = new L.LatLng( latlong[1], latlong[2], true);
+			var plotmark = new L.Marker(plotll, {icon: icon[plotlist[i].category] });
+			plotmark.data=plotlist[i];
+			// map.addLayer(plotmark);
+			plotmark.bindPopup("<h3><a href=\"/attractions/"+ plotlist[i].name.replace(/ /g, '_') +"\">  "+plotlist[i].name+"</a></h3>"+plotlist[i].description);
+			plotlayers[plotlist[i].category].push(plotmark);
+            plots[i] = plotmark
+            $("#feature-list tbody").append('<tr class="feature-row" id="' + i + '" lat="' + latlong[1] + '" lng="' + latlong[2] + '"><td style="vertical-align: middle;"><img width="16" height="18" src="assets/mapicons/6ec65b_classic/tower.png"></td><td class="feature-name">' + plotlist[i].name + '</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
+            //$("#feature-list tbody").append('<tr class="feature-row" id="' + i + '"><td style="vertical-align: middle;">' + plotlist[i].name + '</td><td><i class="fa fa-chevron-right pull-right"></i></td></tr>');
+            //$("#feature-list tbody").append('<tr class="feature-row" id="id"><td style="vertical-align: middle;">Name</td><td><i class="fa fa-chevron-right pull-right"></i></td></tr>');
+            //$("#feature-list tbody").append("HELLO ");
+		}
+	}
+
+	// Now put them on the map:
+    initmap()
 		//}
 	//}
-	createSideBar( plotlist );
+	//createSideBar( plotlist );
 }
 
 /* Side Bar */
@@ -171,23 +268,37 @@ function stateChanged( response ) {
 function createSideBar( plotlist ) {
 //var oUL = document.createElement("ul");
 // write links into document.
-	for (var j=0; j<aCats.length; j++) {
-		for (var i=0; i<plotlist.length; i++) {
-			if (plotlist[i].category == aCats[j][0]) {
-				var linkElem = document.createElement("a");
-				var listElem = document.createElement("li");
-				linkElem.innerHTML = plotlist[i].name;
-				linkElem.href = "javascript:void(0)";
-				linkElem.href = "javascript:openPopup(" + i +")";
-				//linkElem.click = "javascript:openPopup(" + i +")";
-				
-				var listNode = document.getElementById(aCats[j][2]).appendChild(listElem);
-				listNode.appendChild(linkElem);
-				// oUL.appendChild(listElem);
-			}
-		}
-	}
-//document.getElementById("LocationList").appendChild(oUL);
+//	for (var j=0; j<aCats.length; j++) {
+//		for (var i=0; i<plotlist.length; i++) {
+//			if (plotlist[i].category == aCats[j][0]) {
+//				var linkElem = document.createElement("a");
+//				var listElem = document.createElement("li");
+//				linkElem.innerHTML = plotlist[i].name;
+//				linkElem.href = "javascript:void(0)";
+//				linkElem.href = "javascript:openPopup(" + i +")";
+//				//linkElem.click = "javascript:openPopup(" + i +")";
+//				
+//				var listNode = document.getElementById(aCats[j][2]).appendChild(listElem);
+//				listNode.appendChild(linkElem);
+//				// oUL.appendChild(listElem);
+//			}
+//		}
+//	}
+ 
+	//document.getElementById("LocationList").appendChild(oUL);
+
+ /* Empty sidebar features */
+  $("#feature-list tbody").empty();
+  /* Loop through theaters layer and add only features which are in the map bounds */
+
+  var garden = plotlayers[aCats[0][0]]
+
+  for (var j=0; j<aCats.length; j++) {
+    //plotlayers[aCats[j][0]].eachLayer(function (layer) {
+    garden.forEach(function (layer) {
+      $("#feature-list tbody").append('<tr class="feature-row" id="' + L.stamp(layer) + '" lat="' + layer.getLatLng().lat + '" lng="' + layer.getLatLng().lng + '"><td style="vertical-align: middle;"><img width="16" height="18" src="assets/img/theater.png"></td><td class="feature-name">' + layer.feature.properties.NAME + '</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
+    });
+  }
 }
 
 
@@ -228,7 +339,7 @@ function removeMarkers() {
 	for (i=0;i<plotlayers.length;i++) {
 		map.removeLayer(plotlayers[i]);
 	}
-	plotlayers=[];
+	//plotlayers=[];
 }
 
 function askForPlots() {
@@ -244,7 +355,6 @@ function askForPlots() {
 
 function initmap() {
 	// set up the map
-	map = new L.Map('map');
 
 	// create the tile layer with correct attribution
 	var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
@@ -252,8 +362,15 @@ function initmap() {
 	var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 18, attribution: osmAttrib});		
 
 	// start the map in South-East England
-	map.setView(new L.LatLng(51.104, 0.5105),11);
-	map.addLayer(osm);
+
+	map = new L.Map('map', {
+		center: [51.104, 0.5105],
+		zoom: 10,
+		layers: [osm]
+	});
+
+	//map.setView(new L.LatLng(51.104, 0.5105),11);
+	//map.addLayer(osm);
 	
 	//askForPlots();
 	//map.on('moveend', onMapMove);
@@ -274,7 +391,24 @@ function initmap() {
     var bfoMarker = new L.Marker(new L.LatLng(51.0843672, 0.5094063), {icon: bfo_icon});
     
     map.addLayer(bfoMarker);
-    
+
+	var baseMaps = {
+		"OpenStreetMap": osm
+	}
+
+
+	for (var group in plotlayers) {
+		var name = categoryNames[group]
+		overlayMaps[name] = L.layerGroup(plotlayers[group])
+		map.addLayer(overlayMaps[name])
+	}
+	//	"Gardens": L.layerGroup(plotlayers['garden']),
+	//	"Castles and Houses": L.layerGroup(plotlayers['building']),
+	//	"Places": L.layerGroup(plotlayers['places']),
+	//	"Other Attractions": L.layerGroup(plotlayers['other'])
+	
+
+	L.control.layers(baseMaps, overlayMaps).addTo(map);
     //bfo.setLatLng(new L.LatLng(51.084, 0.5095));
     //bfo.setContent("This is Bull Farm Oast");
     
@@ -287,7 +421,7 @@ function onMapMove(e) { askForPlots(); }
 
 // Setup Map
 $(document).ready(
-	initmap()
+	// initmap()
 );
 
 // Get List of Places

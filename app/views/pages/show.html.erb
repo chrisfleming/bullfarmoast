@@ -1,31 +1,30 @@
-<div id="centercontent">
-  <div id="fixedcontent">
-  <p id="notice"><%= notice %></p>
-  <%= markdown(@page.content) %>
 
-  <% if @page.name == "index"%>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 maincontent">
+			<p id="notice"><%= notice %></p>
+			<%= markdown(@page.content) %>
 
-    <div id="blog">
-    </div>
+			<% if @page.name == "index"%>
 
-    <script language="JavaScript">
-    $.ajax({
-      url: "<%= pages_show_blogfeed_path() %>",
-      format: "html",
-      cache: false,
-      success: function(html){
-        $("#blog").append(html);
-      }
-    }); 
-    </script>
-  <% end %>
-      
-  </div><!-- FixedContent -->
-</div><!-- CenterContent -->
+				<div id="blog" class="img-responsive">
+				</div>
 
-
-<div id="headerright"></div>
-
-<div id="leftcontent">
-  <%= markdown(@page.sub_content) %>
+				<script language="JavaScript">
+				$.ajax({
+				url: "<%= pages_show_blogfeed_path() %>",
+				format: "html",
+				cache: false,
+				success: function(html){
+					$("#blog").append(html);
+				}
+				}); 
+				</script>
+			<% end %>
+		</div><!-- md8 -->
+		<div class="col-md-4 sidebar">
+			<%= markdown(@page.sub_content) %>
+		</div>
+	</div><!-- row -->
 </div>
+

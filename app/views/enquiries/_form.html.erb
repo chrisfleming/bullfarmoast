@@ -12,43 +12,64 @@
   <% end %>
 
  
-  <div class="field">
-    <%= f.label :firstname %><br />
-    <%= f.text_field :firstname %>
+  <div class="form-group row">
+	  <%= f.label :firstname, :class=>"col-sm-2 col-form-label" %>
+	  <div class="col-sm-6">
+		  <%= f.text_field :firstname, :class=>"form-control" %>
+	   </div>
   </div>
-  <div class="field">
-    <%= f.label :surname %><br />
-    <%= f.text_field :surname %>
+  <div class="form-group row">
+    <%= f.label :surname , :class=>"col-sm-2 col-form-label"%>
+	  <div class="col-sm-6">
+    <%= f.text_field :surname , :class=>"form-control"%>
+	   </div>
   </div>
-  <div class="field">
-    <%= f.label :phone %><br />
-    <%= f.text_field :phone %>
+  <div class="form-group row">
+    <%= f.label :phone , :class=>"col-sm-2 col-form-label"%>
+	  <div class="col-sm-6">
+    <%= f.text_field :phone, :class=>"form-control" %>
+	   </div>
   </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
+  <div class="form-group row">
+    <%= f.label :email , :class=>"col-sm-2 col-form-label"%>
+	  <div class="col-sm-6">
+    <%= f.text_field :email, :class=>"form-control" %>
+	   </div>
   </div>
-  <div class="field">
-    <%= f.label :arrival_date %><br />
-    <%= f.date_select :arrival_date, :order => [:day, :month, :year] %>
+  <div class="form-group row">
+    <%= f.label :arrival_date , :class=>"col-sm-2 col-form-label"%>
+	<div class="col-sm-6">
+		<%= f.date_field :arrival_date, :class=>"form-control", :min=>"01-01-2017" %>
+	   </div>
   </div>
-  <div class="field">
-    <%= f.label :night_count %><br />
-    <%= f.number_field :night_count %>
+  <div class="form-group row">
+    <%= f.label :night_count , :class=>"col-sm-2 col-form-label"%>
+	  <div class="col-sm-6">
+         <%= f.number_field :night_count, :class=>"form-control" %>
+	  </div>
   </div>
-  <div class="field">
-    <%= f.label :people %><br />
-    <%= select(:enquiry, :people, options_for_select([['1 Person', 1], ['2 People', 2], ['3 People', 3], ['4 People', 4], ['5 People', 5], ['6 People', 6]], 2)) %>
+  <div class="form-group row">
+    <%= f.label :people , :class=>"col-sm-2 col-form-label"%>
+	  <div class="col-sm-6">
+		  <%= select(:enquiry, :people, options_for_select([['1 Person', 1], ['2 People', 2], ['3 People', 3], ['4 People', 4], ['5 People', 5], ['6 People', 6]], 2), {}, {:class=>"form-control"}) %>
+	  </div>
   </div>
-  <div class="field">
-    <%= f.label :rooms %><br />
-    <%= select(:enquiry, :rooms, options_for_select([['1 Room', 1], ['2 Rooms', 2]], 1)) %>
+  <div class="form-group row">
+    <%= f.label :rooms , :class=>"col-sm-2 col-form-label"%>
+	  <div class="col-sm-6">
+		  <%= select(:enquiry, :rooms, options_for_select([['1 Room', 1], ['2 Rooms', 2]], 1), {}, {:class=>"form-control"}) %>
+	   </div>
   </div>
-  <div class="field">
-    <%= f.label :comment %><br />
-    <%= f.text_area :comment %>
+  <div class="form-group row">
+    <%= f.label :comment , :class=>"col-sm-2 col-form-label"%>
+	  <div class="col-sm-6">
+		  <%= f.text_area :comment, :class=>"form-control", rows: 7 %>
+	   </div>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <div class="form-group row">
+	  <div class="offset-sm-2 col-sm-10">
+	  <%= f.submit 'Make Enquiry', :class => "btn btn-primary" %>
+	   </div>
+   </div>
+</div>
 <% end %>

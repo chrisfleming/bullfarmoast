@@ -1,0 +1,9 @@
+/*
+ *= require_self
+ */
+
+// Custom bootstrap variables must be set or imported before bootstrap itself.
+@import "_custom.scss";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
