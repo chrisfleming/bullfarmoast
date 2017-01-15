@@ -1,11 +1,12 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+	<p id="notice"><%= notice %></p>
 
-<h1>Request Recieved</h1>
+	<h1>Request Recieved</h1>
 
-<p>Thank you for your request for <%= pluralize(@enquiry.night_count, 'night') %> accomodation, from the
- <%= @enquiry.arrival_date %> for <%= pluralize(@enquiry.people, 'person') %> staying in <%= pluralize(@enquiry.rooms, 'room') %>. We reply to you at
-<%= @enquiry.email %> within one day. If you require further information in advance then please
-call us on 01580 714 140 or email us at <a href="mailto:b+b@bullfarmoast.co.uk">b+b@bullfarmoast.co.uk</a>.
-</p>
-<p>We have also sent you a confirmation of this request to <%= @enquiry.email %></p>
- 
+	<p>Thank you for your request for <%= pluralize(@enquiry.night_count, 'night') %> accomodation, from the
+	<%= @enquiry.arrival_date %> for <%= pluralize(@enquiry.people, 'person') %> staying in <%= pluralize(@enquiry.rooms, 'room') %>. We reply to you at
+	<%= @enquiry.email %> within one day. If you require further information in advance then please
+	call us on 01580 714 140 or email us at <a href="mailto:b+b@bullfarmoast.co.uk">b+b@bullfarmoast.co.uk</a>.
+	</p>
+	<p>We have also sent you a confirmation of this request to <%= @enquiry.email %></p>
+</div> 

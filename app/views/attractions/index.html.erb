@@ -238,10 +238,10 @@ function stateChanged( response ) {
 	for (i=0;i<plotlist.length;i++) {
 		latlong = /(-*\d+\.\d+)\s+(-*\d+\.\d+)/.exec( plotlist[i].latlong )
 		
-		if (latlong==null) {
-			alert ("latlong is null for "+ i + ": " + plotlist[i].name + " ll: " + plotlist[i].latlong );
-		}	
-		else {
+		if (latlong!=null) {
+			//alert ("latlong is null for "+ i + ": " + plotlist[i].name + " ll: " + plotlist[i].latlong );
+		//}	
+		//else {
 			var plotll = new L.LatLng( latlong[1], latlong[2], true);
 			var plotmark = new L.Marker(plotll, {icon: icon[plotlist[i].category] });
 			plotmark.data=plotlist[i];

@@ -8,8 +8,9 @@
       %changefreq monthly
       %priority 0.8
   - for page in @attractions
-    %url
-      %loc #{base_url}/attractions/#{page.name.gsub(/ /, '_')}
-      %lastmod=page.updated_at.utc.strftime("%Y-%m-%dT%H:%M:%S+00:00")
-      %changefreq monthly
-      %priority 0.4
+    - if page.name
+      %url
+        %loc #{base_url}/attractions/#{page.name.gsub(/ /, '_')}
+        %lastmod=page.updated_at.utc.strftime("%Y-%m-%dT%H:%M:%S+00:00")
+        %changefreq monthly
+        %priority 0.4
