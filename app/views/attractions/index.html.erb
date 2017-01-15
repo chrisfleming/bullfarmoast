@@ -173,8 +173,8 @@ function stateChanged( response ) {
 	
 	var MyIcon = L.Icon.extend({
 		options: {
-			iconUrl: '<%= asset_path 'marker.png'%>',
-			shadowUrl: '<%= asset_path 'marker-shadow.png'%>',
+			iconUrl: '<%= asset_url 'marker.png'%>',
+			shadowUrl: '<%= asset_url 'marker-shadow.png'%>',
 			iconSize: new L.Point(32, 37),
 			shadowSize: new L.Point(51, 37)
 		} 
@@ -185,8 +185,8 @@ function stateChanged( response ) {
     // Garden
 	iconImg['garden'] = L.Icon.extend({
 		options: {
-			iconUrl: '<%= asset_path 'mapicons/6ec65b_classic/wetlands.png'%>',
-			shadowUrl: '<%= asset_path 'marker-shadow.png'%>',
+			iconUrl: '<%= asset_url 'mapicons/6ec65b_classic/wetlands.png'%>',
+			shadowUrl: '<%= asset_url 'marker-shadow.png'%>',
 			iconSize: new L.Point(32, 37),
 			shadowSize: new L.Point(51, 37)
 			// ,iconAnchor: new L.Point(25, 18)
@@ -197,8 +197,8 @@ function stateChanged( response ) {
 
 	iconImg['building'] = L.Icon.extend({
 		options: {
-			iconUrl: '<%= asset_path 'mapicons/6ec65b_classic/tower.png'%>',
-			shadowUrl: '<%= asset_path 'marker-shadow.png'%>',
+			iconUrl: '<%= asset_url 'mapicons/6ec65b_classic/tower.png'%>',
+			shadowUrl: '<%= asset_url 'marker-shadow.png'%>',
 			iconSize: new L.Point(32, 37),
 			shadowSize: new L.Point(51, 37)
 		}
@@ -207,8 +207,8 @@ function stateChanged( response ) {
     
 	iconImg['places'] = L.Icon.extend({
 		options: {
-			iconUrl: '<%= asset_path 'mapicons/6ec65b_classic/smallcity.png'%>',
-			shadowUrl: '<%= asset_path 'marker-shadow.png'%>',
+			iconUrl: '<%= asset_url 'mapicons/6ec65b_classic/smallcity.png'%>',
+			shadowUrl: '<%= asset_url 'marker-shadow.png'%>',
 			iconSize: new L.Point(32, 37),
 			shadowSize: new L.Point(51, 37)
 		}
@@ -217,8 +217,8 @@ function stateChanged( response ) {
     
 	iconImg['other'] = L.Icon.extend({
 		options: {
-			iconUrl: '<%= asset_path 'mapicons/6ec65b_classic/you-are-here-2.png'%>',
-			shadowUrl: '<%= asset_path 'marker-shadow.png'%>',
+			iconUrl: '<%= asset_url 'mapicons/6ec65b_classic/you-are-here-2.png'%>',
+			shadowUrl: '<%= asset_url 'marker-shadow.png'%>',
 			iconSize: new L.Point(32, 37),
 			shadowSize: new L.Point(51, 37)
 		}
@@ -249,7 +249,7 @@ function stateChanged( response ) {
 			plotmark.bindPopup("<h3><a href=\"/attractions/"+ plotlist[i].name.replace(/ /g, '_') +"\">  "+plotlist[i].name+"</a></h3>"+plotlist[i].description);
 			plotlayers[plotlist[i].category].push(plotmark);
             plots[i] = plotmark
-				$("#feature-list tbody").append('<tr class="feature-row" id="' + i + '" lat="' + latlong[1] + '" lng="' + latlong[2] + '"><td style="vertical-align: middle;"><img width="16" height="18" src="<%= asset_path 'mapicons/6ec65b_classic/tower.png'%>"></td><td class="feature-name">' + plotlist[i].name + '</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
+				$("#feature-list tbody").append('<tr class="feature-row" id="' + i + '" lat="' + latlong[1] + '" lng="' + latlong[2] + '"><td style="vertical-align: middle;"><img width="16" height="18" src="<%= asset_url 'mapicons/6ec65b_classic/tower.png'%>"></td><td class="feature-name">' + plotlist[i].name + '</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
             //$("#feature-list tbody").append('<tr class="feature-row" id="' + i + '"><td style="vertical-align: middle;">' + plotlist[i].name + '</td><td><i class="fa fa-chevron-right pull-right"></i></td></tr>');
             //$("#feature-list tbody").append('<tr class="feature-row" id="id"><td style="vertical-align: middle;">Name</td><td><i class="fa fa-chevron-right pull-right"></i></td></tr>');
             //$("#feature-list tbody").append("HELLO ");
@@ -378,8 +378,8 @@ function initmap() {
 
 	var BfoIcon = L.Icon.extend({ 
 		options: {
-			iconUrl: '<%= asset_path 'mapicons/cowl_blue.png'%>',
-			shadowUrl: '<%= asset_path 'mapicons/shadow.png'%>',
+			iconUrl: '<%= asset_url 'mapicons/cowl_blue.png'%>',
+			shadowUrl: '<%= asset_url 'mapicons/shadow.png'%>',
 			iconSize: new L.Point(32, 37),
 			shadowSize: new L.Point(51, 37)
 		}
