@@ -11,7 +11,7 @@ module ApplicationHelper
     def image(link, title, alt_text)
         link.slice! "/assets/"
         link.slice! "images/"
-        image_tag(link,  alt: alt_text, title: title)
+        image_tag(link, alt: alt_text, title: title, class: "img-fluid")
     end
   end
  

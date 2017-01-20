@@ -5,26 +5,30 @@
 			<p id="notice"><%= notice %></p>
 			<%= markdown(@page.content) %>
 
-			<% if @page.name == "index"%>
 
-				<div id="blog" class="img-responsive">
-				</div>
-
-				<script language="JavaScript">
-				$.ajax({
-				url: "<%= pages_show_blogfeed_path() %>",
-				format: "html",
-				cache: false,
-				success: function(html){
-					$("#blog").append(html);
-				}
-				}); 
-				</script>
-			<% end %>
 		</div><!-- md8 -->
-		<div class="col-md-4 sidebar">
+        <div class="col-md-4 sidebar">
 			<%= markdown(@page.sub_content) %>
 		</div>
 	</div><!-- row -->
+	<% if @page.name == "index"%>
+
+	<div class="row">
+		<div class="col-md-12 maincontent">
+			<div id="blog" class="img-responsive">
+			<script language="JavaScript">
+			$.ajax({
+			url: "<%= pages_show_blogfeed_path() %>",
+			format: "html",
+			cache: false,
+			success: function(html){
+				$("#blog").append(html);
+			}
+			}); 
+			</script>
+			</div>
+		</div>
+	</div>
+	<% end %>
 </div>
 

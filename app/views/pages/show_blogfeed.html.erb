@@ -4,8 +4,11 @@
   	<h2 class="">
   	  <a href="<%= feed_entry.url %>"><%= feed_entry.published_at.strftime("%d %B") %>: <%= feed_entry.name.html_safe %></a>	
   	</h2>  
-    <div class="storycontent">
-    	<%= raw(feed_entry.content) %>
+	<div class="storycontent">
+		<% display_html = feed_entry.content.gsub(/img\ class\=\"/, "img class=\"img-fluid ") %>
+		<% display_html = display_html.gsub(/aligncenter|size-full|wp-image-\d+/, "") %>
+		<% display_html = display_html.gsub(/width\:\ \d+px/, "") %>
+    	<%= raw(display_html) %>
     </div>
   </div>
 <% end %>
